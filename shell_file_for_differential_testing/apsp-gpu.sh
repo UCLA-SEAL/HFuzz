@@ -1,0 +1,1 @@
+./apsp/apsp-heterofuzz.gpu $1

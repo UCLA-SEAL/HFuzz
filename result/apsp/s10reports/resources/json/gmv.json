@@ -1,0 +1,760 @@
+{
+  "nodes":
+  [
+    {
+      "name":"DDR"
+      , "id":2375
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Interleaving":"Yes"
+          , "Interleave Size":"4096 bytes"
+          , "Channels":"4 channels"
+          , "Maximum bandwidth the BSP can deliver":"76800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel DDR Width (bits)":"512, 512, 512, 512"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"channel 0"
+          , "id":2377
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 1"
+          , "id":2378
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 2"
+          , "id":2379
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 3"
+          , "id":2380
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":2376
+      , "parent":"2375"
+      , "bw":"76800.00"
+      , "num_channels":"4"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"76800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":2381
+      , "parent":"2375"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":2382
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":2385
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"DDR"
+              , "Interconnect Style":"ring"
+              , "Writes":"6"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"4"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect"
+          , "id":2383
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"DDR"
+              , "Interconnect Style":"ring"
+              , "Reads":"9"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect Router"
+          , "id":2384
+          , "details":
+          [
+            {
+              "type":"table"
+              , "User specified num-reorder flag":"Unset"
+            }
+          ]
+          , "type":"memsys"
+          , "children":
+          [
+            {
+              "name":"Bus 0"
+              , "id":2403
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 1"
+              , "id":2404
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 2"
+              , "id":2405
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 3"
+              , "id":2406
+              , "type":"memsys"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Loads"
+      , "id":2386
+      , "parent":"2375"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"LD"
+          , "id":2387
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"14"
+              , "Latency":"806 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase1"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":158
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2390
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"8"
+              , "Latency":"790 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":203
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2391
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"6"
+              , "Latency":"790 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":205
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2393
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"46"
+              , "Latency":"790 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":218
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2394
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"46"
+              , "Latency":"856 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":220
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2396
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"0"
+              , "Latency":"856 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":221
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2399
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"7"
+              , "Latency":"838 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase3"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":266
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2400
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"6"
+              , "Latency":"838 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase3"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":268
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2401
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"6"
+              , "Latency":"838 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase3"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":270
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":2388
+      , "parent":"2375"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":2389
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"12"
+              , "Latency":"2 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase1"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":167
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2392
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"12"
+              , "Latency":"34 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":215
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2395
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"21"
+              , "Latency":"100 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":220
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2397
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"21"
+              , "Latency":"100 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":221
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2398
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"13"
+              , "Latency":"2 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":230
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2402
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"13"
+              , "Latency":"2 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase3"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":279
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":2377
+      , "to":2376
+    }
+    , {
+      "from":2376
+      , "to":2377
+    }
+    , {
+      "from":2378
+      , "to":2376
+    }
+    , {
+      "from":2376
+      , "to":2378
+    }
+    , {
+      "from":2379
+      , "to":2376
+    }
+    , {
+      "from":2376
+      , "to":2379
+    }
+    , {
+      "from":2380
+      , "to":2376
+    }
+    , {
+      "from":2376
+      , "to":2380
+    }
+    , {
+      "from":2383
+      , "to":2382
+    }
+    , {
+      "from":2385
+      , "to":2382
+    }
+    , {
+      "from":2382
+      , "to":2376
+    }
+    , {
+      "from":2387
+      , "to":2383
+    }
+    , {
+      "from":2389
+      , "to":2385
+    }
+    , {
+      "from":2390
+      , "to":2383
+    }
+    , {
+      "from":2391
+      , "to":2383
+    }
+    , {
+      "from":2392
+      , "to":2385
+    }
+    , {
+      "from":2393
+      , "to":2383
+    }
+    , {
+      "from":2394
+      , "to":2383
+    }
+    , {
+      "from":2395
+      , "to":2385
+    }
+    , {
+      "from":2396
+      , "to":2383
+    }
+    , {
+      "from":2397
+      , "to":2385
+    }
+    , {
+      "from":2398
+      , "to":2385
+    }
+    , {
+      "from":2399
+      , "to":2383
+    }
+    , {
+      "from":2400
+      , "to":2383
+    }
+    , {
+      "from":2401
+      , "to":2383
+    }
+    , {
+      "from":2402
+      , "to":2385
+    }
+    , {
+      "from":2376
+      , "to":2403
+    }
+    , {
+      "from":2376
+      , "to":2404
+    }
+    , {
+      "from":2376
+      , "to":2405
+    }
+    , {
+      "from":2376
+      , "to":2406
+    }
+    , {
+      "from":2403
+      , "to":2387
+      , "reverse":1
+    }
+    , {
+      "from":2404
+      , "to":2390
+      , "reverse":1
+    }
+    , {
+      "from":2405
+      , "to":2391
+      , "reverse":1
+    }
+    , {
+      "from":2406
+      , "to":2393
+      , "reverse":1
+    }
+    , {
+      "from":2403
+      , "to":2394
+      , "reverse":1
+    }
+    , {
+      "from":2404
+      , "to":2396
+      , "reverse":1
+    }
+    , {
+      "from":2405
+      , "to":2399
+      , "reverse":1
+    }
+    , {
+      "from":2406
+      , "to":2400
+      , "reverse":1
+    }
+    , {
+      "from":2403
+      , "to":2401
+      , "reverse":1
+    }
+  ]
+}

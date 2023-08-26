@@ -1,0 +1,716 @@
+{
+  "nodes":
+  [
+    {
+      "name":"DDR"
+      , "id":2029
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Interleaving":"Yes"
+          , "Interleave Size":"1024 bytes"
+          , "Channels":"2 channels"
+          , "Maximum bandwidth the BSP can deliver":"34133.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel DDR Width (bits)":"512, 512"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"channel 0"
+          , "id":2031
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 1"
+          , "id":2032
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":2030
+      , "parent":"2029"
+      , "bw":"34133.00"
+      , "num_channels":"2"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"34133.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":2033
+      , "parent":"2029"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":2034
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":2037
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"DDR"
+              , "Interconnect Style":"ring"
+              , "Writes":"6"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"2"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect"
+          , "id":2035
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"DDR"
+              , "Interconnect Style":"ring"
+              , "Reads":"9"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect Router"
+          , "id":2036
+          , "details":
+          [
+            {
+              "type":"table"
+              , "User specified num-reorder flag":"Unset"
+            }
+          ]
+          , "type":"memsys"
+          , "children":
+          [
+            {
+              "name":"Bus 0"
+              , "id":2055
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 1"
+              , "id":2056
+              , "type":"memsys"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Loads"
+      , "id":2038
+      , "parent":"2029"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"LD"
+          , "id":2039
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"8"
+              , "Latency":"207 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase1"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":159
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2042
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"2"
+              , "Latency":"191 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":203
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2043
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"1"
+              , "Latency":"191 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":205
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2045
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"42"
+              , "Latency":"191 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":218
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2046
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"42"
+              , "Latency":"257 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":220
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2048
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"0"
+              , "Latency":"257 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":221
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2051
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"2"
+              , "Latency":"239 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase3"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":267
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2052
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"1"
+              , "Latency":"239 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase3"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":269
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2053
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"1"
+              , "Latency":"239 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase3"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":271
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":2040
+      , "parent":"2029"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":2041
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase1"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":168
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2044
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"8"
+              , "Latency":"34 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":215
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2047
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"13"
+              , "Latency":"100 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":220
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2049
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"13"
+              , "Latency":"100 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":221
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2050
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase2"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":230
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2054
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"10"
+              , "Latency":"2 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"KernelPhase3"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":280
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":2031
+      , "to":2030
+    }
+    , {
+      "from":2030
+      , "to":2031
+    }
+    , {
+      "from":2032
+      , "to":2030
+    }
+    , {
+      "from":2030
+      , "to":2032
+    }
+    , {
+      "from":2035
+      , "to":2034
+    }
+    , {
+      "from":2037
+      , "to":2034
+    }
+    , {
+      "from":2034
+      , "to":2030
+    }
+    , {
+      "from":2039
+      , "to":2035
+    }
+    , {
+      "from":2041
+      , "to":2037
+    }
+    , {
+      "from":2042
+      , "to":2035
+    }
+    , {
+      "from":2043
+      , "to":2035
+    }
+    , {
+      "from":2044
+      , "to":2037
+    }
+    , {
+      "from":2045
+      , "to":2035
+    }
+    , {
+      "from":2046
+      , "to":2035
+    }
+    , {
+      "from":2047
+      , "to":2037
+    }
+    , {
+      "from":2048
+      , "to":2035
+    }
+    , {
+      "from":2049
+      , "to":2037
+    }
+    , {
+      "from":2050
+      , "to":2037
+    }
+    , {
+      "from":2051
+      , "to":2035
+    }
+    , {
+      "from":2052
+      , "to":2035
+    }
+    , {
+      "from":2053
+      , "to":2035
+    }
+    , {
+      "from":2054
+      , "to":2037
+    }
+    , {
+      "from":2030
+      , "to":2055
+    }
+    , {
+      "from":2030
+      , "to":2056
+    }
+    , {
+      "from":2055
+      , "to":2039
+      , "reverse":1
+    }
+    , {
+      "from":2056
+      , "to":2042
+      , "reverse":1
+    }
+    , {
+      "from":2055
+      , "to":2043
+      , "reverse":1
+    }
+    , {
+      "from":2056
+      , "to":2045
+      , "reverse":1
+    }
+    , {
+      "from":2055
+      , "to":2046
+      , "reverse":1
+    }
+    , {
+      "from":2056
+      , "to":2048
+      , "reverse":1
+    }
+    , {
+      "from":2055
+      , "to":2051
+      , "reverse":1
+    }
+    , {
+      "from":2056
+      , "to":2052
+      , "reverse":1
+    }
+    , {
+      "from":2055
+      , "to":2053
+      , "reverse":1
+    }
+  ]
+}

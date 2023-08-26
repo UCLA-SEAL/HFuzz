@@ -1,0 +1,3127 @@
+{
+  "nodes":
+  [
+    {
+      "type":"kernel"
+      , "id":2
+      , "name":"KernelPhase1"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":19
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":159
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"arg0"
+              , "Start Cycle":"10"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":20
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg0"
+              , "Start Cycle":"1"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":21
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg0"
+              , "Start Cycle":"1"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":22
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg0"
+              , "Start Cycle":"1"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":23
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":133
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg0"
+              , "Start Cycle":"1"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":24
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":133
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg0"
+              , "Start Cycle":"1"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":25
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":133
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"arg0"
+              , "Start Cycle":"6"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":26
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":168
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg0"
+              , "Start Cycle":"1"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":40
+          , "name":"On-chip Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":41
+              , "name":"arg0"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":152
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":42
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                        , "line":152
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":43
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":44
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":45
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":46
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":47
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":48
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":49
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":50
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"8 total ports/bank\n6 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"8"
+                      , "Number of read ports per bank":"6"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"6"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"49152 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"4096 words"
+                  , "Number of replicates":"3"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"For each bank, 3 replicates were created to efficiently support multiple accesses"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Running memory at 2x clock to support more concurrent ports"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":52
+      , "name":"KernelPhase2"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":90
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":203
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"arg1"
+              , "Start Cycle":"0"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":91
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":205
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"arg6"
+              , "Start Cycle":"0"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":92
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg6"
+              , "Start Cycle":"0"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":93
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg6"
+              , "Start Cycle":"0"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":94
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg1"
+              , "Start Cycle":"9"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":95
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":133
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg6"
+              , "Start Cycle":"0"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":96
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":133
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg1"
+              , "Start Cycle":"1"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":97
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":133
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"arg6"
+              , "Start Cycle":"9"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":98
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":215
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg6"
+              , "Start Cycle":"0"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":102
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":218
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"arg6"
+              , "Start Cycle":"234"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":103
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":220
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg6"
+              , "Start Cycle":"292"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":104
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":220
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg6"
+              , "Start Cycle":"0"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":107
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":221
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg6"
+              , "Start Cycle":"250"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":108
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":221
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg6"
+              , "Start Cycle":"0"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":110
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg6"
+              , "Start Cycle":"0"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":111
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg6"
+              , "Start Cycle":"0"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":112
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg1"
+              , "Start Cycle":"9"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":113
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":133
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg1"
+              , "Start Cycle":"1"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":114
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":133
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg6"
+              , "Start Cycle":"0"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":115
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":133
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"arg6"
+              , "Start Cycle":"8"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":116
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":230
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg6"
+              , "Start Cycle":"1"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":146
+          , "name":"On-chip Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":147
+              , "name":"arg1"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":193
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":148
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":149
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":150
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":151
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":152
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":153
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"5 total ports/bank\n4 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"5"
+                      , "Number of read ports per bank":"4"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"4"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"32768 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"4096 words"
+                  , "Number of replicates":"2"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"For each bank, 2 replicates were created to efficiently support multiple accesses"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Running memory at 2x clock to support more concurrent ports"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"memsys"
+              , "id":154
+              , "name":"arg6"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":193
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":155
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":159
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":167
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":175
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":183
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"4"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":156
+                  , "name":"Bank 1"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":161
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":169
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":177
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":185
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"4"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":157
+                  , "name":"Bank 2"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":163
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":171
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":179
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":187
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"4"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":158
+                  , "name":"Bank 3"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":165
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":173
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":181
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":189
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"4"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"16384 bytes"
+                  , "Number of banks":"4"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"1024 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Running memory at 2x clock to support more concurrent ports"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":160
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":162
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":164
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":166
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":168
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":170
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":172
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":174
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":176
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":178
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":180
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":182
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":184
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":186
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":188
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":190
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":191
+      , "name":"KernelPhase3"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":212
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":267
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"arg1"
+              , "Start Cycle":"0"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":213
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":269
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"arg6"
+              , "Start Cycle":"0"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":214
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":271
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"arg10"
+              , "Start Cycle":"0"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":215
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg10"
+              , "Start Cycle":"1"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":216
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg1"
+              , "Start Cycle":"1"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":217
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg6"
+              , "Start Cycle":"1"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":218
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":133
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg1"
+              , "Start Cycle":"1"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":219
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":133
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg6"
+              , "Start Cycle":"1"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":220
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":133
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"arg10"
+              , "Start Cycle":"6"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":221
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                , "line":281
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg10"
+              , "Start Cycle":"2"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":237
+          , "name":"On-chip Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":238
+              , "name":"arg1"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":254
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":239
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                        , "line":254
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":240
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":241
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":242
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"3 total ports/bank\n2 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"3"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"16384 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"4096 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Running memory at 2x clock to support more concurrent ports"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"memsys"
+              , "id":243
+              , "name":"arg6"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":254
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":244
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                        , "line":254
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":245
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":246
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":247
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"3 total ports/bank\n2 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"3"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"16384 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"4096 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Running memory at 2x clock to support more concurrent ports"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"memsys"
+              , "id":248
+              , "name":"arg10"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":254
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":249
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                        , "line":254
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":250
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":251
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":252
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":253
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"16384 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"4096 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Running memory at 2x clock to support more concurrent ports"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":43
+      , "to":20
+    }
+    , {
+      "from":44
+      , "to":21
+    }
+    , {
+      "from":45
+      , "to":22
+    }
+    , {
+      "from":46
+      , "to":23
+    }
+    , {
+      "from":47
+      , "to":24
+    }
+    , {
+      "from":48
+      , "to":26
+    }
+    , {
+      "from":19
+      , "to":49
+    }
+    , {
+      "from":25
+      , "to":50
+    }
+    , {
+      "from":149
+      , "to":94
+    }
+    , {
+      "from":150
+      , "to":96
+    }
+    , {
+      "from":151
+      , "to":112
+    }
+    , {
+      "from":152
+      , "to":113
+    }
+    , {
+      "from":90
+      , "to":153
+    }
+    , {
+      "from":91
+      , "to":160
+    }
+    , {
+      "from":160
+      , "to":92
+    }
+    , {
+      "from":160
+      , "to":103
+    }
+    , {
+      "from":160
+      , "to":110
+    }
+    , {
+      "from":160
+      , "to":159
+    }
+    , {
+      "from":159
+      , "to":160
+    }
+    , {
+      "from":91
+      , "to":162
+    }
+    , {
+      "from":162
+      , "to":92
+    }
+    , {
+      "from":162
+      , "to":103
+    }
+    , {
+      "from":162
+      , "to":110
+    }
+    , {
+      "from":162
+      , "to":161
+    }
+    , {
+      "from":161
+      , "to":162
+    }
+    , {
+      "from":91
+      , "to":164
+    }
+    , {
+      "from":164
+      , "to":92
+    }
+    , {
+      "from":164
+      , "to":103
+    }
+    , {
+      "from":164
+      , "to":110
+    }
+    , {
+      "from":164
+      , "to":163
+    }
+    , {
+      "from":163
+      , "to":164
+    }
+    , {
+      "from":91
+      , "to":166
+    }
+    , {
+      "from":166
+      , "to":92
+    }
+    , {
+      "from":166
+      , "to":103
+    }
+    , {
+      "from":166
+      , "to":110
+    }
+    , {
+      "from":166
+      , "to":165
+    }
+    , {
+      "from":165
+      , "to":166
+    }
+    , {
+      "from":168
+      , "to":93
+    }
+    , {
+      "from":97
+      , "to":168
+    }
+    , {
+      "from":168
+      , "to":104
+    }
+    , {
+      "from":168
+      , "to":111
+    }
+    , {
+      "from":168
+      , "to":167
+    }
+    , {
+      "from":167
+      , "to":168
+    }
+    , {
+      "from":170
+      , "to":93
+    }
+    , {
+      "from":97
+      , "to":170
+    }
+    , {
+      "from":170
+      , "to":104
+    }
+    , {
+      "from":170
+      , "to":111
+    }
+    , {
+      "from":170
+      , "to":169
+    }
+    , {
+      "from":169
+      , "to":170
+    }
+    , {
+      "from":172
+      , "to":93
+    }
+    , {
+      "from":97
+      , "to":172
+    }
+    , {
+      "from":172
+      , "to":104
+    }
+    , {
+      "from":172
+      , "to":111
+    }
+    , {
+      "from":172
+      , "to":171
+    }
+    , {
+      "from":171
+      , "to":172
+    }
+    , {
+      "from":174
+      , "to":93
+    }
+    , {
+      "from":97
+      , "to":174
+    }
+    , {
+      "from":174
+      , "to":104
+    }
+    , {
+      "from":174
+      , "to":111
+    }
+    , {
+      "from":174
+      , "to":173
+    }
+    , {
+      "from":173
+      , "to":174
+    }
+    , {
+      "from":176
+      , "to":114
+    }
+    , {
+      "from":176
+      , "to":95
+    }
+    , {
+      "from":102
+      , "to":176
+    }
+    , {
+      "from":176
+      , "to":107
+    }
+    , {
+      "from":176
+      , "to":175
+    }
+    , {
+      "from":175
+      , "to":176
+    }
+    , {
+      "from":178
+      , "to":114
+    }
+    , {
+      "from":178
+      , "to":95
+    }
+    , {
+      "from":102
+      , "to":178
+    }
+    , {
+      "from":178
+      , "to":107
+    }
+    , {
+      "from":178
+      , "to":177
+    }
+    , {
+      "from":177
+      , "to":178
+    }
+    , {
+      "from":180
+      , "to":114
+    }
+    , {
+      "from":180
+      , "to":95
+    }
+    , {
+      "from":102
+      , "to":180
+    }
+    , {
+      "from":180
+      , "to":107
+    }
+    , {
+      "from":180
+      , "to":179
+    }
+    , {
+      "from":179
+      , "to":180
+    }
+    , {
+      "from":182
+      , "to":114
+    }
+    , {
+      "from":182
+      , "to":95
+    }
+    , {
+      "from":102
+      , "to":182
+    }
+    , {
+      "from":182
+      , "to":107
+    }
+    , {
+      "from":182
+      , "to":181
+    }
+    , {
+      "from":181
+      , "to":182
+    }
+    , {
+      "from":184
+      , "to":98
+    }
+    , {
+      "from":184
+      , "to":108
+    }
+    , {
+      "from":115
+      , "to":184
+    }
+    , {
+      "from":184
+      , "to":116
+    }
+    , {
+      "from":184
+      , "to":183
+    }
+    , {
+      "from":183
+      , "to":184
+    }
+    , {
+      "from":186
+      , "to":98
+    }
+    , {
+      "from":186
+      , "to":108
+    }
+    , {
+      "from":115
+      , "to":186
+    }
+    , {
+      "from":186
+      , "to":116
+    }
+    , {
+      "from":186
+      , "to":185
+    }
+    , {
+      "from":185
+      , "to":186
+    }
+    , {
+      "from":188
+      , "to":98
+    }
+    , {
+      "from":188
+      , "to":108
+    }
+    , {
+      "from":115
+      , "to":188
+    }
+    , {
+      "from":188
+      , "to":116
+    }
+    , {
+      "from":188
+      , "to":187
+    }
+    , {
+      "from":187
+      , "to":188
+    }
+    , {
+      "from":190
+      , "to":98
+    }
+    , {
+      "from":190
+      , "to":108
+    }
+    , {
+      "from":115
+      , "to":190
+    }
+    , {
+      "from":190
+      , "to":116
+    }
+    , {
+      "from":190
+      , "to":189
+    }
+    , {
+      "from":189
+      , "to":190
+    }
+    , {
+      "from":240
+      , "to":216
+    }
+    , {
+      "from":241
+      , "to":218
+    }
+    , {
+      "from":212
+      , "to":242
+    }
+    , {
+      "from":245
+      , "to":217
+    }
+    , {
+      "from":246
+      , "to":219
+    }
+    , {
+      "from":213
+      , "to":247
+    }
+    , {
+      "from":250
+      , "to":215
+    }
+    , {
+      "from":251
+      , "to":221
+    }
+    , {
+      "from":214
+      , "to":252
+    }
+    , {
+      "from":220
+      , "to":253
+    }
+  ]
+}

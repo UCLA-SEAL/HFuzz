@@ -1,0 +1,3923 @@
+{
+  "7":
+  {
+    "nodes":
+    [
+      {
+        "name":"Exit"
+        , "id":49
+        , "subtype":"exit"
+        , "start":"6.00"
+        , "end":"10.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Max Fanout":"2"
+            , "Start Cycle":"6"
+            , "Latency":"3"
+            , "Exit FIFO Depth":"32"
+            , "Exit FIFO Width":"216"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":50
+        , "subtype":"entry"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Max Fanout":"0"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_p3"
+        , "id":51
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"2.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_p3'"
+            , "Max Fanout":"5"
+            , "Start Cycle":"0"
+            , "Latency":"2"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_p"
+        , "id":52
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"5.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_p'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"5"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":53
+        , "subtype":"default"
+        , "start":"2.00"
+        , "end":"6.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Max Fanout":"21"
+            , "Start Cycle":"2"
+            , "Latency":"4"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+              , "line":927
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_n"
+        , "id":54
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"6.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_n'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"6"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Compare"
+        , "id":55
+        , "subtype":"default"
+        , "start":"6.00"
+        , "end":"6.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Compare"
+            , "Max Fanout":"2"
+            , "Start Cycle":"6"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":180
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":56
+        , "subtype":"default"
+        , "start":"3.00"
+        , "end":"6.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Max Fanout":"21"
+            , "Start Cycle":"3"
+            , "Latency":"3"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Xor"
+        , "id":57
+        , "subtype":"default"
+        , "start":"6.00"
+        , "end":"6.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit Xor"
+            , "Constant Operand":"1 (0x1)"
+            , "Max Fanout":"1"
+            , "Start Cycle":"6"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":185
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":50
+        , "to":56
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"72"
+          }
+        ]
+      }
+      , {
+        "from":51
+        , "to":53
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":51
+        , "to":49
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":52
+        , "to":53
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":53
+        , "to":56
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":53
+        , "to":49
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":54
+        , "to":55
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":55
+        , "to":57
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":55
+        , "to":49
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":56
+        , "to":49
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":57
+        , "to":49
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+    ]
+  }
+  , "9":
+  {
+    "nodes":
+    [
+      {
+        "name":"Exit"
+        , "id":59
+        , "subtype":"exit"
+        , "start":"830.00"
+        , "end":"834.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Max Fanout":"2"
+            , "Start Cycle":"830"
+            , "Latency":"3"
+            , "Exit FIFO Depth":"32"
+            , "Exit FIFO Width":"104"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":60
+        , "subtype":"entry"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Max Fanout":"0"
+            , "Start Cycle":"830"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":60
+        , "to":59
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"136"
+          }
+        ]
+      }
+    ]
+  }
+  , "22":
+  {
+    "nodes":
+    [
+      {
+        "name":"Exit"
+        , "id":61
+        , "subtype":"exit"
+        , "start":"805.00"
+        , "end":"809.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Max Fanout":"2"
+            , "Start Cycle":"805"
+            , "Latency":"3"
+            , "Exit FIFO Depth":"32"
+            , "Exit FIFO Width":"48"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":62
+        , "subtype":"entry"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Max Fanout":"0"
+            , "Start Cycle":"804"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":63
+        , "subtype":"default"
+        , "start":"804.00"
+        , "end":"804.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Add"
+            , "Constant Operand":"1 (0x1)"
+            , "Max Fanout":"1"
+            , "Start Cycle":"804"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":180
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_n"
+        , "id":64
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"805.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_n'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"805"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Compare"
+        , "id":65
+        , "subtype":"default"
+        , "start":"805.00"
+        , "end":"805.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Compare"
+            , "Max Fanout":"1"
+            , "Start Cycle":"805"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":180
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":62
+        , "to":63
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"40"
+          }
+        ]
+      }
+      , {
+        "from":63
+        , "to":65
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":63
+        , "to":61
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":64
+        , "to":65
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":65
+        , "to":61
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+    ]
+  }
+  , "23":
+  {
+    "nodes":
+    [
+      {
+        "name":"Exit"
+        , "id":66
+        , "subtype":"exit"
+        , "start":"5.00"
+        , "end":"9.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Max Fanout":"2"
+            , "Start Cycle":"5"
+            , "Latency":"3"
+            , "Exit FIFO Depth":"32"
+            , "Exit FIFO Width":"136"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":67
+        , "subtype":"entry"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Max Fanout":"0"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":68
+        , "subtype":"default"
+        , "start":"1.00"
+        , "end":"4.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Max Fanout":"10"
+            , "Start Cycle":"1"
+            , "Latency":"3"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":69
+        , "subtype":"default"
+        , "start":"1.00"
+        , "end":"5.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Max Fanout":"10"
+            , "Start Cycle":"1"
+            , "Latency":"4"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":67
+        , "to":68
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"104"
+          }
+        ]
+      }
+      , {
+        "from":67
+        , "to":69
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"104"
+          }
+        ]
+      }
+      , {
+        "from":69
+        , "to":66
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+    ]
+  }
+  , "25":
+  {
+    "nodes":
+    [
+      {
+        "name":"Exit"
+        , "id":71
+        , "subtype":"exit"
+        , "start":"821.00"
+        , "end":"825.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Max Fanout":"2"
+            , "Start Cycle":"821"
+            , "Latency":"3"
+            , "Exit FIFO Depth":"32"
+            , "Exit FIFO Width":"176"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":72
+        , "subtype":"entry"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Max Fanout":"0"
+            , "Start Cycle":"809"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 -"
+        , "id":73
+        , "subtype":"default"
+        , "start":"809.00"
+        , "end":"812.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Sub"
+            , "Max Fanout":"4"
+            , "Start Cycle":"809"
+            , "Latency":"3"
+            , "Rounding Scheme":"IEEE-754 RNE Rounding"
+            , "Implementation Preference":"Default DSP usage"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":185
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 -"
+        , "id":74
+        , "subtype":"default"
+        , "start":"809.00"
+        , "end":"812.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Sub"
+            , "Max Fanout":"4"
+            , "Start Cycle":"809"
+            , "Latency":"3"
+            , "Rounding Scheme":"IEEE-754 RNE Rounding"
+            , "Implementation Preference":"Default DSP usage"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":186
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 -"
+        , "id":75
+        , "subtype":"default"
+        , "start":"809.00"
+        , "end":"812.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Sub"
+            , "Max Fanout":"4"
+            , "Start Cycle":"809"
+            , "Latency":"3"
+            , "Rounding Scheme":"IEEE-754 RNE Rounding"
+            , "Implementation Preference":"Default DSP usage"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":187
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_kSofteningSquared"
+        , "id":76
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"815.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_kSofteningSquared'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"815"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 Dot-3"
+        , "id":77
+        , "subtype":"default"
+        , "start":"813.00"
+        , "end":"821.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Dot Product of Size 3"
+            , "Max Fanout":"1"
+            , "Start Cycle":"813"
+            , "Latency":"8"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":190
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FP Compare"
+        , "id":78
+        , "subtype":"default"
+        , "start":"819.00"
+        , "end":"821.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Compare"
+            , "Max Fanout":"6"
+            , "Start Cycle":"819"
+            , "Latency":"2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":193
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FP Compare"
+        , "id":79
+        , "subtype":"default"
+        , "start":"819.00"
+        , "end":"821.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Compare"
+            , "Max Fanout":"6"
+            , "Start Cycle":"819"
+            , "Latency":"2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":199
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Or"
+        , "id":80
+        , "subtype":"default"
+        , "start":"821.00"
+        , "end":"821.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit Or"
+            , "Max Fanout":"1"
+            , "Start Cycle":"821"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FP Compare"
+        , "id":81
+        , "subtype":"default"
+        , "start":"819.00"
+        , "end":"821.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Compare"
+            , "Max Fanout":"6"
+            , "Start Cycle":"819"
+            , "Latency":"2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":204
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Or"
+        , "id":82
+        , "subtype":"default"
+        , "start":"821.00"
+        , "end":"821.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit Or"
+            , "Max Fanout":"1"
+            , "Start Cycle":"821"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"And"
+        , "id":83
+        , "subtype":"default"
+        , "start":"821.00"
+        , "end":"821.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit And"
+            , "Max Fanout":"1"
+            , "Start Cycle":"821"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Xor"
+        , "id":84
+        , "subtype":"default"
+        , "start":"821.00"
+        , "end":"821.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit Xor"
+            , "Constant Operand":"1 (0x1)"
+            , "Max Fanout":"1"
+            , "Start Cycle":"821"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Select"
+        , "id":85
+        , "subtype":"select"
+        , "start":"821.00"
+        , "end":"821.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit Select"
+            , "Max Fanout":"1"
+            , "Start Cycle":"821"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":180
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Select"
+        , "id":86
+        , "subtype":"select"
+        , "start":"821.00"
+        , "end":"821.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit Select"
+            , "Max Fanout":"1"
+            , "Start Cycle":"821"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":180
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Select"
+        , "id":87
+        , "subtype":"select"
+        , "start":"821.00"
+        , "end":"821.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit Select"
+            , "Max Fanout":"1"
+            , "Start Cycle":"821"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":180
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"And"
+        , "id":88
+        , "subtype":"default"
+        , "start":"821.00"
+        , "end":"821.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit And"
+            , "Max Fanout":"1"
+            , "Start Cycle":"821"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":72
+        , "to":73
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"248"
+          }
+        ]
+      }
+      , {
+        "from":72
+        , "to":74
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"248"
+          }
+        ]
+      }
+      , {
+        "from":72
+        , "to":75
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"248"
+          }
+        ]
+      }
+      , {
+        "from":72
+        , "to":83
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"248"
+          }
+        ]
+      }
+      , {
+        "from":72
+        , "to":88
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"248"
+          }
+        ]
+      }
+      , {
+        "from":72
+        , "to":87
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"248"
+          }
+        ]
+      }
+      , {
+        "from":72
+        , "to":86
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"248"
+          }
+        ]
+      }
+      , {
+        "from":72
+        , "to":85
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"248"
+          }
+        ]
+      }
+      , {
+        "from":73
+        , "to":78
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":73
+        , "to":77
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":73
+        , "to":71
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":74
+        , "to":79
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":74
+        , "to":77
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":74
+        , "to":71
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":75
+        , "to":81
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":75
+        , "to":77
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":75
+        , "to":71
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":76
+        , "to":77
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":77
+        , "to":71
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":78
+        , "to":80
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":78
+        , "to":87
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":79
+        , "to":80
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":79
+        , "to":86
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":80
+        , "to":82
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":81
+        , "to":82
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":81
+        , "to":85
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":82
+        , "to":83
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":83
+        , "to":84
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":84
+        , "to":71
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":85
+        , "to":71
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":86
+        , "to":71
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":87
+        , "to":71
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":88
+        , "to":71
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+    ]
+  }
+  , "27":
+  {
+    "nodes":
+    [
+      {
+        "name":"Exit"
+        , "id":89
+        , "subtype":"exit"
+        , "start":"1690.00"
+        , "end":"1694.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Max Fanout":"2"
+            , "Start Cycle":"1690"
+            , "Latency":"3"
+            , "Exit FIFO Depth":"512"
+            , "Exit FIFO Width":"104"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":90
+        , "subtype":"entry"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Max Fanout":"0"
+            , "Start Cycle":"1618"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Floating-point sqrt"
+        , "id":91
+        , "subtype":"default"
+        , "start":"1618.00"
+        , "end":"1645.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"'Floating-point sqrt' Function Call"
+            , "Max Fanout":"2"
+            , "Start Cycle":"1618"
+            , "Latency":"27"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/detail/builtins.hpp"
+              , "line":189
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"And"
+        , "id":92
+        , "subtype":"default"
+        , "start":"1646.00"
+        , "end":"1646.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit And"
+            , "Constant Operand":"2139095040 (0x7F800000)"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1646"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/detail/builtins.hpp"
+              , "line":189
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Compare"
+        , "id":93
+        , "subtype":"default"
+        , "start":"1646.00"
+        , "end":"1646.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Integer Compare"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1646"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/detail/builtins.hpp"
+              , "line":189
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Select"
+        , "id":94
+        , "subtype":"select"
+        , "start":"1646.00"
+        , "end":"1647.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Select"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1646"
+            , "Latency":"1"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/detail/builtins.hpp"
+              , "line":189
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 /"
+        , "id":95
+        , "subtype":"default"
+        , "start":"1647.00"
+        , "end":"1673.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Divide"
+            , "Max Fanout":"3"
+            , "Start Cycle":"1647"
+            , "Latency":"26"
+            , "Rounding Scheme":"Faithful Rounding"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":191
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 *"
+        , "id":96
+        , "subtype":"default"
+        , "start":"1674.00"
+        , "end":"1677.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply"
+            , "Max Fanout":"3"
+            , "Start Cycle":"1674"
+            , "Latency":"3"
+            , "Rounding Scheme":"IEEE-754 RNE Rounding"
+            , "Implementation Preference":"Default DSP usage"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":195
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 *"
+        , "id":97
+        , "subtype":"default"
+        , "start":"1678.00"
+        , "end":"1681.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1678"
+            , "Latency":"3"
+            , "Rounding Scheme":"IEEE-754 RNE Rounding"
+            , "Implementation Preference":"Default DSP usage"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":195
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_kG"
+        , "id":98
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"1682.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_kG'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"1682"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 *"
+        , "id":99
+        , "subtype":"default"
+        , "start":"1682.00"
+        , "end":"1685.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1682"
+            , "Latency":"3"
+            , "Rounding Scheme":"IEEE-754 RNE Rounding"
+            , "Implementation Preference":"Default DSP usage"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":195
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 *"
+        , "id":100
+        , "subtype":"default"
+        , "start":"1682.00"
+        , "end":"1685.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1682"
+            , "Latency":"3"
+            , "Rounding Scheme":"IEEE-754 RNE Rounding"
+            , "Implementation Preference":"Default DSP usage"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":195
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 FP *+"
+        , "id":101
+        , "subtype":"default"
+        , "start":"1686.00"
+        , "end":"1690.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply-Add"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1686"
+            , "Latency":"4"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":195
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 *"
+        , "id":102
+        , "subtype":"default"
+        , "start":"1678.00"
+        , "end":"1681.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1678"
+            , "Latency":"3"
+            , "Rounding Scheme":"IEEE-754 RNE Rounding"
+            , "Implementation Preference":"Default DSP usage"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":201
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_kG"
+        , "id":103
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"1682.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_kG'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"1682"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 *"
+        , "id":104
+        , "subtype":"default"
+        , "start":"1682.00"
+        , "end":"1685.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1682"
+            , "Latency":"3"
+            , "Rounding Scheme":"IEEE-754 RNE Rounding"
+            , "Implementation Preference":"Default DSP usage"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":201
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 *"
+        , "id":105
+        , "subtype":"default"
+        , "start":"1682.00"
+        , "end":"1685.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1682"
+            , "Latency":"3"
+            , "Rounding Scheme":"IEEE-754 RNE Rounding"
+            , "Implementation Preference":"Default DSP usage"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":201
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 FP *+"
+        , "id":106
+        , "subtype":"default"
+        , "start":"1686.00"
+        , "end":"1690.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply-Add"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1686"
+            , "Latency":"4"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":201
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 *"
+        , "id":107
+        , "subtype":"default"
+        , "start":"1678.00"
+        , "end":"1681.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1678"
+            , "Latency":"3"
+            , "Rounding Scheme":"IEEE-754 RNE Rounding"
+            , "Implementation Preference":"Default DSP usage"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":206
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_kG"
+        , "id":108
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"1682.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_kG'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"1682"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 *"
+        , "id":109
+        , "subtype":"default"
+        , "start":"1682.00"
+        , "end":"1685.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1682"
+            , "Latency":"3"
+            , "Rounding Scheme":"IEEE-754 RNE Rounding"
+            , "Implementation Preference":"Default DSP usage"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":206
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 *"
+        , "id":110
+        , "subtype":"default"
+        , "start":"1682.00"
+        , "end":"1685.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1682"
+            , "Latency":"3"
+            , "Rounding Scheme":"IEEE-754 RNE Rounding"
+            , "Implementation Preference":"Default DSP usage"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":206
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 FP *+"
+        , "id":111
+        , "subtype":"default"
+        , "start":"1686.00"
+        , "end":"1690.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply-Add"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1686"
+            , "Latency":"4"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":206
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Select"
+        , "id":112
+        , "subtype":"select"
+        , "start":"1690.00"
+        , "end":"1690.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Select"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1690"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":180
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Select"
+        , "id":113
+        , "subtype":"select"
+        , "start":"1690.00"
+        , "end":"1690.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Select"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1690"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":180
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Select"
+        , "id":114
+        , "subtype":"select"
+        , "start":"1690.00"
+        , "end":"1690.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Select"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1690"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":180
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":90
+        , "to":91
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"288"
+          }
+        ]
+      }
+      , {
+        "from":90
+        , "to":97
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"288"
+          }
+        ]
+      }
+      , {
+        "from":90
+        , "to":110
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"288"
+          }
+        ]
+      }
+      , {
+        "from":90
+        , "to":105
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"288"
+          }
+        ]
+      }
+      , {
+        "from":90
+        , "to":100
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"288"
+          }
+        ]
+      }
+      , {
+        "from":90
+        , "to":101
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"288"
+          }
+        ]
+      }
+      , {
+        "from":90
+        , "to":102
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"288"
+          }
+        ]
+      }
+      , {
+        "from":90
+        , "to":106
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"288"
+          }
+        ]
+      }
+      , {
+        "from":90
+        , "to":107
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"288"
+          }
+        ]
+      }
+      , {
+        "from":90
+        , "to":111
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"288"
+          }
+        ]
+      }
+      , {
+        "from":90
+        , "to":112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"288"
+          }
+        ]
+      }
+      , {
+        "from":90
+        , "to":113
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"288"
+          }
+        ]
+      }
+      , {
+        "from":90
+        , "to":114
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"288"
+          }
+        ]
+      }
+      , {
+        "from":91
+        , "to":94
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":91
+        , "to":92
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":92
+        , "to":93
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":93
+        , "to":94
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":94
+        , "to":95
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":95
+        , "to":109
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":95
+        , "to":104
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":95
+        , "to":99
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":95
+        , "to":96
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":96
+        , "to":107
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":96
+        , "to":102
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":96
+        , "to":97
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":97
+        , "to":100
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":98
+        , "to":99
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":99
+        , "to":101
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":100
+        , "to":101
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":101
+        , "to":114
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":102
+        , "to":105
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":103
+        , "to":104
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":104
+        , "to":106
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":105
+        , "to":106
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":106
+        , "to":113
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":107
+        , "to":110
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":108
+        , "to":109
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":109
+        , "to":111
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":110
+        , "to":111
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":111
+        , "to":112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":112
+        , "to":89
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":113
+        , "to":89
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":114
+        , "to":89
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+    ]
+  }
+  , "34":
+  {
+    "nodes":
+    [
+      {
+        "name":"Exit"
+        , "id":115
+        , "subtype":"exit"
+        , "start":"4.00"
+        , "end":"8.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Max Fanout":"2"
+            , "Start Cycle":"4"
+            , "Latency":"3"
+            , "Exit FIFO Depth":"32"
+            , "Exit FIFO Width":"72"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":116
+        , "subtype":"entry"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Max Fanout":"0"
+            , "Start Cycle":"0"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":117
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"64-bit Integer Add"
+            , "Max Fanout":"2"
+            , "Start Cycle":"0"
+            , "Latency":"1"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_p"
+        , "id":118
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"4.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_p'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"4"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":119
+        , "subtype":"default"
+        , "start":"1.00"
+        , "end":"4.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Max Fanout":"10"
+            , "Start Cycle":"1"
+            , "Latency":"3"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":116
+        , "to":117
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"136"
+          }
+        ]
+      }
+      , {
+        "from":117
+        , "to":119
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":118
+        , "to":119
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":119
+        , "to":115
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+    ]
+  }
+  , "35":
+  {
+    "nodes":
+    [
+      {
+        "name":"Exit"
+        , "id":120
+        , "subtype":"exit"
+        , "start":"4.00"
+        , "end":"8.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Max Fanout":"2"
+            , "Start Cycle":"4"
+            , "Latency":"3"
+            , "Exit FIFO Depth":"32"
+            , "Exit FIFO Width":"136"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":121
+        , "subtype":"entry"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Max Fanout":"0"
+            , "Start Cycle":"0"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":122
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"4.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Max Fanout":"10"
+            , "Start Cycle":"0"
+            , "Latency":"4"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":123
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"4.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Max Fanout":"10"
+            , "Start Cycle":"0"
+            , "Latency":"4"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":121
+        , "to":122
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"136"
+          }
+        ]
+      }
+      , {
+        "from":121
+        , "to":123
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"136"
+          }
+        ]
+      }
+      , {
+        "from":122
+        , "to":120
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+    ]
+  }
+  , "37":
+  {
+    "nodes":
+    [
+      {
+        "name":"Exit"
+        , "id":124
+        , "subtype":"exit"
+        , "start":"808.00"
+        , "end":"812.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Max Fanout":"2"
+            , "Start Cycle":"808"
+            , "Latency":"3"
+            , "Exit FIFO Depth":"32"
+            , "Exit FIFO Width":"296"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":125
+        , "subtype":"entry"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Max Fanout":"0"
+            , "Start Cycle":"803"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_dt"
+        , "id":126
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"804.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_dt'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"804"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 FP *+"
+        , "id":127
+        , "subtype":"default"
+        , "start":"804.00"
+        , "end":"808.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply-Add"
+            , "Max Fanout":"1"
+            , "Start Cycle":"804"
+            , "Latency":"4"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":221
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_dt"
+        , "id":128
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"804.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_dt'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"804"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 FP *+"
+        , "id":129
+        , "subtype":"default"
+        , "start":"804.00"
+        , "end":"808.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply-Add"
+            , "Max Fanout":"1"
+            , "Start Cycle":"804"
+            , "Latency":"4"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":222
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_dt"
+        , "id":130
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"804.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_dt'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"804"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 FP *+"
+        , "id":131
+        , "subtype":"default"
+        , "start":"804.00"
+        , "end":"808.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply-Add"
+            , "Max Fanout":"1"
+            , "Start Cycle":"804"
+            , "Latency":"4"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":223
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":125
+        , "to":127
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"360"
+          }
+        ]
+      }
+      , {
+        "from":125
+        , "to":131
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"360"
+          }
+        ]
+      }
+      , {
+        "from":125
+        , "to":129
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"360"
+          }
+        ]
+      }
+      , {
+        "from":125
+        , "to":124
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"360"
+          }
+        ]
+      }
+      , {
+        "from":126
+        , "to":127
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":127
+        , "to":124
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":128
+        , "to":129
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":129
+        , "to":124
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":130
+        , "to":131
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":131
+        , "to":124
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+    ]
+  }
+  , "40":
+  {
+    "nodes":
+    [
+      {
+        "name":"Exit"
+        , "id":132
+        , "subtype":"exit"
+        , "start":"7.00"
+        , "end":"11.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Max Fanout":"2"
+            , "Start Cycle":"7"
+            , "Latency":"3"
+            , "Exit FIFO Depth":"32"
+            , "Exit FIFO Width":"200"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":133
+        , "subtype":"entry"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Max Fanout":"0"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_p3"
+        , "id":134
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"2.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_p3'"
+            , "Max Fanout":"5"
+            , "Start Cycle":"0"
+            , "Latency":"2"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_p"
+        , "id":135
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"5.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_p'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"5"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":136
+        , "subtype":"default"
+        , "start":"2.00"
+        , "end":"6.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Max Fanout":"20"
+            , "Start Cycle":"2"
+            , "Latency":"4"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+              , "line":927
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":137
+        , "subtype":"default"
+        , "start":"3.00"
+        , "end":"7.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Max Fanout":"20"
+            , "Start Cycle":"3"
+            , "Latency":"4"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":138
+        , "subtype":"default"
+        , "start":"3.00"
+        , "end":"7.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Max Fanout":"20"
+            , "Start Cycle":"3"
+            , "Latency":"4"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":133
+        , "to":137
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"72"
+          }
+        ]
+      }
+      , {
+        "from":133
+        , "to":138
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"72"
+          }
+        ]
+      }
+      , {
+        "from":134
+        , "to":136
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":135
+        , "to":136
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":136
+        , "to":137
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":136
+        , "to":138
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":137
+        , "to":132
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":138
+        , "to":132
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+    ]
+  }
+  , "41":
+  {
+    "nodes":
+    [
+      {
+        "name":"Exit"
+        , "id":139
+        , "subtype":"exit"
+        , "start":"894.00"
+        , "end":"898.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Max Fanout":"2"
+            , "Start Cycle":"894"
+            , "Latency":"3"
+            , "Exit FIFO Depth":"32"
+            , "Exit FIFO Width":"72"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":140
+        , "subtype":"entry"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Max Fanout":"0"
+            , "Start Cycle":"893"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_energy"
+        , "id":141
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"894.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_energy'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"894"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":141
+        , "to":139
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+    ]
+  }
+  , "44":
+  {
+    "nodes":
+    [
+      {
+        "name":"Exit"
+        , "id":142
+        , "subtype":"exit"
+        , "start":"796.00"
+        , "end":"800.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Max Fanout":"2"
+            , "Start Cycle":"796"
+            , "Latency":"3"
+            , "Exit FIFO Depth":"32"
+            , "Exit FIFO Width":"232"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":143
+        , "subtype":"entry"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Max Fanout":"0"
+            , "Start Cycle":"788"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_dt"
+        , "id":144
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"789.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_dt'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"789"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 FP *+"
+        , "id":145
+        , "subtype":"default"
+        , "start":"789.00"
+        , "end":"793.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply-Add"
+            , "Max Fanout":"1"
+            , "Start Cycle":"789"
+            , "Latency":"4"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":233
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_dt"
+        , "id":146
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"789.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_dt'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"789"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 FP *+"
+        , "id":147
+        , "subtype":"default"
+        , "start":"789.00"
+        , "end":"793.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply-Add"
+            , "Max Fanout":"1"
+            , "Start Cycle":"789"
+            , "Latency":"4"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":234
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_dt"
+        , "id":148
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"789.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_dt'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"789"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 FP *+"
+        , "id":149
+        , "subtype":"default"
+        , "start":"789.00"
+        , "end":"793.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply-Add"
+            , "Max Fanout":"1"
+            , "Start Cycle":"789"
+            , "Latency":"4"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":235
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 Dot-3"
+        , "id":150
+        , "subtype":"default"
+        , "start":"788.00"
+        , "end":"796.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Dot Product of Size 3"
+            , "Max Fanout":"1"
+            , "Start Cycle":"788"
+            , "Latency":"8"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":238
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":143
+        , "to":145
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"328"
+          }
+        ]
+      }
+      , {
+        "from":143
+        , "to":147
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"328"
+          }
+        ]
+      }
+      , {
+        "from":143
+        , "to":149
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"328"
+          }
+        ]
+      }
+      , {
+        "from":143
+        , "to":150
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"328"
+          }
+        ]
+      }
+      , {
+        "from":144
+        , "to":145
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":145
+        , "to":142
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":146
+        , "to":147
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":147
+        , "to":142
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":148
+        , "to":149
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":149
+        , "to":142
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":150
+        , "to":142
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+    ]
+  }
+  , "47":
+  {
+    "nodes":
+    [
+      {
+        "name":"Exit"
+        , "id":151
+        , "subtype":"exit"
+        , "start":"1693.00"
+        , "end":"1697.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Max Fanout":"2"
+            , "Start Cycle":"1693"
+            , "Latency":"3"
+            , "Exit FIFO Depth":"32"
+            , "Exit FIFO Width":"104"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":152
+        , "subtype":"entry"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Max Fanout":"0"
+            , "Start Cycle":"1689"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"f32 FP *+"
+        , "id":153
+        , "subtype":"default"
+        , "start":"1689.00"
+        , "end":"1693.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"32-bit Floating-point Multiply-Add"
+            , "Max Fanout":"1"
+            , "Start Cycle":"1689"
+            , "Latency":"4"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+              , "line":237
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"arg_energy"
+        , "id":154
+        , "subtype":"default"
+        , "start":"0.00"
+        , "end":"1693.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'arg_energy'"
+            , "Max Fanout":"1"
+            , "Start Cycle":"0"
+            , "Latency":"1693"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":152
+        , "to":153
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"104"
+          }
+        ]
+      }
+      , {
+        "from":153
+        , "to":151
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":154
+        , "to":151
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+    ]
+  }
+}

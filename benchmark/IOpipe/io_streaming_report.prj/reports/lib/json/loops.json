@@ -1,0 +1,1657 @@
+{
+  "columns":
+  ["", "Pipelined", "II", "Speculated iterations", "Details"]
+  , "children":
+  [
+    {
+      "name":"Kernel: LoopBackMainKernel"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/LoopbackTest.hpp"
+            , "line":33
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/ipp1476408832230.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"LoopBackMainKernel.B1"
+          , "data":
+          ["Yes", "~1", "3"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/LoopbackTest.hpp"
+                , "line":34
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Pipe Read Operation (%L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/LoopbackTest.hpp"
+                      , "line":"35"
+                    }
+                    , {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"62"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Pipe Write Operation (%L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/LoopbackTest.hpp"
+                      , "line":"37"
+                    }
+                    , {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"75"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/wfa1476380079940.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: LoopBackReadIOPipeID"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+            , "line":189
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/ipp1476408832230.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"LoopBackReadIOPipeID.B1"
+          , "data":
+          ["Yes", "~1", "3"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Load Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"193"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Pipe Write Operation (%L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"194"
+                    }
+                    , {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"75"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/wfa1476380079940.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: LoopBackWriteIOPipeID"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+            , "line":246
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/ipp1476408832230.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"LoopBackWriteIOPipeID.B1"
+          , "data":
+          ["Yes", "~1", "3"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Pipe Read Operation (%L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"250"
+                    }
+                    , {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"62"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"251"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/wfa1476380079940.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: SideChannelMainKernel"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+            , "line":52
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/ipp1476408832230.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"SideChannelMainKernel.B1"
+          , "data":
+          ["No", "n/a", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Unresolvable exit condition"
+            }
+            , {
+              "type":"text"
+              , "text":"Loop not pipelined due to:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Loop exit condition unresolvable at iteration initiation."
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Stallable instruction: n/a"
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: 1 due to not being pipelined"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Nested Loops"
+                  , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/rfr1469543500580.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"SideChannelMainKernel.B2"
+              , "data":
+              ["Yes", "~1", "2"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+                    , "line":73
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"II is an approximation due to the following stallable instructions:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Pipe Write Operation (%L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                          , "line":"940"
+                        }
+                        , {
+                          "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+                          , "line":"90"
+                        }
+                        , {
+                          "filename":"/home/u93631/A10_oneapi/IOpipe/src/HostSideChannel.hpp"
+                          , "line":"137"
+                        }
+                        , {
+                          "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                          , "line":"75"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Pipe Write Operation (%L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                          , "line":"940"
+                        }
+                        , {
+                          "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+                          , "line":"104"
+                        }
+                        , {
+                          "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                          , "line":"75"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Maximum concurrent iterations: Capacity of loop"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Use the %L viewer to estimate capacity"
+                      , "links":
+                      [
+                        {
+                          "view":"Fmax II Report"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/wfa1476380079940.html"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: HostToDeviceSideChannelID"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+            , "line":189
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/ipp1476408832230.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"HostToDeviceSideChannelID.B1"
+          , "data":
+          ["Yes", "~1", "3"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Load Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"193"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Pipe Write Operation (%L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"194"
+                    }
+                    , {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"75"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/wfa1476380079940.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: SideChannelReadIOPipeID"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+            , "line":189
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/ipp1476408832230.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"SideChannelReadIOPipeID.B1"
+          , "data":
+          ["Yes", "~1", "3"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Load Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"193"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Pipe Write Operation (%L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"194"
+                    }
+                    , {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"75"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/wfa1476380079940.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: SideChannelWriteIOPipeID"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+            , "line":246
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/ipp1476408832230.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"SideChannelWriteIOPipeID.B1"
+          , "data":
+          ["Yes", "~1", "3"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Pipe Read Operation (%L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"250"
+                    }
+                    , {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"62"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"251"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/wfa1476380079940.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: DeviceToHostSideChannelID"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+            , "line":246
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/ipp1476408832230.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"DeviceToHostSideChannelID.B1"
+          , "data":
+          ["Yes", "~1", "3"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Pipe Read Operation (%L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"250"
+                    }
+                    , {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"62"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"251"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/wfa1476380079940.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: DeviceToHostDSideChannelID"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+            , "line":246
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/ipp1476408832230.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"DeviceToHostDSideChannelID.B1"
+          , "data":
+          ["Yes", "~1", "3"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Pipe Read Operation (%L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"250"
+                    }
+                    , {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"62"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"251"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/wfa1476380079940.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: DeviceToHostTSideChannelID"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+            , "line":246
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/ipp1476408832230.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"DeviceToHostTSideChannelID.B1"
+          , "data":
+          ["Yes", "~1", "3"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Pipe Read Operation (%L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"250"
+                    }
+                    , {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"62"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"251"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/wfa1476380079940.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: HostToDeviceTermSideChannelID"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+            , "line":189
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/ipp1476408832230.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"HostToDeviceTermSideChannelID.B1"
+          , "data":
+          ["Yes", "~1", "3"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Load Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"193"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Pipe Write Operation (%L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"194"
+                    }
+                    , {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"75"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/wfa1476380079940.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: HostToDeviceDTermSideChannelID"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+            , "line":189
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/ipp1476408832230.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"HostToDeviceDTermSideChannelID.B1"
+          , "data":
+          ["Yes", "~1", "3"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Load Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"193"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Pipe Write Operation (%L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                      , "line":"940"
+                    }
+                    , {
+                      "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                      , "line":"194"
+                    }
+                    , {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                      , "line":"75"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/wfa1476380079940.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+  ]
+}

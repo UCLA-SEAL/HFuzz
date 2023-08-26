@@ -1,0 +1,742 @@
+{
+  "nodes":
+  [
+    {
+      "name":"KernelPhase1"
+      , "id":1
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"KernelPhase1.B0"
+          , "id":4
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":72
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"Fused loop KernelPhase1.B1"
+          , "id":5
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":83
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase1.B2"
+          , "id":6
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 2"
+              , "id":95
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 3"
+              , "id":97
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase1.B3"
+          , "id":7
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase1.B4"
+          , "id":8
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 4"
+              , "id":122
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase1.B5"
+          , "id":9
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 5"
+              , "id":136
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase1.B6"
+          , "id":10
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 6"
+              , "id":151
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase1.B7"
+          , "id":11
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase1.B8"
+          , "id":12
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 7"
+              , "id":180
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase1.B9"
+          , "id":13
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 8"
+              , "id":194
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"Fused loop KernelPhase1.B10"
+          , "id":14
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 9"
+              , "id":211
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase1.B11"
+          , "id":15
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 10"
+              , "id":228
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase1.B12"
+          , "id":16
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase1.B13"
+          , "id":17
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 11"
+              , "id":252
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase1.B14"
+          , "id":18
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 12"
+              , "id":259
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 13"
+              , "id":262
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"KernelPhase2"
+      , "id":2
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"KernelPhase2.B0"
+          , "id":19
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelPhase2.B1"
+          , "id":20
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase2.B2"
+          , "id":21
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 14"
+              , "id":333
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B3"
+          , "id":22
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelPhase2.B4"
+          , "id":23
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase2.B5"
+          , "id":24
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 15"
+              , "id":401
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B6"
+          , "id":25
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 16"
+              , "id":427
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B7"
+          , "id":26
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 17"
+              , "id":450
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B8"
+          , "id":27
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase2.B9"
+          , "id":28
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 18"
+              , "id":495
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B10"
+          , "id":29
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase2.B11"
+          , "id":30
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 19"
+              , "id":544
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B12"
+          , "id":31
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 20"
+              , "id":567
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B13"
+          , "id":32
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase2.B14"
+          , "id":33
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 21"
+              , "id":619
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B15"
+          , "id":34
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 22"
+              , "id":648
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"Fused loop KernelPhase2.B16"
+          , "id":35
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 23"
+              , "id":667
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B17"
+          , "id":36
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 24"
+              , "id":687
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"Fused loop KernelPhase2.B18"
+          , "id":37
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 25"
+              , "id":706
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B19"
+          , "id":38
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 26"
+              , "id":725
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"Fused loop KernelPhase2.B20"
+          , "id":39
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 27"
+              , "id":743
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B21"
+          , "id":40
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 28"
+              , "id":762
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B22"
+          , "id":41
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase2.B23"
+          , "id":42
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 29"
+              , "id":795
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B24"
+          , "id":43
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 30"
+              , "id":816
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B25"
+          , "id":44
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 31"
+              , "id":834
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B26"
+          , "id":45
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase2.B27"
+          , "id":46
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 32"
+              , "id":869
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B28"
+          , "id":47
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 33"
+              , "id":886
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"Fused loop KernelPhase2.B29"
+          , "id":48
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 34"
+              , "id":906
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B30"
+          , "id":49
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelPhase2.B31"
+          , "id":50
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase2.B32"
+          , "id":51
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 35"
+              , "id":952
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase2.B33"
+          , "id":52
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelPhase2.B34"
+          , "id":53
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 36"
+              , "id":971
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"KernelPhase3"
+      , "id":3
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"KernelPhase3.B0"
+          , "id":54
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelPhase3.B1"
+          , "id":55
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase3.B2"
+          , "id":56
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 37"
+              , "id":1046
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase3.B3"
+          , "id":57
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelPhase3.B4"
+          , "id":58
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase3.B5"
+          , "id":59
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 38"
+              , "id":1106
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase3.B6"
+          , "id":60
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 39"
+              , "id":1124
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase3.B7"
+          , "id":61
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 40"
+              , "id":1143
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase3.B8"
+          , "id":62
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase3.B9"
+          , "id":63
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 41"
+              , "id":1180
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase3.B10"
+          , "id":64
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 42"
+              , "id":1198
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"Fused loop KernelPhase3.B11"
+          , "id":65
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 43"
+              , "id":1219
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase3.B12"
+          , "id":66
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 44"
+              , "id":1240
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase3.B13"
+          , "id":67
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop KernelPhase3.B14"
+          , "id":68
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 45"
+              , "id":1264
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPhase3.B15"
+          , "id":69
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelPhase3.B16"
+          , "id":70
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 46"
+              , "id":1278
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 47"
+              , "id":1281
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

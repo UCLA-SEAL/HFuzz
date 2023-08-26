@@ -1,0 +1,3096 @@
+{
+  "nodes":
+  [
+    {
+      "type":"kernel"
+      , "id":2
+      , "name":"LoopBackMainKernel"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":3
+          , "name":"LoopBackMainKernel.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":4
+          , "name":"LoopBackMainKernel.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":6
+              , "name":"Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":62
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"4"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"5"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":8
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":75
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"4"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"5"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":10
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/LoopbackTest.hpp"
+                    , "line":34
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"11"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":11
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"5"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"5"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":5
+          , "name":"LoopBackMainKernel.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":12
+      , "name":"LoopBackReadIOPipeID"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":13
+          , "name":"LoopBackReadIOPipeID.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":14
+          , "name":"LoopBackReadIOPipeID.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":16
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":193
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Prefetching"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"5"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":17
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":75
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"4"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"8"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":18
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":192
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"19"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":19
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"8"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"8"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":15
+          , "name":"LoopBackReadIOPipeID.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":21
+      , "name":"LoopBackWriteIOPipeID"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":22
+          , "name":"LoopBackWriteIOPipeID.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":23
+          , "name":"LoopBackWriteIOPipeID.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":25
+              , "name":"Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":62
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"4"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"9"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":26
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":251
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"9"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":27
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":249
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"28"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":28
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"11"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"11"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":24
+          , "name":"LoopBackWriteIOPipeID.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":29
+      , "name":"SideChannelMainKernel"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":30
+          , "name":"SideChannelMainKernel.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":31
+          , "name":"SideChannelMainKernel.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":35
+              , "name":"Non-Blocking Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":31
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"1"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"2"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":51
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+                    , "line":58
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"56"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":52
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"3"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"3"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":32
+          , "name":"SideChannelMainKernel.B2"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":37
+              , "name":"Non-Blocking Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":31
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"1"
+                  , "Stall-free":"Yes"
+                  , "Start Cycle":"2"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":39
+              , "name":"Non-Blocking Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":46
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"8"
+                  , "Stall-free":"Yes"
+                  , "Start Cycle":"3"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":41
+              , "name":"Non-Blocking Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":46
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"8"
+                  , "Stall-free":"Yes"
+                  , "Start Cycle":"3"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":43
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":75
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"8"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"6"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":45
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":75
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"1"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"6"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":53
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+                    , "line":73
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"54"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":54
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"6"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"6"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":33
+          , "name":"SideChannelMainKernel.B3"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":47
+              , "name":"Non-Blocking Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":31
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"8 bits"
+                  , "Depth":"1"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"1"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":49
+              , "name":"Non-Blocking Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":31
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"8 bits"
+                  , "Depth":"1"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"1"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":55
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":56
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"1"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"1"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":34
+          , "name":"SideChannelMainKernel.B4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":57
+      , "name":"HostToDeviceSideChannelID"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":58
+          , "name":"HostToDeviceSideChannelID.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":59
+          , "name":"HostToDeviceSideChannelID.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":61
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":193
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Prefetching"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"5"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":62
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":75
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"1"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"8"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":63
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":192
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"64"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":64
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"8"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"8"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":60
+          , "name":"HostToDeviceSideChannelID.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":65
+      , "name":"SideChannelReadIOPipeID"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":66
+          , "name":"SideChannelReadIOPipeID.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":67
+          , "name":"SideChannelReadIOPipeID.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":69
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":193
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Prefetching"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"5"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":70
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":75
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"1"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"8"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":71
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":192
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"72"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":72
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"8"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"8"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":68
+          , "name":"SideChannelReadIOPipeID.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":73
+      , "name":"SideChannelWriteIOPipeID"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":74
+          , "name":"SideChannelWriteIOPipeID.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":75
+          , "name":"SideChannelWriteIOPipeID.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":77
+              , "name":"Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":62
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"1"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"9"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":78
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":251
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"9"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":79
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":249
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"80"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":80
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"11"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"11"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":76
+          , "name":"SideChannelWriteIOPipeID.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":81
+      , "name":"DeviceToHostSideChannelID"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":82
+          , "name":"DeviceToHostSideChannelID.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":83
+          , "name":"DeviceToHostSideChannelID.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":85
+              , "name":"Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":62
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"8"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"9"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":86
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":251
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"9"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":87
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":249
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"88"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":88
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"11"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"11"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":84
+          , "name":"DeviceToHostSideChannelID.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":89
+      , "name":"DeviceToHostDSideChannelID"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":90
+          , "name":"DeviceToHostDSideChannelID.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":91
+          , "name":"DeviceToHostDSideChannelID.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":93
+              , "name":"Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":62
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"8"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"9"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":94
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":251
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"9"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":95
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":249
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"96"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":96
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"11"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"11"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":92
+          , "name":"DeviceToHostDSideChannelID.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":97
+      , "name":"DeviceToHostTSideChannelID"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":98
+          , "name":"DeviceToHostTSideChannelID.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":99
+          , "name":"DeviceToHostTSideChannelID.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":101
+              , "name":"Pipe Read"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":62
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Depth":"8"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"9"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":102
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":251
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"9"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":103
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":249
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"104"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":104
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"11"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"11"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":100
+          , "name":"DeviceToHostTSideChannelID.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":105
+      , "name":"HostToDeviceTermSideChannelID"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":106
+          , "name":"HostToDeviceTermSideChannelID.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":107
+          , "name":"HostToDeviceTermSideChannelID.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":109
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":193
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"8 bits"
+                  , "Type":"Prefetching"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"5"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":110
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":75
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"8 bits"
+                  , "Depth":"1"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"8"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":111
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":192
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"112"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":112
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"8"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"8"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":108
+          , "name":"HostToDeviceTermSideChannelID.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":113
+      , "name":"HostToDeviceDTermSideChannelID"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":114
+          , "name":"HostToDeviceDTermSideChannelID.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":115
+          , "name":"HostToDeviceDTermSideChannelID.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":117
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":193
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"8 bits"
+                  , "Type":"Prefetching"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"5"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":118
+              , "name":"Pipe Write"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                    , "line":75
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"8 bits"
+                  , "Depth":"1"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"8"
+                  , "Latency":"0"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Channels"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.1.2/oneapi/compiler/2022.0.2/linux/lib/oclfpga/aoc_help_pages/qah1476410829821.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":119
+              , "name":"Loop Input"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                    , "line":192
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"120"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":120
+              , "name":"Loop End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"8"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"8"
+              , "II":"1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":""
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":116
+          , "name":"HostToDeviceDTermSideChannelID.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"memtype"
+      , "id":1
+      , "name":"Global Memory"
+      , "children":
+      [
+        {
+          "type":"memsys"
+          , "id":20
+          , "name":"DDR"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Number of banks":"2"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":9
+      , "name":"cl::sycl::ext::intel::pipe<detail::ConsumerImpl<LoopBackWriteIOPipeID, int, false, 4ul>"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/LoopbackTest.hpp"
+            , "line":33
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"32 bits"
+          , "Depth":"4"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":46
+      , "name":"cl::sycl::ext::intel::pipe<detail::ConsumerImpl<SideChannelWriteIOPipeID, int, false, 0ul>"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+            , "line":52
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"32 bits"
+          , "Depth":"1"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":44
+      , "name":"cl::sycl::ext::intel::pipe<detail::ConsumerImpl<DeviceToHostSideChannelID, int, false, 8ul>"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+            , "line":52
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"32 bits"
+          , "Depth":"8"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":40
+      , "name":"cl::sycl::ext::intel::pipe<detail::ConsumerImpl<DeviceToHostDSideChannelID, int, false, 8ul>"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+            , "line":52
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"32 bits"
+          , "Depth":"8"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":42
+      , "name":"cl::sycl::ext::intel::pipe<detail::ConsumerImpl<DeviceToHostTSideChannelID, int, false, 8ul>"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+            , "line":52
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"32 bits"
+          , "Depth":"8"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":7
+      , "name":"cl::sycl::ext::intel::pipe<detail::ProducerImpl<LoopBackReadIOPipeID, int, false, 4ul>"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/LoopbackTest.hpp"
+            , "line":33
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"32 bits"
+          , "Depth":"4"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":38
+      , "name":"cl::sycl::ext::intel::pipe<detail::ProducerImpl<SideChannelReadIOPipeID, int, false, 0ul>"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+            , "line":52
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"32 bits"
+          , "Depth":"1"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":36
+      , "name":"cl::sycl::ext::intel::pipe<detail::ProducerImpl<HostToDeviceSideChannelID, int, false, 1ul>"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+            , "line":52
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"32 bits"
+          , "Depth":"1"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":50
+      , "name":"cl::sycl::ext::intel::pipe<detail::ProducerImpl<HostToDeviceTermSideChannelID, char, false, 1ul>"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+            , "line":52
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"8 bits"
+          , "Depth":"1"
+        }
+      ]
+    }
+    , {
+      "type":"pipe"
+      , "id":48
+      , "name":"cl::sycl::ext::intel::pipe<detail::ProducerImpl<HostToDeviceDTermSideChannelID, char, false, 1ul>"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+            , "line":52
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"8 bits"
+          , "Depth":"1"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":7
+      , "to":6
+    }
+    , {
+      "from":8
+      , "to":9
+    }
+    , {
+      "from":11
+      , "to":10
+    }
+    , {
+      "from":3
+      , "to":10
+    }
+    , {
+      "from":6
+      , "to":11
+    }
+    , {
+      "from":8
+      , "to":11
+    }
+    , {
+      "from":11
+      , "to":5
+    }
+    , {
+      "from":10
+      , "to":6
+    }
+    , {
+      "from":6
+      , "to":8
+    }
+    , {
+      "from":17
+      , "to":7
+    }
+    , {
+      "from":19
+      , "to":18
+    }
+    , {
+      "from":13
+      , "to":18
+    }
+    , {
+      "from":16
+      , "to":19
+    }
+    , {
+      "from":17
+      , "to":19
+    }
+    , {
+      "from":19
+      , "to":15
+    }
+    , {
+      "from":18
+      , "to":16
+    }
+    , {
+      "from":16
+      , "to":17
+    }
+    , {
+      "from":20
+      , "to":16
+    }
+    , {
+      "from":9
+      , "to":25
+    }
+    , {
+      "from":28
+      , "to":27
+    }
+    , {
+      "from":22
+      , "to":27
+    }
+    , {
+      "from":25
+      , "to":28
+    }
+    , {
+      "from":26
+      , "to":28
+    }
+    , {
+      "from":28
+      , "to":24
+    }
+    , {
+      "from":27
+      , "to":25
+    }
+    , {
+      "from":25
+      , "to":26
+    }
+    , {
+      "from":26
+      , "to":20
+    }
+    , {
+      "from":36
+      , "to":35
+    }
+    , {
+      "from":38
+      , "to":37
+    }
+    , {
+      "from":39
+      , "to":40
+    }
+    , {
+      "from":41
+      , "to":42
+    }
+    , {
+      "from":43
+      , "to":44
+    }
+    , {
+      "from":45
+      , "to":46
+    }
+    , {
+      "from":48
+      , "to":47
+    }
+    , {
+      "from":50
+      , "to":49
+    }
+    , {
+      "from":56
+      , "to":51
+    }
+    , {
+      "from":30
+      , "to":51
+    }
+    , {
+      "from":35
+      , "to":52
+    }
+    , {
+      "from":54
+      , "to":53
+    }
+    , {
+      "from":52
+      , "to":53
+    }
+    , {
+      "from":39
+      , "to":54
+    }
+    , {
+      "from":41
+      , "to":54
+    }
+    , {
+      "from":43
+      , "to":54
+    }
+    , {
+      "from":45
+      , "to":54
+    }
+    , {
+      "from":54
+      , "to":55
+    }
+    , {
+      "from":47
+      , "to":56
+    }
+    , {
+      "from":49
+      , "to":56
+    }
+    , {
+      "from":56
+      , "to":34
+    }
+    , {
+      "from":51
+      , "to":35
+    }
+    , {
+      "from":53
+      , "to":37
+    }
+    , {
+      "from":37
+      , "to":39
+    }
+    , {
+      "from":37
+      , "to":41
+    }
+    , {
+      "from":39
+      , "to":43
+    }
+    , {
+      "from":41
+      , "to":43
+    }
+    , {
+      "from":39
+      , "to":45
+    }
+    , {
+      "from":41
+      , "to":45
+    }
+    , {
+      "from":55
+      , "to":47
+    }
+    , {
+      "from":55
+      , "to":49
+    }
+    , {
+      "from":62
+      , "to":36
+    }
+    , {
+      "from":64
+      , "to":63
+    }
+    , {
+      "from":58
+      , "to":63
+    }
+    , {
+      "from":61
+      , "to":64
+    }
+    , {
+      "from":62
+      , "to":64
+    }
+    , {
+      "from":64
+      , "to":60
+    }
+    , {
+      "from":63
+      , "to":61
+    }
+    , {
+      "from":61
+      , "to":62
+    }
+    , {
+      "from":20
+      , "to":61
+    }
+    , {
+      "from":70
+      , "to":38
+    }
+    , {
+      "from":72
+      , "to":71
+    }
+    , {
+      "from":66
+      , "to":71
+    }
+    , {
+      "from":69
+      , "to":72
+    }
+    , {
+      "from":70
+      , "to":72
+    }
+    , {
+      "from":72
+      , "to":68
+    }
+    , {
+      "from":71
+      , "to":69
+    }
+    , {
+      "from":69
+      , "to":70
+    }
+    , {
+      "from":20
+      , "to":69
+    }
+    , {
+      "from":46
+      , "to":77
+    }
+    , {
+      "from":80
+      , "to":79
+    }
+    , {
+      "from":74
+      , "to":79
+    }
+    , {
+      "from":77
+      , "to":80
+    }
+    , {
+      "from":78
+      , "to":80
+    }
+    , {
+      "from":80
+      , "to":76
+    }
+    , {
+      "from":79
+      , "to":77
+    }
+    , {
+      "from":77
+      , "to":78
+    }
+    , {
+      "from":78
+      , "to":20
+    }
+    , {
+      "from":44
+      , "to":85
+    }
+    , {
+      "from":88
+      , "to":87
+    }
+    , {
+      "from":82
+      , "to":87
+    }
+    , {
+      "from":85
+      , "to":88
+    }
+    , {
+      "from":86
+      , "to":88
+    }
+    , {
+      "from":88
+      , "to":84
+    }
+    , {
+      "from":87
+      , "to":85
+    }
+    , {
+      "from":85
+      , "to":86
+    }
+    , {
+      "from":86
+      , "to":20
+    }
+    , {
+      "from":40
+      , "to":93
+    }
+    , {
+      "from":96
+      , "to":95
+    }
+    , {
+      "from":90
+      , "to":95
+    }
+    , {
+      "from":93
+      , "to":96
+    }
+    , {
+      "from":94
+      , "to":96
+    }
+    , {
+      "from":96
+      , "to":92
+    }
+    , {
+      "from":95
+      , "to":93
+    }
+    , {
+      "from":93
+      , "to":94
+    }
+    , {
+      "from":94
+      , "to":20
+    }
+    , {
+      "from":42
+      , "to":101
+    }
+    , {
+      "from":104
+      , "to":103
+    }
+    , {
+      "from":98
+      , "to":103
+    }
+    , {
+      "from":101
+      , "to":104
+    }
+    , {
+      "from":102
+      , "to":104
+    }
+    , {
+      "from":104
+      , "to":100
+    }
+    , {
+      "from":103
+      , "to":101
+    }
+    , {
+      "from":101
+      , "to":102
+    }
+    , {
+      "from":102
+      , "to":20
+    }
+    , {
+      "from":110
+      , "to":50
+    }
+    , {
+      "from":112
+      , "to":111
+    }
+    , {
+      "from":106
+      , "to":111
+    }
+    , {
+      "from":109
+      , "to":112
+    }
+    , {
+      "from":110
+      , "to":112
+    }
+    , {
+      "from":112
+      , "to":108
+    }
+    , {
+      "from":111
+      , "to":109
+    }
+    , {
+      "from":109
+      , "to":110
+    }
+    , {
+      "from":20
+      , "to":109
+    }
+    , {
+      "from":118
+      , "to":48
+    }
+    , {
+      "from":120
+      , "to":119
+    }
+    , {
+      "from":114
+      , "to":119
+    }
+    , {
+      "from":117
+      , "to":120
+    }
+    , {
+      "from":118
+      , "to":120
+    }
+    , {
+      "from":120
+      , "to":116
+    }
+    , {
+      "from":119
+      , "to":117
+    }
+    , {
+      "from":117
+      , "to":118
+    }
+    , {
+      "from":20
+      , "to":117
+    }
+  ]
+}

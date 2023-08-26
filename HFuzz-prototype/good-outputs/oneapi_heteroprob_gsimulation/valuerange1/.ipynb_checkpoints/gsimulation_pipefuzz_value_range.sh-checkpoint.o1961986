@@ -1,0 +1,3352 @@
+
+########################################################################
+#      Date:           Tue Jul 26 16:51:44 PDT 2022
+#    Job ID:           1961986.v-qsvr-1.aidevcloud
+#      User:           u93631
+# Resources:           neednodes=s001-n081:ppn=2,nodes=s001-n081:ppn=2,walltime=06:00:00
+########################################################################
+
+sourcing /opt/intel/inteloneapi/setvars.sh
+ 
+:: WARNING: setvars.sh has already been run. Skipping re-execution.
+   To force a re-execution of setvars.sh, use the '--force' option.
+   Using '--force' can result in excessive use of your environment variables.
+  
+usage: source setvars.sh [--force] [--config=file] [--help] [...]
+  --force        Force setvars.sh to re-run, doing so may overload environment.
+  --config=file  Customize env vars using a setvars.sh configuration file.
+  --help         Display this help message and exit.
+  ...            Additional args are passed to individual env/vars.sh scripts
+                 and should follow this script's arguments.
+  
+  Some POSIX shells do not accept command-line options. In that case, you can pass
+  command-line options via the SETVARS_ARGS environment variable. For example:
+  
+  $ SETVARS_ARGS="ia32 --config=config.txt" ; export SETVARS_ARGS
+  $ . path/to/setvars.sh
+  
+  The SETVARS_ARGS environment variable is cleared on exiting setvars.sh.
+  
+
+Running in Emulation Mode:
+===============================
+ Initialize Gravity Simulation
+Could not open the input file.
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.223      4.9144      1.5107      
+ 2       0.2     81396       4.7553      1.5613      
+ 3       0.3     82654       2.8206      2.6322      
+ 4       0.4     2.2027e+05  2.885       2.5734      
+ 5       0.5     2.3447e+05  4.9731      1.4929      
+ 6       0.6     6.1158e+05  5.038       1.4737      
+ 7       0.7     6.1523e+05  2.8979      2.562       
+ 8       0.8     6.1973e+05  2.7682      2.682       
+ 9       0.9     6.4655e+05  5.0637      1.4662      
+ 10      1       6.5217e+05  5.0511      1.4698      
+
+# Total Time (s)     : 41.168
+# Average Performance : 2.044 +- 0.56945
+===============================
+[0;36mrandom-fuzz [1;97m2.52b[0m by <zhangqian@cs.ucla.edu>
+[1;94m[*] [0mSetting up the shared memory for code coverage...[0m
+[1;92m[+] [0mShared memory is ready.[0m
+main cksum -1312741860
+[1;92m[+] [0mInput queue initialized with 1 seeds.[0m
+[1;92m[+] [0mCommand line saved.[0m
+[1;92m[+] [0mThe start time is: 1658879514641[0m
+[1;92m[+] [0mPerform dry run![0m
+[1;94m[*] [0mAttempting dry run with 'gsimulation.fpga_emu'...[0m
+check sum of changed bitmap 2982225436
+child exited normal exit status= 0
+Fuzzing execution time: -1658879514641
+[1;92m[+] [0mThe binary works well with the seed input.[0m
+[1;92m[+] [0mStart fuzzing![0m
+
+**********1**********
+input queue length: 1
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      2.9455      2.5206      
+ 2       0.2     81396       4.7738      1.5552      
+ 3       0.3     82654       3.7139      1.9991      
+ 4       0.4     2.2027e+05  3.6303      2.0451      
+ 5       0.5     2.3447e+05  2.8093      2.6428      
+ 6       0.6     6.1158e+05  5.0301      1.476       
+ 7       0.7     6.1523e+05  4.8883      1.5188      
+ 8       0.8     6.1972e+05  2.9438      2.522       
+ 9       0.9     6.4655e+05  4.4435      1.6708      
+ 10      1       6.5217e+05  3.7365      1.987       
+
+# Total Time (s)     : 38.916
+# Average Performance : 1.9827 +- 0.40311
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+TIME MAX48.070200
+DSPs MAX48.070200
+DSPs MIN48.070200
+FMax MIN0.000000
+the current input is interest: 3
+
+**********2**********
+input queue length: 2
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/2
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.225      4.9126      1.5113      
+ 2       0.2     81396       4.7979      1.5474      
+ 3       0.3     82654       3.138       2.3659      
+ 4       0.4     2.2027e+05  4.9977      1.4855      
+ 5       0.5     2.3447e+05  5.0218      1.4784      
+ 6       0.6     6.1158e+05  4.9642      1.4956      
+ 7       0.7     6.1523e+05  5.0151      1.4804      
+ 8       0.8     6.1973e+05  2.9373      2.5276      
+ 9       0.9     6.4655e+05  4.6208      1.6067      
+ 10      1       6.5217e+05  5.0228      1.4781      
+
+# Total Time (s)     : 45.429
+# Average Performance : 1.7398 +- 0.41211
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********3**********
+input queue length: 2
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      4.8986      1.5156      
+ 2       0.2     2.6766e+06  2.7793      2.6713      
+ 3       0.3     2.6778e+06  5.0353      1.4745      
+ 4       0.4     2.8154e+06  3.5204      2.1089      
+ 5       0.5     2.8295e+06  3.2913      2.2558      
+ 6       0.6     3.2066e+06  2.9204      2.5423      
+ 7       0.7     3.2103e+06  3.2517      2.2832      
+ 8       0.8     3.2148e+06  4.972       1.4932      
+ 9       0.9     3.2416e+06  3.6057      2.059       
+ 10      1       3.2472e+06  4.4585      1.6652      
+
+# Total Time (s)     : 38.734
+# Average Performance : 1.9853 +- 0.37054
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+TIME MAX178.186000
+DSPs MAX178.186000
+the current input is interest: 2
+
+**********4**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+5
+delete position begin 3delete position end 5running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/4
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      4.8877      1.519       
+ 2       0.2     81396       4.7633      1.5587      
+ 3       0.3     82654       3.5899      2.0681      
+ 4       0.4     2.2027e+05  4.9961      1.486       
+ 5       0.5     2.3447e+05  2.8575      2.5982      
+ 6       0.6     6.1158e+05  3.0779      2.4122      
+ 7       0.7     6.1523e+05  5.0093      1.4821      
+ 8       0.8     6.1972e+05  4.8344      1.5357      
+ 9       0.9     6.4655e+05  2.8355      2.6184      
+ 10      1       6.5217e+05  2.9159      2.5461      
+
+# Total Time (s)     : 39.768
+# Average Performance : 2.0934 +- 0.48621
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********5**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+5
+delete position begin 2delete position end 21running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/5
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.238      4.8668      1.5255      
+ 2       0.2     81396       4.8015      1.5463      
+ 3       0.3     82654       2.8423      2.612       
+ 4       0.4     2.2027e+05  5.0357      1.4743      
+ 5       0.5     2.3447e+05  2.8868      2.5718      
+ 6       0.6     6.1158e+05  3.6699      2.023       
+ 7       0.7     6.1523e+05  3.0893      2.4032      
+ 8       0.8     6.1973e+05  2.9977      2.4766      
+ 9       0.9     6.4655e+05  2.9384      2.5267      
+ 10      1       6.5217e+05  3.1417      2.3631      
+
+# Total Time (s)     : 36.271
+# Average Performance : 2.3064 +- 0.35823
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********6**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+1
+selected pos: 6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/6
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.225      2.9116      2.5499      
+ 2       0.2     81396       2.7892      2.6618      
+ 3       0.3     82654       5.0199      1.479       
+ 4       0.4     2.2027e+05  2.7946      2.6566      
+ 5       0.5     2.3447e+05  2.8827      2.5755      
+ 6       0.6     6.1158e+05  5.0284      1.4765      
+ 7       0.7     6.1523e+05  2.9123      2.5493      
+ 8       0.8     6.1973e+05  2.8912      2.5679      
+ 9       0.9     6.4655e+05  4.977       1.4917      
+ 10      1       6.5217e+05  2.8759      2.5815      
+
+# Total Time (s)     : 35.083
+# Average Performance : 2.1723 +- 0.53517
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********7**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/7
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.271      2.9174      2.5448      
+ 2       0.2     81947       2.7786      2.6719      
+ 3       0.3     83206       5.0224      1.4782      
+ 4       0.4     2.2082e+05  5.0176      1.4796      
+ 5       0.5     2.3502e+05  2.9209      2.5417      
+ 6       0.6     6.1213e+05  3.2965      2.2522      
+ 7       0.7     6.1578e+05  2.9438      2.522       
+ 8       0.8     6.2027e+05  3.1215      2.3784      
+ 9       0.9     6.471e+05   5.0545      1.4689      
+ 10      1       6.5272e+05  5.0365      1.4741      
+
+# Total Time (s)     : 38.11
+# Average Performance : 1.9494 +- 0.48141
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********8**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+5
+delete position begin 26delete position end 29running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/8
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.251      4.8444      1.5325      
+ 2       0.2     83456       2.9048      2.5559      
+ 3       0.3     84719       4.5415      1.6348      
+ 4       0.4     2.2234e+05  4.9491      1.5001      
+ 5       0.5     2.3655e+05  4.3848      1.6932      
+ 6       0.6     6.1366e+05  2.9753      2.4953      
+ 7       0.7     6.1731e+05  2.7976      2.6538      
+ 8       0.8     6.218e+05   2.8854      2.573       
+ 9       0.9     6.4863e+05  2.8364      2.6175      
+ 10      1       6.5425e+05  2.9196      2.5429      
+
+# Total Time (s)     : 36.04
+# Average Performance : 2.2138 +- 0.47286
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********9**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+5
+delete position begin 1delete position end 10running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/9
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.262      4.9286      1.5064      
+ 2       0.2     2.0365e+05  4.7393      1.5665      
+ 3       0.3     2.0489e+05  4.9984      1.4853      
+ 4       0.4     3.4248e+05  3.0884      2.4039      
+ 5       0.5     3.5666e+05  2.9083      2.5528      
+ 6       0.6     7.3376e+05  4.7596      1.5598      
+ 7       0.7     7.374e+05   2.9129      2.5488      
+ 8       0.8     7.4188e+05  4.0347      1.8401      
+ 9       0.9     7.6871e+05  3.8571      1.9248      
+ 10      1       7.7432e+05  4.9598      1.4969      
+
+# Total Time (s)     : 41.188
+# Average Performance : 1.9766 +- 0.43422
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********10**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/10
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      2.8905      2.5685      
+ 2       0.2     2.6766e+06  2.8297      2.6237      
+ 3       0.3     2.6778e+06  3.0054      2.4703      
+ 4       0.4     2.8154e+06  2.8278      2.6255      
+ 5       0.5     2.8295e+06  4.7165      1.5741      
+ 6       0.6     3.2066e+06  4.2494      1.7471      
+ 7       0.7     3.2103e+06  4.0814      1.819       
+ 8       0.8     3.2148e+06  4.9544      1.4985      
+ 9       0.9     3.2416e+06  5.065       1.4658      
+ 10      1       3.2472e+06  4.8733      1.5235      
+
+# Total Time (s)     : 39.494
+# Average Performance : 1.8405 +- 0.42586
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********11**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/11
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.282      3.0676      2.4202      
+ 2       0.2     81396       4.7627      1.5588      
+ 3       0.3     82654       2.8897      2.5693      
+ 4       0.4     2.2027e+05  4.9887      1.4882      
+ 5       0.5     2.3447e+05  4.9647      1.4954      
+ 6       0.6     6.1158e+05  3.8042      1.9516      
+ 7       0.7     6.1523e+05  2.8304      2.6231      
+ 8       0.8     6.1972e+05  3.675       2.0202      
+ 9       0.9     6.4655e+05  4.6816      1.5858      
+ 10      1       6.5217e+05  4.9852      1.4893      
+
+# Total Time (s)     : 40.65
+# Average Performance : 1.9029 +- 0.4456
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********12**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/12
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.244      4.7743      1.5551      
+ 2       0.2     89540       4.7871      1.5509      
+ 3       0.3     90799       3.0414      2.4411      
+ 4       0.4     2.2842e+05  2.9844      2.4877      
+ 5       0.5     2.4261e+05  2.8598      2.5961      
+ 6       0.6     6.1972e+05  2.9286      2.5351      
+ 7       0.7     6.2337e+05  2.9212      2.5416      
+ 8       0.8     6.2786e+05  2.977       2.4938      
+ 9       0.9     6.5468e+05  3.0049      2.4708      
+ 10      1       6.603e+05   2.8769      2.5807      
+
+# Total Time (s)     : 33.156
+# Average Performance : 2.5184 +- 0.050653
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********13**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+1
+selected pos: 2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/13
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.225      4.8956      1.5165      
+ 2       0.2     81396       4.7825      1.5524      
+ 3       0.3     82654       2.7864      2.6645      
+ 4       0.4     2.2027e+05  3.1791      2.3354      
+ 5       0.5     2.3447e+05  2.949       2.5175      
+ 6       0.6     6.1158e+05  2.8567      2.5989      
+ 7       0.7     6.1523e+05  2.8563      2.5993      
+ 8       0.8     6.1973e+05  4.9909      1.4876      
+ 9       0.9     6.4655e+05  5.0459      1.4714      
+ 10      1       6.5217e+05  5.0352      1.4745      
+
+# Total Time (s)     : 39.379
+# Average Performance : 2.1436 +- 0.52356
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********14**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/14
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.195      4.8937      1.5171      
+ 2       0.2     2.6766e+06  4.7533      1.5619      
+ 3       0.3     2.6778e+06  3.005       2.4706      
+ 4       0.4     2.8154e+06  5.0136      1.4808      
+ 5       0.5     2.8165e+06  5.02        1.4789      
+ 6       0.6     3.1936e+06  5.0492      1.4704      
+ 7       0.7     3.1973e+06  4.9884      1.4883      
+ 8       0.8     3.2018e+06  2.9788      2.4924      
+ 9       0.9     3.2287e+06  2.7894      2.6616      
+ 10      1       3.2343e+06  2.8547      2.6007      
+
+# Total Time (s)     : 41.347
+# Average Performance : 2.018 +- 0.54121
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********15**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/15
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.195      2.9421      2.5235      
+ 2       0.2     2.6766e+06  4.7314      1.5692      
+ 3       0.3     2.6778e+06  3.5605      2.0852      
+ 4       0.4     2.8154e+06  3.6834      2.0156      
+ 5       0.5     2.8165e+06  4.126       1.7994      
+ 6       0.6     3.1936e+06  4.8902      1.5182      
+ 7       0.7     3.1973e+06  3.0095      2.467       
+ 8       0.8     3.2018e+06  3.2975      2.2515      
+ 9       0.9     3.2287e+06  5.0265      1.477       
+ 10      1       3.2343e+06  2.8879      2.5708      
+
+# Total Time (s)     : 38.156
+# Average Performance : 2.0231 +- 0.38017
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********16**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+5
+delete position begin 20delete position end 29running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/16
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      4.8751      1.5229      
+ 2       0.2     81396       3.1449      2.3607      
+ 3       0.3     82654       2.8341      2.6196      
+ 4       0.4     2.2027e+05  3.5638      2.0833      
+ 5       0.5     2.3447e+05  4.4237      1.6783      
+ 6       0.6     6.1158e+05  5.0207      1.4787      
+ 7       0.7     6.1523e+05  2.8404      2.6139      
+ 8       0.8     6.1972e+05  2.8431      2.6113      
+ 9       0.9     6.4655e+05  5.0443      1.4718      
+ 10      1       6.5217e+05  2.8323      2.6213      
+
+# Total Time (s)     : 37.423
+# Average Performance : 2.1473 +- 0.50101
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********17**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/17
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      3.6145      2.054       
+ 2       0.2     2.6766e+06  2.8555      2.6         
+ 3       0.3     2.6778e+06  3.0325      2.4482      
+ 4       0.4     2.8154e+06  2.834       2.6198      
+ 5       0.5     2.8295e+06  2.9251      2.5381      
+ 6       0.6     3.2066e+06  2.839       2.6151      
+ 7       0.7     3.2103e+06  2.8795      2.5784      
+ 8       0.8     3.2148e+06  5.0447      1.4717      
+ 9       0.9     3.2416e+06  4.9914      1.4874      
+ 10      1       3.2472e+06  5.0429      1.4722      
+
+# Total Time (s)     : 36.06
+# Average Performance : 2.1539 +- 0.5266
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********18**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+1
+selected pos: 2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/18
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.225      2.968       2.5014      
+ 2       0.2     81396       2.8647      2.5917      
+ 3       0.3     82654       2.8218      2.631       
+ 4       0.4     2.2027e+05  5.0047      1.4835      
+ 5       0.5     2.3447e+05  4.965       1.4953      
+ 6       0.6     6.1158e+05  2.9477      2.5187      
+ 7       0.7     6.1523e+05  5.0298      1.4761      
+ 8       0.8     6.1973e+05  2.783       2.6678      
+ 9       0.9     6.4655e+05  5.0498      1.4702      
+ 10      1       6.5217e+05  2.8547      2.6007      
+
+# Total Time (s)     : 37.29
+# Average Performance : 2.0429 +- 0.56302
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********19**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/19
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.195      2.922       2.5408      
+ 2       0.2     2.6766e+06  4.8015      1.5463      
+ 3       0.3     2.6778e+06  4.2233      1.7579      
+ 4       0.4     2.8154e+06  3.8936      1.9068      
+ 5       0.5     2.8165e+06  5.0133      1.4809      
+ 6       0.6     3.1936e+06  2.8915      2.5677      
+ 7       0.7     3.1973e+06  2.8195      2.6332      
+ 8       0.8     3.2018e+06  4.4251      1.6778      
+ 9       0.9     3.2287e+06  5.0047      1.4835      
+ 10      1       3.2343e+06  2.8016      2.65        
+
+# Total Time (s)     : 38.797
+# Average Performance : 2.0197 +- 0.48087
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********20**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/20
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.247      4.9383      1.5034      
+ 2       0.2     81396       2.9037      2.5569      
+ 3       0.3     82654       5.0211      1.4786      
+ 4       0.4     2.2027e+05  2.8804      2.5775      
+ 5       0.5     2.3447e+05  2.9205      2.5422      
+ 6       0.6     6.1158e+05  5.0279      1.4766      
+ 7       0.7     6.1523e+05  3.2723      2.2688      
+ 8       0.8     6.1972e+05  2.9877      2.485       
+ 9       0.9     6.4655e+05  2.9188      2.5436      
+ 10      1       6.5217e+05  4.967       1.4947      
+
+# Total Time (s)     : 37.838
+# Average Performance : 2.1084 +- 0.49214
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********21**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/21
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      2.992       2.4814      
+ 2       0.2     2.6766e+06  4.7521      1.5623      
+ 3       0.3     2.6778e+06  5.0083      1.4824      
+ 4       0.4     2.8154e+06  2.8764      2.5811      
+ 5       0.5     2.8295e+06  3.4438      2.1559      
+ 6       0.6     3.2066e+06  4.839       1.5343      
+ 7       0.7     3.2103e+06  2.9922      2.4812      
+ 8       0.8     3.2148e+06  4.9736      1.4927      
+ 9       0.9     3.2416e+06  2.8433      2.6112      
+ 10      1       3.2472e+06  4.8907      1.5181      
+
+# Total Time (s)     : 39.612
+# Average Performance : 1.9821 +- 0.49231
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********22**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/22
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.247      3.077       2.4129      
+ 2       0.2     81396       2.8143      2.6381      
+ 3       0.3     82654       5.0119      1.4813      
+ 4       0.4     2.2027e+05  4.9455      1.5012      
+ 5       0.5     2.3447e+05  5.0791      1.4617      
+ 6       0.6     6.1158e+05  5.0128      1.4811      
+ 7       0.7     6.1523e+05  4.8425      1.5332      
+ 8       0.8     6.1973e+05  2.8773      2.5803      
+ 9       0.9     6.4655e+05  3.2878      2.2581      
+ 10      1       6.5217e+05  5.0411      1.4728      
+
+# Total Time (s)     : 41.99
+# Average Performance : 1.7212 +- 0.41145
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********23**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/23
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.274      4.8631      1.5267      
+ 2       0.2     81396       3.0133      2.4638      
+ 3       0.3     82654       2.8372      2.6168      
+ 4       0.4     2.2027e+05  2.8475      2.6073      
+ 5       0.5     2.3447e+05  4.9831      1.4899      
+ 6       0.6     6.1158e+05  2.802       2.6496      
+ 7       0.7     6.1523e+05  4.9609      1.4966      
+ 8       0.8     6.1973e+05  5.058       1.4678      
+ 9       0.9     6.4655e+05  5.0467      1.4711      
+ 10      1       6.5217e+05  3.0389      2.4431      
+
+# Total Time (s)     : 39.451
+# Average Performance : 2.0303 +- 0.55192
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********24**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+5
+delete position begin 6delete position end 18running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/24
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.258      4.8709      1.5242      
+ 2       0.2     2.0365e+05  2.7686      2.6816      
+ 3       0.3     2.0489e+05  5.0377      1.4738      
+ 4       0.4     3.4248e+05  5.0039      1.4837      
+ 5       0.5     3.5666e+05  4.9768      1.4918      
+ 6       0.6     7.3375e+05  5.9765      1.2422      
+ 7       0.7     7.374e+05   5.0362      1.4742      
+ 8       0.8     7.4188e+05  4.3315      1.714       
+ 9       0.9     7.6871e+05  2.8207      2.6321      
+ 10      1       7.7432e+05  4.9816      1.4904      
+
+# Total Time (s)     : 45.805
+# Average Performance : 1.6253 +- 0.39845
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********25**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/25
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      3.0097      2.4668      
+ 2       0.2     2.6766e+06  3.3198      2.2364      
+ 3       0.3     2.6778e+06  5.0169      1.4799      
+ 4       0.4     2.8154e+06  5.0223      1.4783      
+ 5       0.5     2.8295e+06  2.7797      2.6709      
+ 6       0.6     3.2066e+06  4.8893      1.5185      
+ 7       0.7     3.2103e+06  5.027       1.4769      
+ 8       0.8     3.2148e+06  4.9744      1.4925      
+ 9       0.9     3.2416e+06  2.815       2.6375      
+ 10      1       3.2472e+06  3.0389      2.4431      
+
+# Total Time (s)     : 39.894
+# Average Performance : 1.8997 +- 0.53363
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********26**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/26
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.255      3.0333      2.4476      
+ 2       0.2     81396       4.7242      1.5715      
+ 3       0.3     82654       2.8505      2.6045      
+ 4       0.4     2.2027e+05  2.8834      2.5749      
+ 5       0.5     2.3447e+05  4.9032      1.5142      
+ 6       0.6     6.1158e+05  3.3244      2.2333      
+ 7       0.7     6.1523e+05  4.9472      1.5007      
+ 8       0.8     6.1973e+05  5.0238      1.4778      
+ 9       0.9     6.4655e+05  4.9556      1.4982      
+ 10      1       6.5217e+05  2.7739      2.6765      
+
+# Total Time (s)     : 39.42
+# Average Performance : 2.01 +- 0.52643
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********27**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/27
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.252      2.9379      2.527       
+ 2       0.2     81396       2.8789      2.5788      
+ 3       0.3     82654       4.9602      1.4968      
+ 4       0.4     2.2027e+05  2.8584      2.5974      
+ 5       0.5     2.3447e+05  2.854       2.6014      
+ 6       0.6     6.1158e+05  4.973       1.4929      
+ 7       0.7     6.1523e+05  2.9471      2.5192      
+ 8       0.8     6.1973e+05  4.9914      1.4874      
+ 9       0.9     6.4655e+05  4.9974      1.4856      
+ 10      1       6.5217e+05  2.8872      2.5715      
+
+# Total Time (s)     : 37.286
+# Average Performance : 2.0315 +- 0.54135
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********28**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/28
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      4.8898      1.5183      
+ 2       0.2     2.6766e+06  4.7701      1.5564      
+ 3       0.3     2.6778e+06  2.851       2.6041      
+ 4       0.4     2.8154e+06  5.0195      1.4791      
+ 5       0.5     2.8295e+06  4.9645      1.4955      
+ 6       0.6     3.2066e+06  3.6122      2.0553      
+ 7       0.7     3.2103e+06  2.8195      2.6332      
+ 8       0.8     3.2148e+06  2.7727      2.6777      
+ 9       0.9     3.2416e+06  5.013       1.481       
+ 10      1       3.2472e+06  4.156       1.7864      
+
+# Total Time (s)     : 40.869
+# Average Performance : 2.0265 +- 0.50786
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********29**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/29
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.274      3.1379      2.366       
+ 2       0.2     81396       2.8412      2.6131      
+ 3       0.3     82654       2.9988      2.4758      
+ 4       0.4     2.2027e+05  2.9593      2.5088      
+ 5       0.5     2.3447e+05  2.8495      2.6055      
+ 6       0.6     6.1158e+05  3.4357      2.1609      
+ 7       0.7     6.1523e+05  5.0263      1.4771      
+ 8       0.8     6.1973e+05  3.367       2.205       
+ 9       0.9     6.4655e+05  4.9624      1.4961      
+ 10      1       6.5217e+05  2.7739      2.6765      
+
+# Total Time (s)     : 34.353
+# Average Performance : 2.2007 +- 0.44476
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********30**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+5
+delete position begin 17delete position end 25running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/30
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.244      3.2062      2.3156      
+ 2       0.2     81396       4.731       1.5693      
+ 3       0.3     82654       3.3877      2.1916      
+ 4       0.4     2.2027e+05  2.9681      2.5013      
+ 5       0.5     2.3447e+05  4.6611      1.5928      
+ 6       0.6     6.1158e+05  4.7926      1.5491      
+ 7       0.7     6.1523e+05  4.9726      1.493       
+ 8       0.8     6.1972e+05  4.8296      1.5373      
+ 9       0.9     6.4655e+05  2.9613      2.5071      
+ 10      1       6.5217e+05  4.8552      1.5291      
+
+# Total Time (s)     : 41.366
+# Average Performance : 1.8627 +- 0.42665
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********31**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/31
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.225      3.2248      2.3023      
+ 2       0.2     81396       4.752       1.5623      
+ 3       0.3     82654       2.9576      2.5103      
+ 4       0.4     2.2027e+05  2.7568      2.6931      
+ 5       0.5     2.3447e+05  4.9421      1.5023      
+ 6       0.6     6.1158e+05  3.0429      2.4399      
+ 7       0.7     6.1523e+05  5.06        1.4673      
+ 8       0.8     6.1973e+05  2.8173      2.6353      
+ 9       0.9     6.4655e+05  4.9921      1.4872      
+ 10      1       6.5217e+05  5.0356      1.4744      
+
+# Total Time (s)     : 39.582
+# Average Performance : 2.0262 +- 0.54808
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********32**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/32
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      3.0673      2.4205      
+ 2       0.2     2.6766e+06  4.6332      1.6024      
+ 3       0.3     2.6778e+06  2.9126      2.549       
+ 4       0.4     2.8154e+06  4.1422      1.7924      
+ 5       0.5     2.8295e+06  4.963       1.4959      
+ 6       0.6     3.2066e+06  2.9106      2.5508      
+ 7       0.7     3.2103e+06  5.013       1.481       
+ 8       0.8     3.2148e+06  4.9651      1.4953      
+ 9       0.9     3.2416e+06  3.4688      2.1403      
+ 10      1       3.2472e+06  2.8176      2.635       
+
+# Total Time (s)     : 38.894
+# Average Performance : 2.0175 +- 0.48043
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********33**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+5
+delete position begin 0delete position end 4running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/33
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.293      3.0006      2.4743      
+ 2       0.2     1.6468e+05  4.7894      1.5502      
+ 3       0.3     1.6597e+05  3.3987      2.1845      
+ 4       0.4     3.036e+05   3.6984      2.0075      
+ 5       0.5     3.1779e+05  2.8116      2.6406      
+ 6       0.6     6.9486e+05  2.9528      2.5143      
+ 7       0.7     6.9846e+05  4.3221      1.7178      
+ 8       0.8     7.0291e+05  2.8904      2.5686      
+ 9       0.9     7.2971e+05  4.0115      1.8508      
+ 10      1       7.3531e+05  2.8462      2.6085      
+
+# Total Time (s)     : 34.722
+# Average Performance : 2.2616 +- 0.3459
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********34**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+1
+selected pos: 19
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/34
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      2.9988      2.4757      
+ 2       0.2     81396       2.9467      2.5195      
+ 3       0.3     82654       2.8705      2.5864      
+ 4       0.4     2.2027e+05  3.9335      1.8874      
+ 5       0.5     2.3447e+05  4.9918      1.4873      
+ 6       0.6     6.1158e+05  3.5171      2.1109      
+ 7       0.7     6.1523e+05  4.6879      1.5837      
+ 8       0.8     6.1972e+05  2.8762      2.5813      
+ 9       0.9     6.4655e+05  2.9069      2.554       
+ 10      1       6.5217e+05  5.0487      1.4705      
+
+# Total Time (s)     : 36.779
+# Average Performance : 2.0327 +- 0.46389
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********35**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/35
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.238      3.0336      2.4474      
+ 2       0.2     81396       4.8322      1.5364      
+ 3       0.3     82654       4.9339      1.5047      
+ 4       0.4     2.2027e+05  5.0193      1.4792      
+ 5       0.5     2.3447e+05  4.8453      1.5323      
+ 6       0.6     6.1158e+05  4.9223      1.5083      
+ 7       0.7     6.1523e+05  3.6556      2.0309      
+ 8       0.8     6.1973e+05  4.9949      1.4864      
+ 9       0.9     6.4655e+05  2.9206      2.542       
+ 10      1       6.5217e+05  5.0314      1.4756      
+
+# Total Time (s)     : 44.19
+# Average Performance : 1.6949 +- 0.36504
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********36**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/36
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      2.9109      2.5505      
+ 2       0.2     2.6766e+06  3.3721      2.2017      
+ 3       0.3     2.6778e+06  3.0699      2.4184      
+ 4       0.4     2.8154e+06  5.036       1.4742      
+ 5       0.5     2.8295e+06  5.0147      1.4805      
+ 6       0.6     3.2066e+06  3.0296      2.4506      
+ 7       0.7     3.2103e+06  2.9276      2.536       
+ 8       0.8     3.2148e+06  2.835       2.6188      
+ 9       0.9     3.2416e+06  2.8864      2.5722      
+ 10      1       3.2472e+06  5.0073      1.4827      
+
+# Total Time (s)     : 36.09
+# Average Performance : 2.1292 +- 0.50696
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********37**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/37
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      2.9873      2.4853      
+ 2       0.2     81396       4.7376      1.5671      
+ 3       0.3     82654       4.9998      1.4849      
+ 4       0.4     2.2027e+05  2.9929      2.4806      
+ 5       0.5     2.3447e+05  4.957       1.4977      
+ 6       0.6     6.1158e+05  3.1526      2.355       
+ 7       0.7     6.1523e+05  5.02        1.479       
+ 8       0.8     6.1972e+05  5.0293      1.4762      
+ 9       0.9     6.4655e+05  5.0033      1.4839      
+ 10      1       6.5217e+05  4.9416      1.5024      
+
+# Total Time (s)     : 43.822
+# Average Performance : 1.72 +- 0.4042
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********38**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+1
+selected pos: 8
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/38
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.274      2.928       2.5356      
+ 2       0.2     81396       4.7543      1.5616      
+ 3       0.3     82654       4.9087      1.5125      
+ 4       0.4     2.2027e+05  2.8286      2.6247      
+ 5       0.5     2.3447e+05  4.7734      1.5554      
+ 6       0.6     6.1158e+05  4.9537      1.4987      
+ 7       0.7     6.1523e+05  2.8872      2.5714      
+ 8       0.8     6.1973e+05  2.8169      2.6356      
+ 9       0.9     6.4655e+05  3.5394      2.0976      
+ 10      1       6.5217e+05  2.9343      2.5302      
+
+# Total Time (s)     : 37.325
+# Average Performance : 2.1283 +- 0.49579
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********39**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/39
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.268      3.073       2.416       
+ 2       0.2     81396       3.9156      1.8961      
+ 3       0.3     82654       2.8793      2.5785      
+ 4       0.4     2.2027e+05  2.8518      2.6034      
+ 5       0.5     2.3447e+05  4.9935      1.4868      
+ 6       0.6     6.1158e+05  5.0216      1.4785      
+ 7       0.7     6.1523e+05  5.0031      1.4839      
+ 8       0.8     6.1972e+05  3.3606      2.2092      
+ 9       0.9     6.4655e+05  3.3979      2.185       
+ 10      1       6.5217e+05  4.3815      1.6944      
+
+# Total Time (s)     : 38.878
+# Average Performance : 1.965 +- 0.45579
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********40**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+1
+selected pos: 17
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/40
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      4.8477      1.5315      
+ 2       0.2     81396       4.7617      1.5592      
+ 3       0.3     82654       4.988       1.4884      
+ 4       0.4     2.2027e+05  2.8552      2.6003      
+ 5       0.5     2.3447e+05  3.9384      1.8851      
+ 6       0.6     6.1158e+05  4.4396      1.6723      
+ 7       0.7     6.1523e+05  4.9935      1.4868      
+ 8       0.8     6.1972e+05  4.9635      1.4958      
+ 9       0.9     6.4655e+05  2.8101      2.642       
+ 10      1       6.5217e+05  2.8149      2.6375      
+
+# Total Time (s)     : 41.414
+# Average Performance : 1.9885 +- 0.50962
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********41**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/41
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.288      3.0151      2.4624      
+ 2       0.2     81396       4.7721      1.5558      
+ 3       0.3     82654       2.8779      2.5798      
+ 4       0.4     2.2027e+05  4.6714      1.5893      
+ 5       0.5     2.3447e+05  5.0111      1.4816      
+ 6       0.6     6.1158e+05  4.9811      1.4905      
+ 7       0.7     6.1523e+05  2.8359      2.618       
+ 8       0.8     6.1973e+05  5.0093      1.4821      
+ 9       0.9     6.4655e+05  4.9577      1.4975      
+ 10      1       6.5217e+05  5.045       1.4716      
+
+# Total Time (s)     : 43.177
+# Average Performance : 1.7763 +- 0.47627
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********42**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/42
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      2.9256      2.5377      
+ 2       0.2     2.6766e+06  4.8094      1.5437      
+ 3       0.3     2.6778e+06  2.8676      2.589       
+ 4       0.4     2.8154e+06  2.8996      2.5605      
+ 5       0.5     2.8295e+06  5.0383      1.4736      
+ 6       0.6     3.2066e+06  5.015       1.4804      
+ 7       0.7     3.2103e+06  2.7623      2.6877      
+ 8       0.8     3.2148e+06  2.8637      2.5926      
+ 9       0.9     3.2416e+06  3.3699      2.2032      
+ 10      1       3.2472e+06  2.8032      2.6485      
+
+# Total Time (s)     : 35.355
+# Average Performance : 2.2794 +- 0.4834
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********43**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/43
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.195      2.982       2.4897      
+ 2       0.2     2.6766e+06  4.8409      1.5337      
+ 3       0.3     2.6778e+06  2.9229      2.5401      
+ 4       0.4     2.8154e+06  2.9271      2.5364      
+ 5       0.5     2.8165e+06  5.0485      1.4706      
+ 6       0.6     3.1936e+06  2.8765      2.581       
+ 7       0.7     3.1973e+06  5.042       1.4725      
+ 8       0.8     3.2018e+06  2.9124      2.5492      
+ 9       0.9     3.2287e+06  4.9921      1.4872      
+ 10      1       3.2343e+06  4.9054      1.5135      
+
+# Total Time (s)     : 39.451
+# Average Performance : 2.0188 +- 0.53314
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********44**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/44
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.255      3.0241      2.455       
+ 2       0.2     81396       2.7509      2.6989      
+ 3       0.3     82654       2.9362      2.5285      
+ 4       0.4     2.2027e+05  5.0083      1.4824      
+ 5       0.5     2.3447e+05  2.9026      2.5579      
+ 6       0.6     6.1158e+05  5.0363      1.4741      
+ 7       0.7     6.1523e+05  3.9814      1.8648      
+ 8       0.8     6.1973e+05  2.839       2.6151      
+ 9       0.9     6.4655e+05  3.8855      1.9108      
+ 10      1       6.5217e+05  4.9517      1.4994      
+
+# Total Time (s)     : 37.316
+# Average Performance : 1.9916 +- 0.47298
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********45**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+5
+delete position begin 4delete position end 13running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/45
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.262      3.6026      2.0608      
+ 2       0.2     2.0365e+05  2.9772      2.4937      
+ 3       0.3     2.0489e+05  4.9861      1.489       
+ 4       0.4     3.4248e+05  3.4406      2.1579      
+ 5       0.5     3.5666e+05  4.1903      1.7718      
+ 6       0.6     7.3376e+05  3.699       2.0071      
+ 7       0.7     7.374e+05   2.8978      2.562       
+ 8       0.8     7.4188e+05  2.8621      2.594       
+ 9       0.9     7.6871e+05  5.0249      1.4775      
+ 10      1       7.7432e+05  4.0621      1.8277      
+
+# Total Time (s)     : 37.743
+# Average Performance : 1.9859 +- 0.40435
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********46**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+5
+delete position begin 26delete position end 29running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/46
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.251      4.8486      1.5312      
+ 2       0.2     83456       4.7655      1.5579      
+ 3       0.3     84719       2.9298      2.5341      
+ 4       0.4     2.2234e+05  2.8524      2.6028      
+ 5       0.5     2.3655e+05  5.0256      1.4773      
+ 6       0.6     6.1366e+05  2.8528      2.6024      
+ 7       0.7     6.1731e+05  4.923       1.5081      
+ 8       0.8     6.218e+05   2.8795      2.5783      
+ 9       0.9     6.4863e+05  4.6737      1.5885      
+ 10      1       6.5425e+05  5.0024      1.4842      
+
+# Total Time (s)     : 40.754
+# Average Performance : 2.047 +- 0.53373
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********47**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/47
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.243      2.9042      2.5564      
+ 2       0.2     81396       4.7485      1.5635      
+ 3       0.3     82654       5.0387      1.4735      
+ 4       0.4     2.2027e+05  4.646       1.598       
+ 5       0.5     2.3447e+05  5.0775      1.4622      
+ 6       0.6     6.1158e+05  2.8356      2.6182      
+ 7       0.7     6.1523e+05  4.9894      1.488       
+ 8       0.8     6.1972e+05  3.5478      2.0927      
+ 9       0.9     6.4655e+05  2.7915      2.6596      
+ 10      1       6.5217e+05  5.0012      1.4845      
+
+# Total Time (s)     : 41.581
+# Average Performance : 1.8596 +- 0.49042
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********48**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/48
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      4.85        1.5308      
+ 2       0.2     2.6766e+06  2.7801      2.6705      
+ 3       0.3     2.6778e+06  5.0157      1.4802      
+ 4       0.4     2.8154e+06  2.8365      2.6175      
+ 5       0.5     2.8295e+06  3.0742      2.415       
+ 6       0.6     3.2066e+06  2.9845      2.4876      
+ 7       0.7     3.2103e+06  4.6513      1.5962      
+ 8       0.8     3.2148e+06  2.6978      2.7519      
+ 9       0.9     3.2416e+06  3.6438      2.0375      
+ 10      1       3.2472e+06  5.0308      1.4758      
+
+# Total Time (s)     : 37.565
+# Average Performance : 2.1077 +- 0.49666
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********49**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/49
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      3.0657      2.4218      
+ 2       0.2     2.6766e+06  3.3655      2.206       
+ 3       0.3     2.6778e+06  5.0113      1.4815      
+ 4       0.4     2.8154e+06  2.8323      2.6213      
+ 5       0.5     2.8295e+06  3.2327      2.2966      
+ 6       0.6     3.2066e+06  5.0298      1.4761      
+ 7       0.7     3.2103e+06  4.9739      1.4927      
+ 8       0.8     3.2148e+06  4.9742      1.4926      
+ 9       0.9     3.2416e+06  5.0125      1.4812      
+ 10      1       3.2472e+06  2.9659      2.5033      
+
+# Total Time (s)     : 40.464
+# Average Performance : 1.8556 +- 0.48579
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********50**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/50
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      3.0631      2.4238      
+ 2       0.2     2.6766e+06  4.7677      1.5572      
+ 3       0.3     2.6778e+06  2.8498      2.6052      
+ 4       0.4     2.8154e+06  3.8954      1.9059      
+ 5       0.5     2.8295e+06  4.8485      1.5313      
+ 6       0.6     3.2066e+06  2.8218      2.6311      
+ 7       0.7     3.2103e+06  2.8189      2.6337      
+ 8       0.8     3.2148e+06  2.8381      2.616       
+ 9       0.9     3.2416e+06  2.8696      2.5873      
+ 10      1       3.2472e+06  2.9561      2.5115      
+
+# Total Time (s)     : 33.73
+# Average Performance : 2.3777 +- 0.39356
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********51**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/51
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.255      3.0013      2.4737      
+ 2       0.2     81396       4.7729      1.5555      
+ 3       0.3     82654       5.0133      1.4809      
+ 4       0.4     2.2027e+05  2.8824      2.5758      
+ 5       0.5     2.3447e+05  4.0216      1.8461      
+ 6       0.6     6.1158e+05  3.7563      1.9765      
+ 7       0.7     6.1523e+05  2.7863      2.6646      
+ 8       0.8     6.1973e+05  4.1962      1.7693      
+ 9       0.9     6.4655e+05  2.8068      2.6451      
+ 10      1       6.5217e+05  4.9616      1.4963      
+
+# Total Time (s)     : 38.199
+# Average Performance : 2.0568 +- 0.46958
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********52**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+5
+delete position begin 1delete position end 3running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/52
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      4.2884      1.7312      
+ 2       0.2     81396       4.762       1.5591      
+ 3       0.3     82654       2.9741      2.4964      
+ 4       0.4     2.2027e+05  4.9727      1.493       
+ 5       0.5     2.3447e+05  4.6676      1.5906      
+ 6       0.6     6.1158e+05  2.8875      2.5712      
+ 7       0.7     6.1523e+05  2.8806      2.5773      
+ 8       0.8     6.1972e+05  4.7353      1.5679      
+ 9       0.9     6.4655e+05  4.3279      1.7155      
+ 10      1       6.5217e+05  4.9849      1.4894      
+
+# Total Time (s)     : 41.482
+# Average Performance : 1.9376 +- 0.47801
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********53**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+1
+selected pos: 12
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/53
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.238      3.0359      2.4455      
+ 2       0.2     81396       4.7679      1.5571      
+ 3       0.3     82654       2.9342      2.5303      
+ 4       0.4     2.2027e+05  2.8124      2.6398      
+ 5       0.5     2.3447e+05  4.4896      1.6537      
+ 6       0.6     6.1158e+05  4.9998      1.4849      
+ 7       0.7     6.1523e+05  3.8522      1.9273      
+ 8       0.8     6.1973e+05  2.8903      2.5687      
+ 9       0.9     6.4655e+05  2.9102      2.5511      
+ 10      1       6.5217e+05  5.0254      1.4774      
+
+# Total Time (s)     : 37.719
+# Average Performance : 2.1041 +- 0.48665
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********54**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/54
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      3.1356      2.3678      
+ 2       0.2     2.6766e+06  3.9408      1.884       
+ 3       0.3     2.6778e+06  5.0184      1.4794      
+ 4       0.4     2.8154e+06  3.3216      2.2351      
+ 5       0.5     2.8295e+06  4.9403      1.5028      
+ 6       0.6     3.2066e+06  2.9649      2.504       
+ 7       0.7     3.2103e+06  5.0422      1.4724      
+ 8       0.8     3.2148e+06  2.9011      2.5591      
+ 9       0.9     3.2416e+06  5.0441      1.4719      
+ 10      1       3.2472e+06  2.898       2.5619      
+
+# Total Time (s)     : 39.208
+# Average Performance : 1.9733 +- 0.50092
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********55**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/55
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      4.9783      1.4913      
+ 2       0.2     2.6766e+06  3.21        2.3129      
+ 3       0.3     2.6778e+06  4.2501      1.7468      
+ 4       0.4     2.8154e+06  4.8941      1.517       
+ 5       0.5     2.8295e+06  2.8847      2.5737      
+ 6       0.6     3.2066e+06  4.8355      1.5354      
+ 7       0.7     3.2103e+06  2.9876      2.4851      
+ 8       0.8     3.2148e+06  4.9949      1.4864      
+ 9       0.9     3.2416e+06  4.6588      1.5936      
+ 10      1       3.2472e+06  2.8723      2.5848      
+
+# Total Time (s)     : 40.567
+# Average Performance : 1.9403 +- 0.47699
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********56**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+1
+selected pos: 2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/56
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      4.8905      1.5181      
+ 2       0.2     2.6766e+06  2.7882      2.6628      
+ 3       0.3     2.6778e+06  2.7482      2.7016      
+ 4       0.4     2.8154e+06  2.8886      2.5702      
+ 5       0.5     2.8295e+06  3.6011      2.0617      
+ 6       0.6     3.2066e+06  5.0411      1.4728      
+ 7       0.7     3.2103e+06  2.9782      2.4929      
+ 8       0.8     3.2148e+06  5.0281      1.4766      
+ 9       0.9     3.2416e+06  2.8038      2.648       
+ 10      1       3.2472e+06  2.8997      2.5604      
+
+# Total Time (s)     : 35.668
+# Average Performance : 2.248 +- 0.48191
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********57**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/57
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      2.9506      2.5162      
+ 2       0.2     81396       2.916       2.5461      
+ 3       0.3     82654       4.9177      1.5097      
+ 4       0.4     2.2027e+05  3.1513      2.3559      
+ 5       0.5     2.3447e+05  4.7766      1.5543      
+ 6       0.6     6.1158e+05  2.8687      2.588       
+ 7       0.7     6.1523e+05  5.0203      1.4789      
+ 8       0.8     6.1972e+05  2.9246      2.5386      
+ 9       0.9     6.4655e+05  3.0402      2.442       
+ 10      1       6.5217e+05  5.0655      1.4657      
+
+# Total Time (s)     : 37.632
+# Average Performance : 1.9916 +- 0.49416
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********58**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/58
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.225      2.9547      2.5127      
+ 2       0.2     81396       3.4832      2.1314      
+ 3       0.3     82654       5.0188      1.4793      
+ 4       0.4     2.2027e+05  2.9845      2.4876      
+ 5       0.5     2.3447e+05  2.8815      2.5765      
+ 6       0.6     6.1158e+05  3.3549      2.2129      
+ 7       0.7     6.1523e+05  3.8743      1.9163      
+ 8       0.8     6.1973e+05  2.9073      2.5536      
+ 9       0.9     6.4655e+05  3.1668      2.3444      
+ 10      1       6.5217e+05  4.2502      1.7468      
+
+# Total Time (s)     : 34.877
+# Average Performance : 2.1647 +- 0.38175
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********59**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/59
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      4.8758      1.5227      
+ 2       0.2     81396       4.7449      1.5647      
+ 3       0.3     82654       3.1725      2.3402      
+ 4       0.4     2.2027e+05  3.6472      2.0356      
+ 5       0.5     2.3447e+05  2.9505      2.5163      
+ 6       0.6     6.1158e+05  2.8854      2.5731      
+ 7       0.7     6.1523e+05  5.0277      1.4767      
+ 8       0.8     6.1972e+05  2.9245      2.5387      
+ 9       0.9     6.4655e+05  4.8539      1.5296      
+ 10      1       6.5217e+05  5.0643      1.466       
+
+# Total Time (s)     : 40.147
+# Average Performance : 2.0595 +- 0.46826
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********60**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+1
+selected pos: 0
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/60
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.223      3.1499      2.357       
+ 2       0.2     81396       2.8947      2.5648      
+ 3       0.3     82654       3.2496      2.2847      
+ 4       0.4     2.2027e+05  2.9413      2.5242      
+ 5       0.5     2.3447e+05  2.8704      2.5865      
+ 6       0.6     6.1158e+05  2.874       2.5832      
+ 7       0.7     6.1523e+05  5.0192      1.4792      
+ 8       0.8     6.1973e+05  2.8754      2.582       
+ 9       0.9     6.4655e+05  4.9761      1.492       
+ 10      1       6.5217e+05  2.8596      2.5962      
+
+# Total Time (s)     : 33.711
+# Average Performance : 2.266 +- 0.46063
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********61**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+5
+delete position begin 15delete position end 26running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/61
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.262      3.0417      2.4408      
+ 2       0.2     2.0365e+05  4.7662      1.5577      
+ 3       0.3     2.0489e+05  2.8694      2.5874      
+ 4       0.4     3.4248e+05  4.9789      1.4911      
+ 5       0.5     3.5666e+05  4.968       1.4944      
+ 6       0.6     7.3376e+05  4.9888      1.4882      
+ 7       0.7     7.374e+05   2.9121      2.5494      
+ 8       0.8     7.4188e+05  5.0321      1.4754      
+ 9       0.9     7.6871e+05  4.1326      1.7965      
+ 10      1       7.7432e+05  4.9954      1.4862      
+
+# Total Time (s)     : 42.686
+# Average Performance : 1.7961 +- 0.45709
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********62**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/62
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.293      4.886       1.5195      
+ 2       0.2     89543       4.7526      1.5621      
+ 3       0.3     90803       2.8808      2.5772      
+ 4       0.4     2.2842e+05  3.0201      2.4583      
+ 5       0.5     2.4262e+05  2.9129      2.5487      
+ 6       0.6     6.1972e+05  2.9429      2.5228      
+ 7       0.7     6.2337e+05  3.2959      2.2526      
+ 8       0.8     6.2786e+05  2.8773      2.5803      
+ 9       0.9     6.5468e+05  2.7814      2.6693      
+ 10      1       6.603e+05   2.7904      2.6606      
+
+# Total Time (s)     : 33.141
+# Average Performance : 2.5337 +- 0.12431
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********63**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/63
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      2.9603      2.5079      
+ 2       0.2     81396       2.8339      2.6198      
+ 3       0.3     82654       4.931       1.5056      
+ 4       0.4     2.2027e+05  5.0585      1.4677      
+ 5       0.5     2.3447e+05  3.9156      1.8961      
+ 6       0.6     6.1158e+05  2.9158      2.5463      
+ 7       0.7     6.1523e+05  5.0219      1.4784      
+ 8       0.8     6.1972e+05  2.8342      2.6195      
+ 9       0.9     6.4655e+05  5.0617      1.4667      
+ 10      1       6.5217e+05  2.8745      2.5828      
+
+# Total Time (s)     : 38.408
+# Average Performance : 1.9454 +- 0.5115
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********64**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/64
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      4.8942      1.517       
+ 2       0.2     81396       4.7617      1.5592      
+ 3       0.3     82654       5.0123      1.4812      
+ 4       0.4     2.2027e+05  4.6416      1.5995      
+ 5       0.5     2.3447e+05  2.9335      2.5309      
+ 6       0.6     6.1158e+05  2.8878      2.571       
+ 7       0.7     6.1523e+05  2.9231      2.5399      
+ 8       0.8     6.1972e+05  2.9121      2.5495      
+ 9       0.9     6.4655e+05  3.7988      1.9544      
+ 10      1       6.5217e+05  2.97        2.4997      
+
+# Total Time (s)     : 37.736
+# Average Performance : 2.2158 +- 0.43448
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********65**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/65
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.274      4.8454      1.5322      
+ 2       0.2     83454       4.8         1.5467      
+ 3       0.3     84717       2.8322      2.6214      
+ 4       0.4     2.2234e+05  4.9801      1.4908      
+ 5       0.5     2.3654e+05  3.3698      2.2032      
+ 6       0.6     6.1365e+05  2.8553      2.6002      
+ 7       0.7     6.1731e+05  3.2682      2.2717      
+ 8       0.8     6.218e+05   5.0194      1.4791      
+ 9       0.9     6.4863e+05  4.9532      1.4989      
+ 10      1       6.5425e+05  5.0155      1.4803      
+
+# Total Time (s)     : 41.94
+# Average Performance : 1.9557 +- 0.48702
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********66**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/66
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.276      3.0914      2.4016      
+ 2       0.2     81396       3.1338      2.3691      
+ 3       0.3     82654       3.302       2.2484      
+ 4       0.4     2.2027e+05  2.8562      2.5994      
+ 5       0.5     2.3447e+05  2.8626      2.5936      
+ 6       0.6     6.1158e+05  5.0218      1.4784      
+ 7       0.7     6.1523e+05  2.7787      2.6719      
+ 8       0.8     6.1973e+05  4.957       1.4977      
+ 9       0.9     6.4655e+05  5.0467      1.4711      
+ 10      1       6.5217e+05  3.9795      1.8656      
+
+# Total Time (s)     : 37.03
+# Average Performance : 2.0533 +- 0.503
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********67**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/67
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.225      2.8637      2.5926      
+ 2       0.2     81396       3.7642      1.9724      
+ 3       0.3     82654       5.0193      1.4792      
+ 4       0.4     2.2027e+05  3.0719      2.4168      
+ 5       0.5     2.3447e+05  2.847       2.6078      
+ 6       0.6     6.1158e+05  4.9725      1.4931      
+ 7       0.7     6.1523e+05  4.8357      1.5353      
+ 8       0.8     6.1973e+05  4.9793      1.491       
+ 9       0.9     6.4655e+05  2.864       2.5923      
+ 10      1       6.5217e+05  5.0383      1.4736      
+
+# Total Time (s)     : 40.257
+# Average Performance : 1.8861 +- 0.50876
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********68**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/68
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      2.9836      2.4884      
+ 2       0.2     81396       4.835       1.5355      
+ 3       0.3     82654       2.8924      2.5668      
+ 4       0.4     2.2027e+05  2.9081      2.553       
+ 5       0.5     2.3447e+05  2.8324      2.6212      
+ 6       0.6     6.1158e+05  5.0067      1.4829      
+ 7       0.7     6.1523e+05  5.045       1.4716      
+ 8       0.8     6.1972e+05  4.9892      1.4881      
+ 9       0.9     6.4655e+05  2.835       2.6188      
+ 10      1       6.5217e+05  2.9395      2.5257      
+
+# Total Time (s)     : 37.267
+# Average Performance : 2.166 +- 0.53157
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********69**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/69
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      3.0169      2.4609      
+ 2       0.2     2.6766e+06  2.9375      2.5274      
+ 3       0.3     2.6778e+06  4.9786      1.4912      
+ 4       0.4     2.8154e+06  4.968       1.4944      
+ 5       0.5     2.8295e+06  3.5603      2.0853      
+ 6       0.6     3.2066e+06  3.9552      1.8771      
+ 7       0.7     3.2103e+06  4.6669      1.5908      
+ 8       0.8     3.2148e+06  4.9842      1.4896      
+ 9       0.9     3.2416e+06  2.8843      2.5741      
+ 10      1       3.2472e+06  2.8363      2.6176      
+
+# Total Time (s)     : 38.789
+# Average Performance : 1.9025 +- 0.44718
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********70**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+1
+selected pos: 23
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/70
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      4.9075      1.5128      
+ 2       0.2     81396       4.7606      1.5595      
+ 3       0.3     82654       2.8548      2.6006      
+ 4       0.4     2.2027e+05  2.9048      2.5559      
+ 5       0.5     2.3447e+05  4.5901      1.6174      
+ 6       0.6     6.1158e+05  2.9841      2.4879      
+ 7       0.7     6.1523e+05  3.1481      2.3584      
+ 8       0.8     6.1972e+05  4.3254      1.7164      
+ 9       0.9     6.4655e+05  2.8153      2.6371      
+ 10      1       6.5217e+05  5.0214      1.4785      
+
+# Total Time (s)     : 38.313
+# Average Performance : 2.1815 +- 0.45788
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********71**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+1
+selected pos: 14
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/71
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.255      2.9364      2.5283      
+ 2       0.2     81396       4.7611      1.5594      
+ 3       0.3     82654       4.4798      1.6573      
+ 4       0.4     2.2027e+05  4.9656      1.4951      
+ 5       0.5     2.3447e+05  4.9906      1.4877      
+ 6       0.6     6.1158e+05  5.023       1.4781      
+ 7       0.7     6.1523e+05  3.3855      2.193       
+ 8       0.8     6.1973e+05  2.8759      2.5816      
+ 9       0.9     6.4655e+05  5.0218      1.4784      
+ 10      1       6.5217e+05  2.9948      2.4791      
+
+# Total Time (s)     : 41.435
+# Average Performance : 1.8563 +- 0.44987
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********72**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/72
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      3.0072      2.4688      
+ 2       0.2     81396       4.8254      1.5386      
+ 3       0.3     82654       4.1871      1.7731      
+ 4       0.4     2.2027e+05  5.0263      1.4771      
+ 5       0.5     2.3447e+05  2.9237      2.5393      
+ 6       0.6     6.1158e+05  3.153       2.3547      
+ 7       0.7     6.1523e+05  2.9645      2.5044      
+ 8       0.8     6.1972e+05  5.0181      1.4795      
+ 9       0.9     6.4655e+05  2.9742      2.4963      
+ 10      1       6.5217e+05  2.8237      2.6293      
+
+# Total Time (s)     : 36.904
+# Average Performance : 2.1567 +- 0.4627
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********73**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/73
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      4.8962      1.5163      
+ 2       0.2     81396       4.7191      1.5732      
+ 3       0.3     82654       4.9553      1.4983      
+ 4       0.4     2.2027e+05  3.4602      2.1457      
+ 5       0.5     2.3447e+05  4.9302      1.5059      
+ 6       0.6     6.1158e+05  4.9629      1.496       
+ 7       0.7     6.1523e+05  2.9512      2.5157      
+ 8       0.8     6.1972e+05  4.9699      1.4938      
+ 9       0.9     6.4655e+05  3.8574      1.9247      
+ 10      1       6.5217e+05  2.8396      2.6146      
+
+# Total Time (s)     : 42.543
+# Average Performance : 1.8993 +- 0.44659
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********74**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/74
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.269      2.9473      2.519       
+ 2       0.2     2.0333e+05  4.7397      1.5664      
+ 3       0.3     2.0456e+05  2.7971      2.6543      
+ 4       0.4     3.4216e+05  3.1751      2.3383      
+ 5       0.5     3.5635e+05  2.9075      2.5535      
+ 6       0.6     7.3345e+05  2.9123      2.5493      
+ 7       0.7     7.371e+05   2.9548      2.5126      
+ 8       0.8     7.4159e+05  4.9715      1.4934      
+ 9       0.9     7.6841e+05  4.9387      1.5033      
+ 10      1       7.7403e+05  2.8626      2.5936      
+
+# Total Time (s)     : 35.207
+# Average Performance : 2.2748 +- 0.45622
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********75**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/75
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      2.9701      2.4997      
+ 2       0.2     2.6766e+06  4.2637      1.7413      
+ 3       0.3     2.6778e+06  4.8307      1.5369      
+ 4       0.4     2.8154e+06  2.8259      2.6273      
+ 5       0.5     2.8295e+06  4.9847      1.4894      
+ 6       0.6     3.2066e+06  5.0023      1.4842      
+ 7       0.7     3.2103e+06  2.8463      2.6084      
+ 8       0.8     3.2148e+06  4.8988      1.5155      
+ 9       0.9     3.2416e+06  2.8269      2.6263      
+ 10      1       3.2472e+06  2.8248      2.6283      
+
+# Total Time (s)     : 38.275
+# Average Performance : 2.0645 +- 0.55827
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********76**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/76
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.195      3.0069      2.4691      
+ 2       0.2     2.6766e+06  3.0558      2.4296      
+ 3       0.3     2.6778e+06  2.9961      2.478       
+ 4       0.4     2.8154e+06  2.9347      2.5299      
+ 5       0.5     2.8165e+06  4.9906      1.4877      
+ 6       0.6     3.1936e+06  3.2282      2.2998      
+ 7       0.7     3.1973e+06  4.9819      1.4903      
+ 8       0.8     3.2018e+06  4.4254      1.6776      
+ 9       0.9     3.2287e+06  2.955       2.5125      
+ 10      1       3.2343e+06  5.0317      1.4755      
+
+# Total Time (s)     : 37.607
+# Average Performance : 1.9939 +- 0.46941
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********77**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+1
+selected pos: 4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/77
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.225      2.9949      2.479       
+ 2       0.2     81396       2.8005      2.6511      
+ 3       0.3     82654       2.8268      2.6264      
+ 4       0.4     2.2027e+05  4.9921      1.4872      
+ 5       0.5     2.3447e+05  4.9793      1.491       
+ 6       0.6     6.1158e+05  2.8976      2.5623      
+ 7       0.7     6.1523e+05  4.9805      1.4907      
+ 8       0.8     6.1973e+05  4.9042      1.5139      
+ 9       0.9     6.4655e+05  2.7431      2.7066      
+ 10      1       6.5217e+05  4.2709      1.7383      
+
+# Total Time (s)     : 38.39
+# Average Performance : 1.952 +- 0.53334
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********78**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/78
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.195      2.9839      2.4881      
+ 2       0.2     2.6766e+06  4.7843      1.5518      
+ 3       0.3     2.6778e+06  4.3074      1.7236      
+ 4       0.4     2.8154e+06  4.4327      1.6749      
+ 5       0.5     2.8165e+06  4.8747      1.523       
+ 6       0.6     3.1936e+06  2.8409      2.6134      
+ 7       0.7     3.1973e+06  4.524       1.6411      
+ 8       0.8     3.2018e+06  2.8297      2.6237      
+ 9       0.9     3.2287e+06  2.8559      2.5997      
+ 10      1       3.2343e+06  4.3357      1.7124      
+
+# Total Time (s)     : 38.77
+# Average Performance : 2.014 +- 0.46696
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********79**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/79
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      4.753       1.562       
+ 2       0.2     81396       4.8018      1.5461      
+ 3       0.3     82654       3.6155      2.0535      
+ 4       0.4     2.2027e+05  2.9398      2.5255      
+ 5       0.5     2.3447e+05  2.8479      2.6069      
+ 6       0.6     6.1158e+05  2.8703      2.5866      
+ 7       0.7     6.1523e+05  2.9786      2.4926      
+ 8       0.8     6.1972e+05  5.0217      1.4784      
+ 9       0.9     6.4655e+05  5.0462      1.4713      
+ 10      1       6.5217e+05  2.832       2.6216      
+
+# Total Time (s)     : 37.707
+# Average Performance : 2.2295 +- 0.46777
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********80**********
+input queue length: 3
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      4.4068      1.6848      
+ 2       0.2     6.8893e+06  4.7852      1.5515      
+ 3       0.3     6.8905e+06  5.0313      1.4756      
+ 4       0.4     7.0281e+06  5.0489      1.4705      
+ 5       0.5     7.0423e+06  4.0792      1.82        
+ 6       0.6     7.4194e+06  5.0851      1.46        
+ 7       0.7     7.423e+06   5.0265      1.477       
+ 8       0.8     7.4275e+06  4.9301      1.5059      
+ 9       0.9     7.4544e+06  3.307       2.245       
+ 10      1       7.46e+06    2.923       2.54        
+
+# Total Time (s)     : 44.624
+# Average Performance : 1.7493 +- 0.39459
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:279.083000
+TIME MAX279.083000
+DSPs MAX279.083000
+the current input is interest: 2
+
+**********81**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+1
+selected pos: 4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/81
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.225      3.0627      2.4241      
+ 2       0.2     81396       4.7539      1.5617      
+ 3       0.3     82654       2.8356      2.6182      
+ 4       0.4     2.2027e+05  5.0273      1.4768      
+ 5       0.5     2.3447e+05  2.8258      2.6273      
+ 6       0.6     6.1158e+05  2.9243      2.5388      
+ 7       0.7     6.1523e+05  2.9154      2.5466      
+ 8       0.8     6.1973e+05  2.8504      2.6047      
+ 9       0.9     6.4655e+05  4.9788      1.4912      
+ 10      1       6.5217e+05  2.8385      2.6155      
+
+# Total Time (s)     : 35.014
+# Average Performance : 2.3149 +- 0.48071
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********82**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+1
+selected pos: 21
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/82
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      2.8672      2.5894      
+ 2       0.2     81396       4.7594      1.5599      
+ 3       0.3     82654       4.8707      1.5243      
+ 4       0.4     2.2027e+05  3.3731      2.201       
+ 5       0.5     2.3447e+05  5.0559      1.4685      
+ 6       0.6     6.1158e+05  3.1721      2.3405      
+ 7       0.7     6.1523e+05  4.9867      1.4888      
+ 8       0.8     6.1972e+05  2.9468      2.5195      
+ 9       0.9     6.4655e+05  3.2614      2.2764      
+ 10      1       6.5217e+05  4.8704      1.5244      
+
+# Total Time (s)     : 40.164
+# Average Performance : 1.9179 +- 0.425
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********83**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/83
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      4.348       1.7075      
+ 2       0.2     81396       2.7807      2.6699      
+ 3       0.3     82654       2.8834      2.5749      
+ 4       0.4     2.2027e+05  4.9523      1.4992      
+ 5       0.5     2.3447e+05  5.0082      1.4824      
+ 6       0.6     6.1158e+05  5.0261      1.4771      
+ 7       0.7     6.1523e+05  2.8457      2.6089      
+ 8       0.8     6.1972e+05  2.8178      2.6348      
+ 9       0.9     6.4655e+05  2.8361      2.6178      
+ 10      1       6.5217e+05  2.8599      2.596       
+
+# Total Time (s)     : 36.359
+# Average Performance : 2.1864 +- 0.5426
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********84**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/84
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.253      4.8715      1.524       
+ 2       0.2     81396       4.8246      1.5388      
+ 3       0.3     82654       2.8321      2.6215      
+ 4       0.4     2.2027e+05  4.854       1.5295      
+ 5       0.5     2.3447e+05  5.0101      1.4819      
+ 6       0.6     6.1158e+05  2.8925      2.5667      
+ 7       0.7     6.1523e+05  3.148       2.3584      
+ 8       0.8     6.1972e+05  2.926       2.5374      
+ 9       0.9     6.4655e+05  2.8876      2.5711      
+ 10      1       6.5217e+05  2.8537      2.6016      
+
+# Total Time (s)     : 37.101
+# Average Performance : 2.2835 +- 0.45546
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********85**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/85
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.169      3.0894      2.4031      
+ 2       0.2     6.8893e+06  4.7221      1.5723      
+ 3       0.3     6.8905e+06  4.9466      1.5009      
+ 4       0.4     7.0281e+06  5.0122      1.4812      
+ 5       0.5     7.0292e+06  2.8022      2.6495      
+ 6       0.6     7.4064e+06  2.786       2.6648      
+ 7       0.7     7.41e+06    2.8329      2.6208      
+ 8       0.8     7.4146e+06  4.9985      1.4853      
+ 9       0.9     7.4414e+06  3.3216      2.2351      
+ 10      1       7.447e+06   4.7396      1.5665      
+
+# Total Time (s)     : 39.252
+# Average Performance : 2.0255 +- 0.53273
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:279.083000
+the current input is interest: 0
+
+**********86**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+5
+delete position begin 21delete position end 25running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/86
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.275      3.0365      2.445       
+ 2       0.2     2.8489e+06  4.8499      1.5308      
+ 3       0.3     2.8502e+06  2.8147      2.6376      
+ 4       0.4     2.9878e+06  3.2857      2.2596      
+ 5       0.5     3.002e+06   4.1952      1.7697      
+ 6       0.6     3.3791e+06  2.9518      2.5151      
+ 7       0.7     3.3828e+06  4.9641      1.4956      
+ 8       0.8     3.3873e+06  4.9671      1.4947      
+ 9       0.9     3.4141e+06  2.803       2.6487      
+ 10      1       3.4197e+06  2.8511      2.604       
+
+# Total Time (s)     : 36.72
+# Average Performance : 2.1781 +- 0.47878
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:219.603000
+the current input is interest: 0
+
+**********87**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/87
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.254      4.8942      1.517       
+ 2       0.2     2.8489e+06  4.1354      1.7953      
+ 3       0.3     2.8502e+06  4.9896      1.488       
+ 4       0.4     2.9878e+06  2.8952      2.5643      
+ 5       0.5     3.002e+06   4.0309      1.8419      
+ 6       0.6     3.3791e+06  2.8089      2.6431      
+ 7       0.7     3.3828e+06  5.0812      1.4611      
+ 8       0.8     3.3873e+06  2.8478      2.6071      
+ 9       0.9     3.4141e+06  5.0373      1.4739      
+ 10      1       3.4197e+06  2.8024      2.6493      
+
+# Total Time (s)     : 39.524
+# Average Performance : 2.0911 +- 0.53738
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:219.603000
+the current input is interest: 0
+
+**********88**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+1
+selected pos: 23
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/88
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.24       2.964       2.5048      
+ 2       0.2     2.8489e+06  2.945       2.521       
+ 3       0.3     2.8502e+06  3.5934      2.0661      
+ 4       0.4     2.9878e+06  5.091       1.4583      
+ 5       0.5     3.002e+06   2.961       2.5074      
+ 6       0.6     3.3791e+06  5.0052      1.4833      
+ 7       0.7     3.3828e+06  2.899       2.561       
+ 8       0.8     3.3873e+06  4.2433      1.7497      
+ 9       0.9     3.4141e+06  3.0483      2.4356      
+ 10      1       3.4197e+06  2.8495      2.6055      
+
+# Total Time (s)     : 35.6
+# Average Performance : 2.1084 +- 0.4558
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:219.603000
+the current input is interest: 0
+
+**********89**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/89
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.24       2.9398      2.5255      
+ 2       0.2     81396       2.8914      2.5678      
+ 3       0.3     82654       4.9923      1.4871      
+ 4       0.4     2.2027e+05  2.8292      2.6241      
+ 5       0.5     2.3447e+05  2.8516      2.6035      
+ 6       0.6     6.1158e+05  2.897       2.5628      
+ 7       0.7     6.1523e+05  4.9825      1.4901      
+ 8       0.8     6.1972e+05  5.014       1.4807      
+ 9       0.9     6.4655e+05  4.1359      1.7951      
+ 10      1       6.5217e+05  5.0079      1.4825      
+
+# Total Time (s)     : 38.542
+# Average Performance : 1.9408 +- 0.51779
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********90**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/90
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.266      4.9278      1.5066      
+ 2       0.2     2.6766e+06  2.822       2.6309      
+ 3       0.3     2.6778e+06  2.8278      2.6255      
+ 4       0.4     2.8154e+06  4.186       1.7736      
+ 5       0.5     2.8295e+06  2.8861      2.5724      
+ 6       0.6     3.2066e+06  3.8479      1.9294      
+ 7       0.7     3.2103e+06  5.0026      1.4841      
+ 8       0.8     3.2148e+06  3.3851      2.1932      
+ 9       0.9     3.2416e+06  5.007       1.4828      
+ 10      1       3.2472e+06  4.9825      1.4901      
+
+# Total Time (s)     : 39.875
+# Average Performance : 1.9439 +- 0.44454
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:178.186000
+the current input is interest: 0
+
+**********91**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+5
+delete position begin 13delete position end 29running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/91
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      4.8376      1.5347      
+ 2       0.2     81396       2.9613      2.5071      
+ 3       0.3     82654       5.0281      1.4766      
+ 4       0.4     2.2027e+05  2.8908      2.5682      
+ 5       0.5     2.3447e+05  2.8252      2.6279      
+ 6       0.6     6.1158e+05  2.9453      2.5207      
+ 7       0.7     6.1523e+05  2.8359      2.618       
+ 8       0.8     6.1972e+05  2.8882      2.5706      
+ 9       0.9     6.4655e+05  5.0311      1.4757      
+ 10      1       6.5217e+05  4.9493      1.5001      
+
+# Total Time (s)     : 37.193
+# Average Performance : 2.1697 +- 0.53199
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********92**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/92
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.236      4.8392      1.5342      
+ 2       0.2     81396       2.7795      2.6711      
+ 3       0.3     82654       4.9661      1.495       
+ 4       0.4     2.2027e+05  4.477       1.6583      
+ 5       0.5     2.3447e+05  2.8304      2.623       
+ 6       0.6     6.1158e+05  2.8773      2.5803      
+ 7       0.7     6.1523e+05  2.8569      2.5988      
+ 8       0.8     6.1973e+05  5.0042      1.4836      
+ 9       0.9     6.4655e+05  2.912       2.5495      
+ 10      1       6.5217e+05  5.0203      1.4789      
+
+# Total Time (s)     : 38.564
+# Average Performance : 2.0584 +- 0.53246
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********93**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/93
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.225      2.9688      2.5008      
+ 2       0.2     81396       3.7565      1.9764      
+ 3       0.3     82654       3.0197      2.4586      
+ 4       0.4     2.2027e+05  3.0313      2.4492      
+ 5       0.5     2.3447e+05  2.8759      2.5815      
+ 6       0.6     6.1158e+05  3.5498      2.0915      
+ 7       0.7     6.1523e+05  4.2314      1.7546      
+ 8       0.8     6.1973e+05  4.9616      1.4964      
+ 9       0.9     6.4655e+05  4.1297      1.7978      
+ 10      1       6.5217e+05  3.0205      2.458       
+
+# Total Time (s)     : 35.546
+# Average Performance : 2.1359 +- 0.3833
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********94**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+5
+delete position begin 1delete position end 4running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/94
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.293      3.0493      2.4348      
+ 2       0.2     1.1885e+05  3.5102      2.1151      
+ 3       0.3     1.2014e+05  2.8722      2.5849      
+ 4       0.4     2.5778e+05  2.9134      2.5483      
+ 5       0.5     2.7199e+05  4.9869      1.4888      
+ 6       0.6     6.4906e+05  4.9957      1.4861      
+ 7       0.7     6.5267e+05  2.9451      2.5209      
+ 8       0.8     6.5713e+05  3.4033      2.1815      
+ 9       0.9     6.8393e+05  2.9603      2.5079      
+ 10      1       6.8954e+05  5.0244      1.4776      
+
+# Total Time (s)     : 36.662
+# Average Performance : 2.0995 +- 0.49042
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********95**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/95
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      2.9001      2.56        
+ 2       0.2     81396       4.7635      1.5586      
+ 3       0.3     82654       4.9812      1.4905      
+ 4       0.4     2.2027e+05  4.9635      1.4958      
+ 5       0.5     2.3447e+05  3.4869      2.1292      
+ 6       0.6     6.1158e+05  2.7958      2.6556      
+ 7       0.7     6.1523e+05  2.8444      2.6102      
+ 8       0.8     6.1972e+05  3.6361      2.0418      
+ 9       0.9     6.4655e+05  2.9367      2.5282      
+ 10      1       6.5217e+05  2.9396      2.5256      
+
+# Total Time (s)     : 36.248
+# Average Performance : 2.1846 +- 0.44958
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********96**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/96
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.239      2.928       2.5356      
+ 2       0.2     81396       4.7741      1.5551      
+ 3       0.3     82654       4.9791      1.4911      
+ 4       0.4     2.2027e+05  4.2921      1.7298      
+ 5       0.5     2.3447e+05  4.1957      1.7695      
+ 6       0.6     6.1158e+05  2.8696      2.5872      
+ 7       0.7     6.1523e+05  5.0354      1.4744      
+ 8       0.8     6.1972e+05  2.8857      2.5728      
+ 9       0.9     6.4655e+05  2.8545      2.6009      
+ 10      1       6.5217e+05  3.1648      2.3459      
+
+# Total Time (s)     : 37.98
+# Average Performance : 2.0715 +- 0.47093
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********97**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/97
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.243      3.0867      2.4053      
+ 2       0.2     81396       4.7311      1.5692      
+ 3       0.3     82654       5.0505      1.47        
+ 4       0.4     2.2027e+05  4.3606      1.7026      
+ 5       0.5     2.3447e+05  2.7824      2.6683      
+ 6       0.6     6.1158e+05  2.8618      2.5943      
+ 7       0.7     6.1523e+05  2.9439      2.5219      
+ 8       0.8     6.1972e+05  2.8611      2.5949      
+ 9       0.9     6.4655e+05  2.8195      2.6332      
+ 10      1       6.5217e+05  5.0047      1.4835      
+
+# Total Time (s)     : 36.503
+# Average Performance : 2.2086 +- 0.51419
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********98**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/98
+===============================
+ Initialize Gravity Simulation
+ nPart = 16000; nSteps = 10; dt = 0.1
+------------------------------------------------
+ s       dt      kenergy     time (s)    GFLOPS      
+------------------------------------------------
+ 1       0.1     34.264      4.8774      1.5222      
+ 2       0.2     81396       4.7747      1.5549      
+ 3       0.3     82654       5.0022      1.4842      
+ 4       0.4     2.2027e+05  4.9654      1.4952      
+ 5       0.5     2.3447e+05  4.996       1.4861      
+ 6       0.6     6.1158e+05  3.7778      1.9653      
+ 7       0.7     6.1523e+05  2.9981      2.4763      
+ 8       0.8     6.1973e+05  5.0042      1.4836      
+ 9       0.9     6.4655e+05  5.0234      1.478       
+ 10      1       6.5217e+05  5.0086      1.4823      
+
+# Total Time (s)     : 46.429
+# Average Performance : 1.6689 +- 0.34334
+===============================
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:48.070200
+the current input is interest: 0
+
+**********99**********
+input queue length: 4
+../../HeteroFuzz/prototype/seedsForSort/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/1_both
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/80_hd
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_gsimulation/valuerange/3_hd
+5
+
+########################################################################
+# End of output for job 1961986.v-qsvr-1.aidevcloud
+# Date: Tue Jul 26 17:56:51 PDT 2022
+########################################################################
+

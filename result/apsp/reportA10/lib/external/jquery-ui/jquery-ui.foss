@@ -1,0 +1,12 @@
+[foss]
+name = jquery-ui
+version = 1.13.1.min
+description = jquery user interface
+case = 14015964239
+source = true
+binary = false
+modified = false
+usage = redistributed
+license_type = MIT
+license_url = https://jquery.org/license/
+download_url = https://jqueryui.com/download/

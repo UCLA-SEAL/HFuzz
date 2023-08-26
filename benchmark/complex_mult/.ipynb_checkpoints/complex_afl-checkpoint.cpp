@@ -1,0 +1,192 @@
+
+//==============================================================
+// Copyright © 2020 Intel Corporation
+//
+// SPDX-License-Identifier: MIT
+// =============================================================
+//#include <CL/sycl.hpp>
+#include <iomanip>
+#include <vector>
+// dpc_common.hpp can be found in the dev-utilities include folder.
+// e.g., $ONEAPI_ROOT/dev-utilities/<version>/include/dpc_common.hpp
+#include <fstream>
+#include "Complex.hpp"
+#if FPGA || FPGA_EMULATOR
+  #include <sycl/ext/intel/fpga_extensions.hpp>
+#endif
+
+//using namespace sycl;
+using namespace std;
+
+// Number of complex numbers passing to the DPC++ code
+static const int vector_size = 10000;
+static const int num_elements = 10000;
+
+// in_vect1 and in_vect2 are the vectors with num_elements complex nubers and
+// are inputs to the parallel function
+void DpcppParallel(std::vector<Complex2> &in_vect1,
+                   std::vector<Complex2> &in_vect2,
+                   std::vector<Complex2> &out_vect) {
+  auto R = in_vect1.size();
+  if (in_vect2.size() != in_vect1.size() || out_vect.size() != in_vect1.size()){ 
+	  std::cout << "ERROR: Vector sizes do not  match"<< "\n";
+	  return;
+  }
+  // Setup input buffers
+  //buffer bufin_vect1(in_vect1);
+  //buffer bufin_vect2(in_vect2);
+
+  // Setup Output buffers 
+  //buffer bufout_vect(out_vect);
+
+  //std::cout << "Target Device: "
+  //          << q.get_device().get_info<info::device::name>() << "\n";
+  // Submit Command group function object to the queue
+  //q.submit([&](auto &h) {
+    // Accessors set as read mode
+    //accessor V1(bufin_vect1,h,read_only);
+    //accessor V2(bufin_vect2,h,read_only);
+    // Accessor set to Write mode
+    //accessor V3 (bufout_vect,h,write_only);
+    //h.parallel_for(R, [=](auto i) {
+      // call the complex_mul function that computes the multiplication of the
+      // complex number
+   for (int i=0;i<R;i++){
+       out_vect[i] = in_vect1[i].complex_mul(in_vect2[i]);
+   }
+   // });
+  //});
+  //q.wait_and_throw();
+}
+void DpcppScalar(std::vector<Complex2> &in_vect1,
+                 std::vector<Complex2> &in_vect2,
+                 std::vector<Complex2> &out_vect) {
+  if ((in_vect2.size() != in_vect1.size()) || (out_vect.size() != in_vect1.size())){
+	  std::cout<<"ERROR: Vector sizes do not match"<<"\n";
+	  return;
+  }		 
+  for (int i = 0; i < in_vect1.size(); i++) {
+    out_vect[i] = in_vect1[i].complex_mul(in_vect2[i]);
+  }
+}
+// Compare the results of the two output vectors from parallel and scalar. They
+// should be equal
+int Compare(std::vector<Complex2> &v1, std::vector<Complex2> &v2) {
+  int ret_code = 1;
+  if(v1.size() != v2.size()){
+	  ret_code = -1;
+  }
+  for (int i = 0; i < v1.size(); i++) {
+    if (v1[i] != v2[i]) {
+      ret_code = -1;
+      break;
+    }
+  }
+  return ret_code;
+}
+int main(int argc, char* argv[]) {
+  // Declare your Input and Output vectors of the Complex2 class
+  vector<Complex2> input_vect1;
+  vector<Complex2> input_vect2;
+  vector<Complex2> out_vect_parallel;
+  vector<Complex2> out_vect_scalar;
+    
+  
+  std::string file;
+  if (argc > 1) file = argv[1];
+  std::ifstream read(file);
+      
+  if (!read.is_open()){
+      std::cout << "Could not open the input file.\n";
+  } 
+  int number;
+  int i = 0;
+  int a_max = 0;
+  int a_min = 10000000;
+  while ((read >> number) and (i<vector_size)){
+    input_vect1.push_back(Complex2(number, number + 2));
+    if (number>a_max) a_max = number;
+    if (number<a_min) a_min = number;
+    i = i + 1;
+  }
+  while (i<vector_size){
+      input_vect1.push_back(Complex2(i, i + 2));
+      i = i+1;
+  }
+ 
+  i = 0;
+  int b_max = 0;
+  int b_min = 10000000;
+  while ((read >> number) and (i<vector_size)){
+    input_vect2.push_back(Complex2(number, number + 2));
+    if (number>b_max) b_max = number;
+    if (number<b_min) b_min = number;
+    i = i + 1;
+  }
+    
+  while (i<vector_size){
+      input_vect2.push_back(Complex2(i, i + 2));
+      i = i+1;
+  }
+
+  for (int i = 0; i < num_elements; i++) {
+    out_vect_parallel.push_back(Complex2(0, 0));
+    out_vect_scalar.push_back(Complex2(0, 0));
+  }
+  //#if FPGA_EMULATOR
+  // DPC++ extension: FPGA emulator selector on systems without FPGA card.
+  //  ext::intel::fpga_emulator_selector d_selector;
+  //#else
+  //  std::string vendor_name = "Intel";
+  //  CustomDeviceSelector d_selector(vendor_name);
+  //#endif  
+  // Initialize your Input and Output Vectors. Inputs are initialized as below.
+  // Outputs are initialized with 0
+  try {
+    // Pass in the name of the vendor for which the device you want to query
+    //std::string vendor_name = "Intel";
+    // std::string vendor_name = "AMD";
+    // std::string vendor_name = "Nvidia";
+    // queue constructor passed exception handler
+    //CustomDeviceSelector selector(vendor_name);
+    //queue q(d_selector, dpc_common::exception_handler);
+    // Call the DpcppParallel with the required inputs and outputs
+    DpcppParallel(input_vect1, input_vect2, out_vect_parallel);
+  } catch (...) {
+    // some other exception detected
+    std::cout << "Failure" << std::endl;
+    std::terminate();
+  }
+
+  std::cout
+      << "****************************************Multiplying Complex numbers "
+         "in Parallel********************************************************"
+      << std::endl;
+  // Print the outputs of the Parallel function
+  int indices[]{0, 1, 2, 3, 4, (num_elements - 1)};
+  constexpr size_t indices_size = sizeof(indices) / sizeof(int);
+
+  for (int i = 0; i < indices_size; i++) {
+    int j = indices[i];
+    if (i == indices_size - 1) std::cout << "...\n";
+    std::cout << "[" << j << "] " << input_vect1[j] << " * " << input_vect2[j]
+              << " = " << out_vect_parallel[j] << "\n";
+  }
+  // Call the DpcppScalar function with the required input and outputs
+  DpcppScalar(input_vect1, input_vect2, out_vect_scalar);
+
+  // Compare the outputs from the parallel and the scalar functions. They should
+  // be equal
+
+  int ret_code = Compare(out_vect_parallel, out_vect_scalar);
+  if (ret_code == 1) {
+    std::cout << "Complex multiplication successfully run on the device"
+              << "\n";
+  } else
+    std::cout
+        << "*********************************************Verification Failed. Results are "
+           "not matched**************************"
+        << "\n";
+
+  return 0;
+}

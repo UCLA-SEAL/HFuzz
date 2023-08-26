@@ -1,0 +1,38 @@
+icpx: warning: use of 'dpcpp' is deprecated and will be removed in a future release. Use 'icpx -fsycl' [-Wdeprecated]
+src/apsp_kernel_mutation_kernel_execution.cpp:140:70: warning: 'local' is deprecated: use `local_accessor` instead [-Wdeprecated-declarations]
+typedef accessor<float, 2, access::mode::read_write, access::target::local>
+                                                                     ^
+/glob/development-tools/versions/oneapi/2023.0/oneapi/compiler/2023.0.0/linux/bin-llvm/../include/sycl/access/access.hpp:20:9: note: 'local' has been explicitly marked deprecated here
+  local __SYCL2020_DEPRECATED("use `local_accessor` instead") = 2016,
+        ^
+/glob/development-tools/versions/oneapi/2023.0/oneapi/compiler/2023.0.0/linux/bin-llvm/../include/sycl/detail/defines_elementary.hpp:52:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+#define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+                                       ^
+/glob/development-tools/versions/oneapi/2023.0/oneapi/compiler/2023.0.0/linux/bin-llvm/../include/sycl/detail/defines_elementary.hpp:43:38: note: expanded from macro '__SYCL_DEPRECATED'
+#define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+                                     ^
+src/apsp_kernel_mutation_kernel_execution.cpp:143:68: warning: 'local' is deprecated: use `local_accessor` instead [-Wdeprecated-declarations]
+typedef accessor<int, 2, access::mode::read_write, access::target::local>
+                                                                   ^
+/glob/development-tools/versions/oneapi/2023.0/oneapi/compiler/2023.0.0/linux/bin-llvm/../include/sycl/access/access.hpp:20:9: note: 'local' has been explicitly marked deprecated here
+  local __SYCL2020_DEPRECATED("use `local_accessor` instead") = 2016,
+        ^
+/glob/development-tools/versions/oneapi/2023.0/oneapi/compiler/2023.0.0/linux/bin-llvm/../include/sycl/detail/defines_elementary.hpp:52:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+#define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+                                       ^
+/glob/development-tools/versions/oneapi/2023.0/oneapi/compiler/2023.0.0/linux/bin-llvm/../include/sycl/detail/defines_elementary.hpp:43:38: note: expanded from macro '__SYCL_DEPRECATED'
+#define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+                                     ^
+src/apsp_kernel_mutation_kernel_execution.cpp:402:3: warning: 'default_selector' is deprecated: Use the callable sycl::default_selector_v instead. [-Wdeprecated-declarations]
+  default_selector d_selector;
+  ^
+/glob/development-tools/versions/oneapi/2023.0/oneapi/compiler/2023.0.0/linux/bin-llvm/../include/sycl/device_selector.hpp:50:21: note: 'default_selector' has been explicitly marked deprecated here
+class __SYCL_EXPORT __SYCL2020_DEPRECATED(
+                    ^
+/glob/development-tools/versions/oneapi/2023.0/oneapi/compiler/2023.0.0/linux/bin-llvm/../include/sycl/detail/defines_elementary.hpp:52:40: note: expanded from macro '__SYCL2020_DEPRECATED'
+#define __SYCL2020_DEPRECATED(message) __SYCL_DEPRECATED(message)
+                                       ^
+/glob/development-tools/versions/oneapi/2023.0/oneapi/compiler/2023.0.0/linux/bin-llvm/../include/sycl/detail/defines_elementary.hpp:43:38: note: expanded from macro '__SYCL_DEPRECATED'
+#define __SYCL_DEPRECATED(message) [[deprecated(message)]]
+                                     ^
+3 warnings generated.

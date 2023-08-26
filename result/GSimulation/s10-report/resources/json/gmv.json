@@ -1,0 +1,618 @@
+{
+  "nodes":
+  [
+    {
+      "name":"DDR"
+      , "id":210
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Interleaving":"Yes"
+          , "Interleave Size":"4096 bytes"
+          , "Channels":"4 channels"
+          , "Maximum bandwidth the BSP can deliver":"76800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel DDR Width (bits)":"512, 512, 512, 512"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"channel 0"
+          , "id":212
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 1"
+          , "id":213
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 2"
+          , "id":214
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 3"
+          , "id":215
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":211
+      , "parent":"210"
+      , "bw":"76800.00"
+      , "num_channels":"4"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"76800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":216
+      , "parent":"210"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":217
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":220
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"DDR"
+              , "Interconnect Style":"ring"
+              , "Writes":"4"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"4"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect"
+          , "id":218
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"DDR"
+              , "Interconnect Style":"ring"
+              , "Reads":"7"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect Router"
+          , "id":219
+          , "details":
+          [
+            {
+              "type":"table"
+              , "User specified num-reorder flag":"Unset"
+            }
+          ]
+          , "type":"memsys"
+          , "children":
+          [
+            {
+              "name":"Bus 0"
+              , "id":234
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 1"
+              , "id":235
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 2"
+              , "id":236
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 3"
+              , "id":237
+              , "type":"memsys"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Loads"
+      , "id":221
+      , "parent":"210"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"LD"
+          , "id":222
+          , "kwidth":"128"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"10"
+              , "Latency":"819 cycles"
+              , "Width":"128 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-NON-ALIGNED"
+              , "Kernel":"nd_item<1>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+                , "line":185
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":223
+          , "kwidth":"128"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"799 cycles"
+              , "Width":"128 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"Yes"
+              , "LSU Style":"BURST-NON-ALIGNED"
+              , "Kernel":"nd_item<1>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+                , "line":185
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":224
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"825"
+              , "Latency":"792 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"nd_item<1>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+                , "line":195
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":225
+          , "kwidth":"256"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"8"
+              , "Latency":"794 cycles"
+              , "Width":"256 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-NON-ALIGNED"
+              , "Kernel":"nd_item<1>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+                , "line":221
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":229
+          , "kwidth":"256"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"11"
+              , "Latency":"776 cycles"
+              , "Width":"256 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-NON-ALIGNED"
+              , "Kernel":"nd_item<1>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+                , "line":233
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":230
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"11"
+              , "Latency":"790 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"nd_item<1>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+                , "line":237
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":232
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"898"
+              , "Latency":"790 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"nd_item<1>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+                , "line":237
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":226
+      , "parent":"210"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":227
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"812"
+              , "Latency":"2 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"nd_item<1>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+                , "line":221
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":228
+          , "kwidth":"256"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"812"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-NON-ALIGNED"
+              , "Kernel":"nd_item<1>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+                , "line":217
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":231
+          , "kwidth":"128"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"800"
+              , "Latency":"98 cycles"
+              , "Width":"128 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"Yes"
+              , "LSU Style":"BURST-NON-ALIGNED"
+              , "Kernel":"nd_item<1>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+                , "line":233
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":233
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"1697"
+              , "Latency":"2 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"nd_item<1>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+                , "line":237
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":212
+      , "to":211
+    }
+    , {
+      "from":211
+      , "to":212
+    }
+    , {
+      "from":213
+      , "to":211
+    }
+    , {
+      "from":211
+      , "to":213
+    }
+    , {
+      "from":214
+      , "to":211
+    }
+    , {
+      "from":211
+      , "to":214
+    }
+    , {
+      "from":215
+      , "to":211
+    }
+    , {
+      "from":211
+      , "to":215
+    }
+    , {
+      "from":218
+      , "to":217
+    }
+    , {
+      "from":220
+      , "to":217
+    }
+    , {
+      "from":217
+      , "to":211
+    }
+    , {
+      "from":222
+      , "to":218
+    }
+    , {
+      "from":223
+      , "to":218
+    }
+    , {
+      "from":224
+      , "to":218
+    }
+    , {
+      "from":225
+      , "to":218
+    }
+    , {
+      "from":227
+      , "to":220
+    }
+    , {
+      "from":228
+      , "to":220
+    }
+    , {
+      "from":229
+      , "to":218
+    }
+    , {
+      "from":230
+      , "to":218
+    }
+    , {
+      "from":231
+      , "to":220
+    }
+    , {
+      "from":232
+      , "to":218
+    }
+    , {
+      "from":233
+      , "to":220
+    }
+    , {
+      "from":211
+      , "to":234
+    }
+    , {
+      "from":211
+      , "to":235
+    }
+    , {
+      "from":211
+      , "to":236
+    }
+    , {
+      "from":211
+      , "to":237
+    }
+    , {
+      "from":234
+      , "to":222
+      , "reverse":1
+    }
+    , {
+      "from":235
+      , "to":223
+      , "reverse":1
+    }
+    , {
+      "from":236
+      , "to":224
+      , "reverse":1
+    }
+    , {
+      "from":237
+      , "to":225
+      , "reverse":1
+    }
+    , {
+      "from":234
+      , "to":229
+      , "reverse":1
+    }
+    , {
+      "from":235
+      , "to":230
+      , "reverse":1
+    }
+    , {
+      "from":236
+      , "to":232
+      , "reverse":1
+    }
+  ]
+}

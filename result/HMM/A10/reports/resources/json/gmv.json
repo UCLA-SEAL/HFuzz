@@ -1,0 +1,760 @@
+{
+  "nodes":
+  [
+    {
+      "name":"DDR"
+      , "id":532
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Interleaving":"Yes"
+          , "Interleave Size":"4096 bytes"
+          , "Channels":"4 channels"
+          , "Maximum bandwidth the BSP can deliver":"76800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel DDR Width (bits)":"512, 512, 512, 512"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"channel 0"
+          , "id":534
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 1"
+          , "id":535
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 2"
+          , "id":536
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 3"
+          , "id":537
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":533
+      , "parent":"532"
+      , "bw":"76800.00"
+      , "num_channels":"4"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"76800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":538
+      , "parent":"532"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":539
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":542
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"DDR"
+              , "Interconnect Style":"ring"
+              , "Writes":"6"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"4"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect"
+          , "id":540
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"DDR"
+              , "Interconnect Style":"ring"
+              , "Reads":"9"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect Router"
+          , "id":541
+          , "details":
+          [
+            {
+              "type":"table"
+              , "User specified num-reorder flag":"Unset"
+            }
+          ]
+          , "type":"memsys"
+          , "children":
+          [
+            {
+              "name":"Bus 0"
+              , "id":560
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 1"
+              , "id":561
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 2"
+              , "id":562
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 3"
+              , "id":563
+              , "type":"memsys"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Loads"
+      , "id":545
+      , "parent":"532"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"LD"
+          , "id":546
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"83"
+              , "Latency":"806 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":125
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":548
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"7"
+              , "Latency":"7 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"PIPELINED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":153
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":549
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"7"
+              , "Latency":"7 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"PIPELINED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":153
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":550
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"33"
+              , "Latency":"7 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"PIPELINED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":153
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":553
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"828"
+              , "Latency":"864 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":174
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":554
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"19"
+              , "Latency":"790 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":174
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":555
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"19"
+              , "Latency":"864 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":174
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":556
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"828"
+              , "Latency":"864 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":174
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":557
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"1745"
+              , "Latency":"864 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":174
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":543
+      , "parent":"532"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":544
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"85"
+              , "Latency":"2 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":112
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":547
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"908"
+              , "Latency":"2 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":125
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":551
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"68"
+              , "Latency":"34 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":153
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":552
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"102"
+              , "Latency":"2 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":155
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":558
+          , "kwidth":"64"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"2616"
+              , "Latency":"108 cycles"
+              , "Width":"64 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"Yes"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":175
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":559
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"2724"
+              , "Latency":"2 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"id<2>)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                , "line":176
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":534
+      , "to":533
+    }
+    , {
+      "from":533
+      , "to":534
+    }
+    , {
+      "from":535
+      , "to":533
+    }
+    , {
+      "from":533
+      , "to":535
+    }
+    , {
+      "from":536
+      , "to":533
+    }
+    , {
+      "from":533
+      , "to":536
+    }
+    , {
+      "from":537
+      , "to":533
+    }
+    , {
+      "from":533
+      , "to":537
+    }
+    , {
+      "from":540
+      , "to":539
+    }
+    , {
+      "from":542
+      , "to":539
+    }
+    , {
+      "from":539
+      , "to":533
+    }
+    , {
+      "from":544
+      , "to":542
+    }
+    , {
+      "from":546
+      , "to":540
+    }
+    , {
+      "from":547
+      , "to":542
+    }
+    , {
+      "from":548
+      , "to":540
+    }
+    , {
+      "from":549
+      , "to":540
+    }
+    , {
+      "from":550
+      , "to":540
+    }
+    , {
+      "from":551
+      , "to":542
+    }
+    , {
+      "from":552
+      , "to":542
+    }
+    , {
+      "from":553
+      , "to":540
+    }
+    , {
+      "from":554
+      , "to":540
+    }
+    , {
+      "from":555
+      , "to":540
+    }
+    , {
+      "from":556
+      , "to":540
+    }
+    , {
+      "from":557
+      , "to":540
+    }
+    , {
+      "from":558
+      , "to":542
+    }
+    , {
+      "from":559
+      , "to":542
+    }
+    , {
+      "from":533
+      , "to":560
+    }
+    , {
+      "from":533
+      , "to":561
+    }
+    , {
+      "from":533
+      , "to":562
+    }
+    , {
+      "from":533
+      , "to":563
+    }
+    , {
+      "from":560
+      , "to":546
+      , "reverse":1
+    }
+    , {
+      "from":561
+      , "to":548
+      , "reverse":1
+    }
+    , {
+      "from":562
+      , "to":549
+      , "reverse":1
+    }
+    , {
+      "from":563
+      , "to":550
+      , "reverse":1
+    }
+    , {
+      "from":560
+      , "to":553
+      , "reverse":1
+    }
+    , {
+      "from":561
+      , "to":554
+      , "reverse":1
+    }
+    , {
+      "from":562
+      , "to":555
+      , "reverse":1
+    }
+    , {
+      "from":563
+      , "to":556
+      , "reverse":1
+    }
+    , {
+      "from":560
+      , "to":557
+      , "reverse":1
+    }
+  ]
+}

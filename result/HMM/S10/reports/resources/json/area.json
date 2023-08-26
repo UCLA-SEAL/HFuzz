@@ -1,0 +1,1941 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "MLABs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [54.9491, 29.0456, 27.7206, 33.6405, 24.1493]
+  , "total":
+  [537541, 1034666, 3943, 1391, 226]
+  , "name":"Kernel System"
+  , "max_resources":
+  [1866240, 3732480, 11721, 5760, 93312]
+  , "children":
+  [
+    {
+      "name":"Static Partition"
+      , "type":"partition"
+      , "children":
+      [
+        {
+          "name":"Board interface"
+          , "type":"resource"
+          , "data":
+          [466792, 928428, 3039, 1291, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Platform interface logic."
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global interconnect"
+      , "type":"resource"
+      , "data":
+      [21940, 28096, 104, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Global interconnect for 9 global loads and 6 global stores. Reduce number of global loads and stores to simplify global interconnect."
+        }
+        , {
+          "type":"brief"
+          , "text":"For 9 global loads and 6 global stores."
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Global Memory Interconnect"
+              , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/hnj1476724450050.html"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"System description ROM"
+      , "type":"resource"
+      , "data":
+      [2, 71, 2, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"This read-only memory contains information for the host about the system and about each kernel in the system, including kernel names, arguments, and attributes. The system description ROM ensures that the binary image on the FPGA is compatible with the host program."
+        }
+        , {
+          "type":"brief"
+          , "text":"Contains information for the host."
+        }
+      ]
+    }
+    , {
+      "name":"id<2>)"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [0.697839, 0.391482, 0.334737, 0.494838, 0.295139]
+      , "total_kernel_resources":
+      [6726, 12494, 58, 17, 29]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Function overhead"
+          , "type":"resource"
+          , "data":
+          [1463, 1467, 0, 0, 6]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Kernel dispatch logic."
+            }
+            , {
+              "type":"brief"
+              , "text":"Kernel dispatch logic."
+            }
+          ]
+        }
+        , {
+          "name":"id<2>).B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [436, 5016, 10, 0, 12]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [436, 5016, 10, 0, 12]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [122, 214, 2, 0, 7]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:123"
+                  , "type":"resource"
+                  , "data":
+                  [2412, 341, 0, 1, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":123
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Floating-point Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 1, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer to Floating-point Conversion"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [329, 310, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Unsigned Integer Remainder"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2051, 31, 0, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Implemented using inlined soft-IP."
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:125"
+                  , "type":"resource"
+                  , "data":
+                  [949, 4292, 46, 0, 4]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":125
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Floating-point Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [30, 6, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [64, 64, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [488, 2050, 29, 0, 4]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [367, 2172, 17, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:125 > \naccessor.hpp:1726 > accessor.hpp:844"
+                  , "type":"resource"
+                  , "data":
+                  [547, 582, 0, 8, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":125
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1726
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":844
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [61, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [486, 582, 0, 8, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:125 > \naccessor.hpp:1726 > accessor.hpp:848"
+                  , "type":"resource"
+                  , "data":
+                  [125, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":125
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1726
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":848
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [125, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:125 > \naccessor.hpp:1733 > accessor.hpp:844"
+                  , "type":"resource"
+                  , "data":
+                  [547, 582, 0, 8, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":125
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1733
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":844
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [61, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [486, 582, 0, 8, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:125 > \naccessor.hpp:1733 > accessor.hpp:848"
+                  , "type":"resource"
+                  , "data":
+                  [125, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":125
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1733
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":848
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [125, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"id<2>)"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [0.787941, 0.449246, 0.372433, 0.341268, 0.416667]
+      , "total_kernel_resources":
+      [6904, 13901, 40, 24, 74]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Function overhead"
+          , "type":"resource"
+          , "data":
+          [1463, 1467, 0, 0, 6]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Kernel dispatch logic."
+            }
+            , {
+              "type":"brief"
+              , "text":"Kernel dispatch logic."
+            }
+          ]
+        }
+        , {
+          "name":"id<2>).B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [786, 5470, 3, 0, 40]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [786, 5470, 3, 0, 40]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [238, 422, 2, 0, 18]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:153"
+                  , "type":"resource"
+                  , "data":
+                  [2008, 2667, 18, 0, 10]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":153
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"'Count leading zeros' Function Call"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [17, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [4, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":5
+                      , "data":
+                      [5, 2, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Xor"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":12
+                      , "data":
+                      [124, 8, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [34, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Or"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [6, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":13
+                      , "data":
+                      [142, 64, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit And"
+                      , "type":"resource"
+                      , "count":25
+                      , "data":
+                      [53, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [57, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":11
+                      , "data":
+                      [48, 11, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Or"
+                      , "type":"resource"
+                      , "count":6
+                      , "data":
+                      [129, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Select"
+                      , "type":"resource"
+                      , "count":16
+                      , "data":
+                      [666, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Xor"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [70, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [236, 340, 0, 0, 10]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Pipelined LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Pipelined LSU"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [383, 2240, 18, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:153 > \naccessor.hpp:349 > accessor.hpp:1733 > \naccessor.hpp:844"
+                  , "type":"resource"
+                  , "data":
+                  [547, 582, 0, 8, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":153
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":349
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1733
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":844
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [61, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [486, 582, 0, 8, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:153 > \naccessor.hpp:349 > accessor.hpp:1733 > \naccessor.hpp:848"
+                  , "type":"resource"
+                  , "data":
+                  [125, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":153
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":349
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1733
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":848
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [125, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:153 > \naccessor.hpp:1726 > accessor.hpp:844"
+                  , "type":"resource"
+                  , "data":
+                  [547, 582, 0, 8, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":153
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1726
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":844
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [61, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [486, 582, 0, 8, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:153 > \naccessor.hpp:1726 > accessor.hpp:848"
+                  , "type":"resource"
+                  , "data":
+                  [125, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":153
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1726
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":848
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [125, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:155"
+                  , "type":"resource"
+                  , "data":
+                  [391, 2128, 17, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":155
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [391, 2128, 17, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:155 > \naccessor.hpp:1726 > accessor.hpp:844"
+                  , "type":"resource"
+                  , "data":
+                  [548, 583, 0, 8, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":155
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1726
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":844
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [62, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [486, 583, 0, 8, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:155 > \naccessor.hpp:1726 > accessor.hpp:848"
+                  , "type":"resource"
+                  , "data":
+                  [126, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":155
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1726
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":848
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [126, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"id<2>)"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [2.49608, 1.53249, 1.09611, 5.60532, 0.694444]
+      , "total_kernel_resources":
+      [27000, 40912, 657, 40, 80]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Function overhead"
+          , "type":"resource"
+          , "data":
+          [1463, 1467, 0, 0, 6]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Kernel dispatch logic."
+            }
+            , {
+              "type":"brief"
+              , "text":"Kernel dispatch logic."
+            }
+          ]
+        }
+        , {
+          "name":"id<2>).B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [560, 4802, 50, 0, 10]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [560, 4802, 50, 0, 10]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [376, 668, 11, 0, 24]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [334, 17, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Double-precision Floating-point Compare"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [334, 17, 0, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:174"
+                  , "type":"resource"
+                  , "data":
+                  [12624, 19342, 561, 0, 4]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":174
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":5
+                      , "data":
+                      [12624, 19342, 561, 0, 4]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced cached LSU.  Load with a private 512 kilobit cache. Cache is not shared with any other load. It is flushed on kernel start. Use Dynamic Profiler to verify cache effectiveness. Other kernels should not be updating the data in global memory while this kernel is using it. Cache is created when memory access pattern is data-dependent or appears to be repetitive. Simplify access pattern or mark pointer as 'volatile' to disable generation of this cache."
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced cached LSU,\nLoad with a private 512 kilobit cache"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:174 > \naccessor.hpp:334 > accessor.hpp:1726 > \naccessor.hpp:844"
+                  , "type":"resource"
+                  , "data":
+                  [1097, 1167, 0, 16, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":174
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":334
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1726
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":844
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [125, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [972, 1167, 0, 16, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:174 > \naccessor.hpp:334 > accessor.hpp:1726 > \naccessor.hpp:848"
+                  , "type":"resource"
+                  , "data":
+                  [253, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":174
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":334
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1726
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":848
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [253, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:174 > \naccessor.hpp:349 > accessor.hpp:1733 > \naccessor.hpp:844"
+                  , "type":"resource"
+                  , "data":
+                  [1094, 1164, 0, 16, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":174
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":349
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1733
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":844
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [122, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [972, 1164, 0, 16, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:174 > \naccessor.hpp:349 > accessor.hpp:1733 > \naccessor.hpp:848"
+                  , "type":"resource"
+                  , "data":
+                  [250, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":174
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":349
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1733
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":848
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [250, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:174 > \nhidden-markov-models_heterofuzz_value_range_no_prob.cpp:228"
+                  , "type":"resource"
+                  , "data":
+                  [3932, 3677, 0, 0, 18]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":174
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":228
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Select"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Double-precision Floating-point Compare"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [360, 18, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Sum of 3 x 64-bit Floating-point"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [3569, 3657, 0, 0, 18]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:175"
+                  , "type":"resource"
+                  , "data":
+                  [3952, 5897, 18, 0, 18]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":175
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [383, 2240, 18, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Sum of 3 x 64-bit Floating-point"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [3569, 3657, 0, 0, 18]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:176"
+                  , "type":"resource"
+                  , "data":
+                  [391, 2128, 17, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":176
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [391, 2128, 17, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:176 > \naccessor.hpp:334 > accessor.hpp:1726 > \naccessor.hpp:844"
+                  , "type":"resource"
+                  , "data":
+                  [548, 583, 0, 8, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":176
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":334
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1726
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":844
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [62, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [486, 583, 0, 8, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:176 > \naccessor.hpp:334 > accessor.hpp:1726 > \naccessor.hpp:848"
+                  , "type":"resource"
+                  , "data":
+                  [126, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":176
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":334
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1726
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":848
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [126, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"id<2>)"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [0.724953, 0.484236, 0.288387, 0.366863, 0.329861]
+      , "total_kernel_resources":
+      [8177, 10764, 43, 18.5, 43]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Function overhead"
+          , "type":"resource"
+          , "data":
+          [1463, 1467, 0, 0, 6]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Kernel dispatch logic."
+            }
+            , {
+              "type":"brief"
+              , "text":"Kernel dispatch logic."
+            }
+          ]
+        }
+        , {
+          "name":"id<2>).B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [82, 1088, 2, 0, 4]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [82, 1088, 2, 0, 4]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [78, 140, 4, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:112"
+                  , "type":"resource"
+                  , "data":
+                  [367, 2172, 17, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":112
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [367, 2172, 17, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:112 > \naccessor.hpp:1726 > accessor.hpp:844"
+                  , "type":"resource"
+                  , "data":
+                  [547, 582, 0, 8, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":112
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1726
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":844
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [61, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [486, 582, 0, 8, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:112 > \naccessor.hpp:1726 > accessor.hpp:848"
+                  , "type":"resource"
+                  , "data":
+                  [125, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":112
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1726
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":848
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [125, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:1122 > hidden-markov-models_heterofuzz_value_range_no_prob.cpp:112 > \nbuiltins.hpp:333 > builtins.hpp:149"
+                  , "type":"resource"
+                  , "data":
+                  [5515, 5315, 20, 10.5, 33]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":1122
+                      }
+                      , {
+                        "filename":"/home/u93631/A10_oneapi/HMM/src/hidden-markov-models_heterofuzz_value_range_no_prob.cpp"
+                        , "line":112
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/builtins.hpp"
+                        , "line":333
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/detail/builtins.hpp"
+                        , "line":149
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"'log10' Function Call"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [5515, 5315, 20, 10.5, 33]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

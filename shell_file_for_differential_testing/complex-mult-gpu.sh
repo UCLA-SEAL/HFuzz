@@ -1,0 +1,1 @@
+./complex-mult/complex-mult-heterofuzz.gpu $1

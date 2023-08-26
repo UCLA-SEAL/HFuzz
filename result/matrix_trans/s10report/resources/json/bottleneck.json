@@ -1,0 +1,174 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"Global variable"
+      , "id":88
+      , "src":"36"
+      , "dst":"41"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerTutorial.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"432.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                  , "line":"69"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                  , "line":"69"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                  , "line":"69"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":36
+          , "start":"4.00"
+          , "parent":"_ZTS16ConsumerTutorial.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                , "line":69
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":37
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                , "line":69
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":40
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                , "line":69
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":50
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                , "line":69
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":41
+          , "end":"5.00"
+          , "parent":"_ZTS16ConsumerTutorial.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                , "line":69
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":36
+          , "to":37
+        }
+        , {
+          "from":37
+          , "to":40
+        }
+        , {
+          "from":40
+          , "to":41
+        }
+        , {
+          "from":37
+          , "to":41
+        }
+        , {
+          "from":36
+          , "to":41
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}

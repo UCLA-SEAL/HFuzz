@@ -1,0 +1,1560 @@
+{
+  "1":
+  {
+    "nodes":
+    [
+      {
+        "name":"ConsumerTutorial.B0"
+        , "id":3
+        , "start":"0"
+        , "end":"9"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 0"
+            , "id":8
+            , "start":"1"
+            , "end":"9"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_entry_zts16consumertutorials_c0_enter_k0_zts16consumertutorial_29_1gr"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"1"
+                , "Cluster Latency":"8"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"arg_num_elements"
+                , "id":22
+                , "start":"0"
+                , "end":"5"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg_num_elements'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"5"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":23
+                , "start":"5"
+                , "end":"5"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Integer Compare"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":30
+                , "start":"0"
+                , "end":"5"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg_num_elements"
+                , "id":24
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg_num_elements'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":25
+                , "start":"2"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Integer Compare"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"2"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg_num_elements"
+                , "id":26
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg_num_elements'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":27
+                , "start":"3"
+                , "end":"4"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Select"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"3"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":28
+                , "start":"4"
+                , "end":"4"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Integer Add"
+                    , "Constant Operand":"-1 (0xFFFFFFFFFFFFFFFF)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":29
+                , "start":"5"
+                , "end":"5"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"65-bit Integer Add"
+                    , "Constant Operand":"-1 (0x1FFFFFFFFFFFFFFFF)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":31
+                , "start":"0"
+                , "end":"5"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":20
+                , "start":"5"
+                , "end":"9"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"5"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"8"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Feedback"
+            , "id":7
+            , "start":"8"
+            , "end":"9"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Feedback Read"
+                , "Variable":"Unknown variable"
+                , "Max Fanout":"1"
+                , "Start Cycle":"8"
+                , "Latency":"1"
+              }
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"ConsumerTutorial.B1"
+        , "id":4
+        , "start":"9"
+        , "end":"31"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 1"
+            , "id":9
+            , "start":"9"
+            , "end":"18"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_for_body_i_zts16consumertutorials_c0_enter101_k0_zts16consumertutorial_149_1gr"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"9"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Global variable"
+                , "id":36
+                , "start":"13"
+                , "end":"13"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"Global variable"
+                    , "Feedback FIFO Depth":"1"
+                    , "Feedback FIFO Width":"128"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":35
+                , "start":"13"
+                , "end":"13"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":37
+                , "start":"13"
+                , "end":"14"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"65-bit Select"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"4"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":40
+                , "start":"14"
+                , "end":"14"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"65-bit Integer Add"
+                    , "Constant Operand":"-1 (0x1FFFFFFFFFFFFFFFF)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":38
+                , "start":"14"
+                , "end":"14"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":33
+                , "start":"14"
+                , "end":"18"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"5"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"40"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Cluster 2"
+            , "id":11
+            , "start":"20"
+            , "end":"29"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c1_in_for_body_i_zts16consumertutorials_c1_enter_k0_zts16consumertutorial_149_5gr"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"11"
+                , "Cluster Latency":"9"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Global variable"
+                , "id":47
+                , "start":"24"
+                , "end":"24"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"Global variable"
+                    , "Feedback FIFO Depth":"1"
+                    , "Feedback FIFO Width":"64"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"15"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":50
+                , "start":"24"
+                , "end":"24"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Integer Add"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"15"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg_out_accessor3"
+                , "id":44
+                , "start":"9"
+                , "end":"24"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg_out_accessor3'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"15"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg_out_accessor"
+                , "id":45
+                , "start":"9"
+                , "end":"24"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg_out_accessor'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"15"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":905
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":46
+                , "start":"24"
+                , "end":"25"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"4"
+                    , "Start Cycle":"15"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":927
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":48
+                , "start":"24"
+                , "end":"25"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"4"
+                    , "Start Cycle":"15"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":1727
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":49
+                , "start":"25"
+                , "end":"25"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"16"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":69
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":42
+                , "start":"25"
+                , "end":"29"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"16"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"80"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"RD"
+            , "id":10
+            , "start":"18"
+            , "end":"18"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Pipe Read"
+                , "Width":"32 bits"
+                , "Depth":"4"
+                , "Pipe Name":"cl::sycl::ext::intel::pipe<ProducerConsumerPipe, int, 4>"
+                , "Stall-free":"No"
+                , "Max Fanout":"1"
+                , "Start Cycle":"9"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":68
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 3"
+            , "id":12
+            , "start":"18"
+            , "end":"29"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c2_in_for_body_i_zts16consumertutorials_c2_enter_k0_zts16consumertutorial_149_8gr"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"9"
+                , "Cluster Latency":"11"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"*"
+                , "id":54
+                , "start":"18"
+                , "end":"25"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Multiply"
+                    , "Max Fanout":"4"
+                    , "Start Cycle":"9"
+                    , "Latency":"7"
+                    , "Implementation Preference":"Default DSP usage"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":57
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":52
+                , "start":"25"
+                , "end":"29"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"16"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"40"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"ST"
+            , "id":13
+            , "start":"29"
+            , "end":"31"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Store"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Max Fanout":"1"
+                , "Start Cycle":"20"
+                , "Latency":"2"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                  , "line":77
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"ConsumerTutorial.B2"
+        , "id":5
+        , "start":"31"
+        , "end":"32"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":3
+        , "to":4
+      }
+      , {
+        "from":22
+        , "to":23
+      }
+      , {
+        "from":23
+        , "to":30
+      }
+      , {
+        "from":24
+        , "to":25
+      }
+      , {
+        "from":25
+        , "to":27
+      }
+      , {
+        "from":26
+        , "to":27
+      }
+      , {
+        "from":27
+        , "to":28
+      }
+      , {
+        "from":28
+        , "to":29
+      }
+      , {
+        "from":29
+        , "to":31
+      }
+      , {
+        "from":4
+        , "to":5
+      }
+      , {
+        "from":9
+        , "to":10
+      }
+      , {
+        "from":9
+        , "to":11
+      }
+      , {
+        "from":36
+        , "to":37
+      }
+      , {
+        "from":35
+        , "to":37
+      }
+      , {
+        "from":37
+        , "to":40
+      }
+      , {
+        "from":37
+        , "to":33
+      }
+      , {
+        "from":38
+        , "to":33
+      }
+      , {
+        "from":11
+        , "to":13
+      }
+      , {
+        "from":47
+        , "to":48
+      }
+      , {
+        "from":47
+        , "to":50
+      }
+      , {
+        "from":44
+        , "to":46
+      }
+      , {
+        "from":45
+        , "to":46
+      }
+      , {
+        "from":46
+        , "to":48
+      }
+      , {
+        "from":48
+        , "to":42
+      }
+      , {
+        "from":49
+        , "to":42
+      }
+      , {
+        "from":10
+        , "to":12
+      }
+      , {
+        "from":12
+        , "to":13
+      }
+      , {
+        "from":54
+        , "to":52
+      }
+    ]
+  }
+  , "2":
+  {
+    "nodes":
+    [
+      {
+        "name":"ProducerTutorial.B0"
+        , "id":6
+        , "start":"0"
+        , "end":"833"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 4"
+            , "id":15
+            , "start":"1"
+            , "end":"7"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_entry_zts16producertutorials_c0_enter_k1_zts16producertutorial_1463_1gr"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"1"
+                , "Cluster Latency":"6"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"arg_num_elements"
+                , "id":57
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg_num_elements'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":58
+                , "start":"3"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Integer Compare"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":44
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg_input2_accessor6"
+                , "id":59
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg_input2_accessor6'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg_input_accessor3"
+                , "id":60
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg_input_accessor3'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg_input_accessor"
+                , "id":61
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg_input_accessor'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":62
+                , "start":"2"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"8"
+                    , "Start Cycle":"2"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":927
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":66
+                , "start":"1"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"8"
+                    , "Start Cycle":"1"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":1734
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg_input2_accessor"
+                , "id":63
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg_input2_accessor'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":64
+                , "start":"2"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"8"
+                    , "Start Cycle":"2"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":927
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":65
+                , "start":"1"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Max Fanout":"8"
+                    , "Start Cycle":"1"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/CL/sycl/accessor.hpp"
+                      , "line":1734
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":55
+                , "start":"3"
+                , "end":"7"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"3"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"144"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"LD"
+            , "id":16
+            , "start":"7"
+            , "end":"813"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced cached"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Max Fanout":"1"
+                , "Start Cycle":"7"
+                , "Latency":"806"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                  , "line":45
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":17
+            , "start":"7"
+            , "end":"813"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced cached"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Max Fanout":"1"
+                , "Start Cycle":"7"
+                , "Latency":"806"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                  , "line":45
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 5"
+            , "id":18
+            , "start":"813"
+            , "end":"833"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c1_in_entry_zts16producertutorials_c1_enter_k1_zts16producertutorial_1463_6gr"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"813"
+                , "Cluster Latency":"20"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"*"
+                , "id":70
+                , "start":"813"
+                , "end":"820"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Multiply"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"813"
+                    , "Latency":"7"
+                    , "Implementation Preference":"Default DSP usage"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":44
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"arg_num_elements"
+                , "id":69
+                , "start":"0"
+                , "end":"821"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'arg_num_elements'"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"0"
+                    , "Latency":"821"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"*"
+                , "id":71
+                , "start":"821"
+                , "end":"828"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Multiply"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"821"
+                    , "Latency":"7"
+                    , "Implementation Preference":"Default DSP usage"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":44
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":72
+                , "start":"829"
+                , "end":"829"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Max Fanout":"1"
+                    , "Start Cycle":"829"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/u93631/A10_oneapi/2kernels/src/twokernel.cpp"
+                      , "line":44
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":67
+                , "start":"829"
+                , "end":"833"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Max Fanout":"2"
+                    , "Start Cycle":"829"
+                    , "Latency":"3"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"40"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"WR"
+            , "id":19
+            , "start":"833"
+            , "end":"833"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Pipe Write"
+                , "Width":"32 bits"
+                , "Depth":"4"
+                , "Pipe Name":"cl::sycl::ext::intel::pipe<ProducerConsumerPipe, int, 4>"
+                , "Stall-free":"No"
+                , "Max Fanout":"1"
+                , "Start Cycle":"833"
+                , "Latency":"0"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"/glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/bin-llvm/../include/sycl/ext/intel/pipes.hpp"
+                  , "line":83
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":15
+        , "to":17
+      }
+      , {
+        "from":15
+        , "to":16
+      }
+      , {
+        "from":15
+        , "to":18
+      }
+      , {
+        "from":57
+        , "to":58
+      }
+      , {
+        "from":58
+        , "to":55
+      }
+      , {
+        "from":59
+        , "to":64
+      }
+      , {
+        "from":60
+        , "to":62
+      }
+      , {
+        "from":61
+        , "to":62
+      }
+      , {
+        "from":62
+        , "to":66
+      }
+      , {
+        "from":66
+        , "to":55
+      }
+      , {
+        "from":63
+        , "to":64
+      }
+      , {
+        "from":64
+        , "to":65
+      }
+      , {
+        "from":65
+        , "to":55
+      }
+      , {
+        "from":16
+        , "to":18
+      }
+      , {
+        "from":17
+        , "to":18
+      }
+      , {
+        "from":18
+        , "to":19
+      }
+      , {
+        "from":70
+        , "to":71
+      }
+      , {
+        "from":69
+        , "to":71
+      }
+      , {
+        "from":71
+        , "to":72
+      }
+      , {
+        "from":72
+        , "to":67
+      }
+    ]
+  }
+}

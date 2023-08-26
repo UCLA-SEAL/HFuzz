@@ -1,0 +1,3746 @@
+
+########################################################################
+#      Date:           Wed 06 Jul 2022 01:17:16 PM PDT
+#    Job ID:           1946432.v-qsvr-1.aidevcloud
+#      User:           u93631
+# Resources:           neednodes=1:gpu:ppn=2,nodes=1:gpu:ppn=2,walltime=06:00:00
+########################################################################
+
+sourcing /opt/intel/inteloneapi/setvars.sh
+ 
+:: WARNING: setvars.sh has already been run. Skipping re-execution.
+   To force a re-execution of setvars.sh, use the '--force' option.
+   Using '--force' can result in excessive use of your environment variables.
+  
+usage: source setvars.sh [--force] [--config=file] [--help] [...]
+  --force        Force setvars.sh to re-run, doing so may overload environment.
+  --config=file  Customize env vars using a setvars.sh configuration file.
+  --help         Display this help message and exit.
+  ...            Additional args are passed to individual env/vars.sh scripts
+                 and should follow this script's arguments.
+  
+  Some POSIX shells do not accept command-line options. In that case, you can pass
+  command-line options via the SETVARS_ARGS environment variable. For example:
+  
+  $ SETVARS_ARGS="ia32 --config=config.txt" ; export SETVARS_ARGS
+  $ . path/to/setvars.sh
+  
+  The SETVARS_ARGS environment variable is cleared on exiting setvars.sh.
+  
+[setupvars.sh] OpenVINO environment initialized
+
+Running in Emulation Mode:
+Could not open the input file.
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308[0;36mrandom-fuzz [1;97m2.52b[0m by 
+[1;94m[*] [0mSetting up the shared memory for code coverage...[0m
+[1;92m[+] [0mShared memory is ready.[0m
+main cksum -1312741860
+[1;92m[+] [0mInput queue initialized with 1 seeds.[0m
+[1;92m[+] [0mCommand line saved.[0m
+[1;92m[+] [0mThe start time is: 1657138642754[0m
+[1;92m[+] [0mPerform dry run![0m
+[1;94m[*] [0mAttempting dry run with 'HMM_pipe_value_range.gpu'...[0m
+check sum of changed bitmap 2982225436
+child exited normal exit status= 0
+Fuzzing execution time: -1657138642754
+[1;92m[+] [0mThe binary works well with the seed input.[0m
+[1;92m[+] [0mStart fuzzing![0m
+
+**********1**********
+input queue length: 1
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 71delete position end 148running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+DSPs MIN-179769000000000006323030492138942643493033036433685336215410983289126434148906289940615299632196609445533816320312774433484859900046491141051651091672734470972759941382582304802812882753059262973637182942535982636884444611376868582636745405553206881859340916340092953230149901406738427651121855107737424232448.000000
+FMax MIN-179769000000000006323030492138942643493033036433685336215410983289126434148906289940615299632196609445533816320312774433484859900046491141051651091672734470972759941382582304802812882753059262973637182942535982636884444611376868582636745405553206881859340916340092953230149901406738427651121855107737424232448.000000
+the current input is interest: 3
+
+**********2**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/2
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********3**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/3
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********4**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/4
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********5**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 17delete position end 33running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/5
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********6**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/6
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********7**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/7
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********8**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/8
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********9**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/9
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********10**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 290
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/10
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********11**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 186
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/11
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********12**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 153delete position end 212running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/12
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 0 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********13**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/13
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********14**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/14
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********15**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/15
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********16**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/16
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********17**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 71
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/17
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********18**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/18
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********19**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/19
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********20**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/20
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********21**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/21
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********22**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/22
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********23**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/23
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********24**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/24
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********25**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/25
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********26**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 243
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/26
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********27**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 175
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/27
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********28**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/28
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 0 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********29**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/29
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********30**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/30
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********31**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 200delete position end 249running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/31
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********32**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/32
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********33**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/33
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********34**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/34
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********35**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 83
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/35
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********36**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/36
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********37**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 268
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/37
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********38**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/38
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********39**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 48delete position end 290running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/39
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********40**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/40
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********41**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/41
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********42**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/42
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********43**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/43
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********44**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/44
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********45**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/45
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********46**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 163
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/46
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********47**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/47
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********48**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 257
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/48
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********49**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/49
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********50**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 1delete position end 2running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/50
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********51**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 205
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/51
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********52**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 69delete position end 234running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/52
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 0 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********53**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 205
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/53
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********54**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/54
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********55**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/55
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********56**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 95
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/56
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********57**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/57
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********58**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/58
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********59**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/59
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 0 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********60**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/60
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********61**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 113delete position end 217running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/61
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********62**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 35delete position end 99running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/62
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********63**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 120
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/63
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********64**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/64
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********65**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 105
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/65
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********66**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/66
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********67**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/67
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********68**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/68
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********69**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/69
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********70**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/70
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********71**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 1delete position end 30running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/71
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********72**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/72
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********73**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 6delete position end 103running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/73
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********74**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/74
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********75**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/75
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********76**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 15
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/76
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********77**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 29delete position end 253running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/77
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********78**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/78
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********79**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/79
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********80**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/80
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********81**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/81
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********82**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/82
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********83**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/83
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********84**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 170
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/84
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********85**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 18delete position end 25running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/85
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********86**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 18delete position end 25running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/86
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********87**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/87
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********88**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/88
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********89**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 33delete position end 138running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/89
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 0 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********90**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/90
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********91**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/91
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********92**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/92
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********93**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 75
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/93
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********94**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 166
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/94
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********95**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/95
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********96**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/96
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 0 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-2.60206check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********97**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/97
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********98**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/98
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********99**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/99
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********100**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 45delete position end 215running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/100
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********101**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 170
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/101
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********102**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/102
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********103**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/103
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********104**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/104
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********105**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/105
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********106**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 84delete position end 178running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/106
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********107**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/107
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********108**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/108
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 0 16 0 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********109**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/109
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********110**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 260
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/110
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********111**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 125
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/111
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********112**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/112
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********113**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 142delete position end 256running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/113
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********114**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/114
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********115**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/115
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********116**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/116
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********117**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/117
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********118**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/118
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********119**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 70
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/119
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********120**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 25
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/120
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********121**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/121
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********122**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/122
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********123**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/123
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********124**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 83
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/124
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********125**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/125
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********126**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/126
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********127**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/127
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********128**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 23delete position end 85running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/128
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********129**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/129
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********130**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 141
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/130
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********131**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 166
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/131
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********132**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/132
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********133**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 88
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/133
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********134**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 191
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/134
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********135**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/135
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********136**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/136
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********137**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 5delete position end 21running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/137
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********138**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/138
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********139**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/139
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********140**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/140
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 0 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********141**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/141
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********142**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/142
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********143**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 55delete position end 80running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/143
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 0 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********144**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 5
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/144
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********145**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 123delete position end 215running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/145
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********146**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/146
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********147**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/147
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********148**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 59delete position end 74running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/148
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********149**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/149
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********150**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/150
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********151**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/151
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********152**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/152
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********153**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/153
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********154**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/154
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********155**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 1delete position end 15running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/155
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********156**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/156
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********157**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 1delete position end 15running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/157
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********158**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/158
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********159**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 120delete position end 154running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/159
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 12 1 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********160**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/160
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********161**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/161
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********162**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 201
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/162
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********163**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/163
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********164**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/164
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********165**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/165
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********166**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/166
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********167**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/167
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********168**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 88
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/168
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********169**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 202
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/169
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********170**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 280
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/170
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********171**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 107delete position end 214running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/171
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********172**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/172
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********173**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 107delete position end 214running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/173
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********174**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 14delete position end 60running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/174
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********175**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/175
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********176**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 27delete position end 53running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/176
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********177**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/177
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********178**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 27delete position end 53running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/178
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********179**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/179
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********180**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/180
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********181**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/181
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********182**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 37delete position end 77running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/182
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********183**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 146
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/183
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 0 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********184**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/184
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********185**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/185
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********186**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/186
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********187**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 65
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/187
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********188**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 186
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/188
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********189**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/189
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 0 16 8 12 1 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********190**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/190
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 12 1 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********191**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/191
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********192**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 42
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/192
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********193**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 73delete position end 102running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/193
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********194**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/194
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********195**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 52
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/195
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********196**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 11delete position end 57running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/196
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********197**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 235
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/197
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********198**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 176
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/198
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********199**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/199
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********200**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 36delete position end 124running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/200
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********201**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/201
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********202**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 121
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/202
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********203**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 32
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/203
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 0 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********204**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 15delete position end 49running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/204
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 0 16 8 16 8 16 8 16 8 16 8 16 0 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********205**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/205
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********206**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 85delete position end 105running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/206
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********207**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/207
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********208**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/208
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 12 1 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********209**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/209
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 0 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********210**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/210
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********211**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/211
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********212**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/212
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********213**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/213
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+1 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********214**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/214
+Device: Intel(R) UHD Graphics P630 [0x3e96] Intel(R) Level-Zero
+The Viterbi path is: 
+8 16 8 16 8 16 8 16 8 16 8 16 8 16 8 16 0 4 17 0 
+The sample completed successfully!
+Max:-2.60206
+Min:-1.79769e+308check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-2.602060
+the current input is interest: 0
+
+**********215**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+
+########################################################################
+# End of output for job 1946432.v-qsvr-1.aidevcloud
+# Date: Wed 06 Jul 2022 01:18:17 PM PDT
+########################################################################
+

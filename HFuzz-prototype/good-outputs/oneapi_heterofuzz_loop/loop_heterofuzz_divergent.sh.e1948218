@@ -1,0 +1,157 @@
+/data/intel_fpga/devcloudLoginToolSetup.sh: line 1013: /opt/intel/openvino/deployment_tools/../bin/setupvars.sh: No such file or directory
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+SYCL host exception:
+SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+terminate called after throwing an instance of 'cl::sycl::invalid_object_error'
+  what():  SYCL buffer size is zero. To create a device accessor, SYCL buffer size must be greater than zero. -30 (CL_INVALID_VALUE)
+Aborted
+/var/spool/torque/mom_priv/jobs/1948218.v-qsvr-1.aidevcloud.SC: line 34: 17538 Floating point exception../../HeteroFuzz/prototype/fuzz ../../HeteroFuzz/prototype/seedsForLoop/ ../../HeteroFuzz/prototype/good-outputs/oneapi_heterofuzz_loop/ 1000 loopUnroll_heterofuzz_divergent.fpga_emu

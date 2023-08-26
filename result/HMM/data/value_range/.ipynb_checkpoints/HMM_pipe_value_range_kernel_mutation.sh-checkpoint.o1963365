@@ -1,0 +1,2801 @@
+
+########################################################################
+#      Date:           Thu Jul 28 23:40:40 PDT 2022
+#    Job ID:           1963365.v-qsvr-1.aidevcloud
+#      User:           u93631
+# Resources:           neednodes=s001-n081:ppn=2,nodes=s001-n081:ppn=2,walltime=06:00:00
+########################################################################
+
+
+Running in Emulation Mode:
+Could not open the input file.
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 10 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-1.79769e+308[0;36mrandom-fuzz [1;97m2.52b[0m by <zhangqian@cs.ucla.edu>
+[1;94m[*] [0mSetting up the shared memory for code coverage...[0m
+[1;92m[+] [0mShared memory is ready.[0m
+main cksum -1312741860
+[1;92m[+] [0mInput queue initialized with 1 seeds.[0m
+[1;92m[+] [0mCommand line saved.[0m
+[1;92m[+] [0mThe start time is: 1659076847089[0m
+[1;92m[+] [0mPerform dry run![0m
+[1;94m[*] [0mAttempting dry run with 'HMM_kernel_mutation_value_range.fpga_emu'...[0m
+check sum of changed bitmap 2982225436
+child exited normal exit status= 0
+Fuzzing execution time: -1659076847089
+[1;92m[+] [0mThe binary works well with the seed input.[0m
+[1;92m[+] [0mStart fuzzing![0m
+
+**********1**********
+input queue length: 1
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 242
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+DSPs MIN0.000000
+FMax MIN0.000000
+the current input is interest: 3
+
+**********2**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 142delete position end 167running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/2
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********3**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/3
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 10 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********4**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 139
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/4
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********5**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/5
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********6**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/6
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********7**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 13delete position end 256running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/7
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********8**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/8
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********9**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 106delete position end 228running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/9
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 10 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********10**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/10
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********11**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 12delete position end 163running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/11
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********12**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 17delete position end 161running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/12
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 10 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********13**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/13
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********14**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/14
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********15**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/15
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********16**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/16
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********17**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 29delete position end 113running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/17
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********18**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/18
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********19**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 229
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/19
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********20**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/20
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 10 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********21**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 72
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/21
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 10 0 0 10 0 0 0 0 0 1 0 0 0 0 0 0 10 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********22**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/22
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 10 0 1 0 0 0 0 0 0 0 10 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********23**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 209
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/23
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********24**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/24
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********25**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/25
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********26**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/26
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 10 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********27**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 103
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/27
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********28**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/28
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********29**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/29
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 10 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********30**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/30
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 10 0 0 0 10 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********31**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/31
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********32**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 32delete position end 238running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/32
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********33**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/33
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 10 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********34**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 64
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/34
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 10 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********35**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 46
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/35
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********36**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/36
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********37**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/37
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 10 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********38**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 8delete position end 34running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/38
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********39**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/39
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********40**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/40
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 10 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********41**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 25delete position end 195running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/41
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********42**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 232
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/42
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********43**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/43
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********44**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/44
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********45**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/45
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********46**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 72
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/46
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********47**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/47
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********48**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/48
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 10 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********49**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/49
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 10 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********50**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 170delete position end 264running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/50
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********51**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/51
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 10 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********52**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/52
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 10 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********53**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/53
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********54**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/54
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 10 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********55**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/55
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 10 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********56**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 163
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/56
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 10 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********57**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/57
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********58**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/58
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 10 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********59**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/59
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 10 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********60**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 130
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/60
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 10 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********61**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 174delete position end 235running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/61
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 10 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********62**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/62
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********63**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/63
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 10 10 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********64**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/64
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********65**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/65
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********66**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/66
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********67**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/67
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 10 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********68**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/68
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********69**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 108
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/69
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 10 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********70**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/70
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********71**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/71
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********72**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/72
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********73**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/73
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********74**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/74
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********75**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 112
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/75
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********76**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 203
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/76
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********77**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 31delete position end 35running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/77
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********78**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/78
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********79**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/79
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********80**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/80
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 10 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********81**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/81
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********82**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/82
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********83**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/83
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 10 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********84**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/84
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********85**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 221
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/85
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 10 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********86**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/86
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********87**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/87
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********88**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/88
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********89**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/89
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 10 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********90**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/90
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********91**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/91
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********92**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 0delete position end 79running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/92
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 10 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********93**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 128delete position end 250running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/93
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 10 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********94**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/94
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********95**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 65delete position end 155running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/95
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********96**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/96
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 10 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********97**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/97
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 10 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********98**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 103delete position end 231running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/98
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 10 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********99**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/99
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********100**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/100
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********101**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/101
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********102**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/102
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********103**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/103
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********104**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+1
+selected pos: 170
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/104
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********105**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/105
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********106**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/106
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********107**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 83delete position end 169running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/107
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********108**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/108
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 10 0 0 0 0 0 10 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********109**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/109
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 10 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********110**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/110
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********111**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 78delete position end 147running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/111
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********112**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/112
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********113**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/113
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 10 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********114**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 24delete position end 116running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/114
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 10 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 10 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********115**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/115
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********116**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 25delete position end 35running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/116
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********117**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 126
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/117
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 10 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********118**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/118
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********119**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/119
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********120**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/120
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 10 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********121**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/121
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********122**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/122
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 10 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********123**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/123
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********124**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/124
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 10 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********125**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/125
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 10 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********126**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/126
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********127**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/127
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********128**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/128
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 10 0 1 0 0 0 0 10 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********129**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/129
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 10 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********130**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/130
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********131**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/131
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********132**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/132
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********133**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/133
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 10 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********134**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 87
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/134
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********135**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 3delete position end 21running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/135
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********136**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/136
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********137**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/137
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 10 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********138**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/138
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********139**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 81
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/139
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 10 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********140**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/140
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********141**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 14delete position end 26running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/141
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********142**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/142
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********143**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/143
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********144**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/144
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********145**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 47delete position end 109running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/145
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********146**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 23delete position end 155running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/146
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********147**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 23delete position end 155running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/147
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********148**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/148
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********149**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/149
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********150**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 3delete position end 13running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/150
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********151**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/151
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 10 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********152**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+delete position begin 19delete position end 23running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/152
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********153**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/153
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********154**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/154
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********155**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/155
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********156**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/156
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 10 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********157**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 27delete position end 185running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/157
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********158**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/158
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********159**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 100delete position end 165running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/159
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********160**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/160
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********161**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/161
+Device: Intel(R) FPGA Emulation Device Intel(R) FPGA Emulation Platform for OpenCL(TM)
+The Viterbi path is: 
+6 10 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+The sample completed successfully!
+Max:-1.30103
+Min:-infcheck sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:-1.301030
+the current input is interest: 0
+
+**********162**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_HMM/value_range/1_both
+5
+
+########################################################################
+# End of output for job 1963365.v-qsvr-1.aidevcloud
+# Date: Thu Jul 28 23:42:45 PDT 2022
+########################################################################
+

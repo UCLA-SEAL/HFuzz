@@ -1,0 +1,1 @@
+var infoJSON={"compileInfo":{"nodes":[{"family":"Stratix 10, 1SX280HN2F43E2VG, intel_s10sx_pac:pac_s10","id":1,"name":"matrix_mul_kernel_data_parallel","product":"SYCL","quartus":"19.2.0 Build 57 Pro","time":"Wed Nov 16 18:08:01 2022","version":"2022.3.0 Build 156.2"}]}};

@@ -1,0 +1,5635 @@
+{
+  "nodes":
+  [
+    {
+      "type":"kernel"
+      , "id":2
+      , "name":"KernelPhase1"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":19
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":158
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"arg_block"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":20
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_block"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":21
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_block"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":22
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_block"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":23
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_block"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":24
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_block"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":25
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"arg_block"
+              , "Start Cycle":"16"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":26
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":167
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_block"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":73
+          , "name":"On-chip Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":74
+              , "name":"arg_block"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_pipe_value_range.cpp"
+                    , "line":151
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":75
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":151
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":79
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":87
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":76
+                  , "name":"Bank 1"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":151
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":81
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":89
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":77
+                  , "name":"Bank 2"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":151
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":83
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":91
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":78
+                  , "name":"Bank 3"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":151
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":85
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":93
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"16384 bytes"
+                  , "Number of banks":"4"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"1024 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"2"
+                  , "Additional Information":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":80
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":82
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":84
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":86
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":88
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":90
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":92
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":94
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":96
+      , "name":"KernelPhase2"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":134
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":205
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"arg_off_diag"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":135
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":203
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"arg_diagonal"
+              , "Start Cycle":"12"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":136
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_off_diag"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":137
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_off_diag"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":138
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg_diagonal"
+              , "Start Cycle":"13"
+              , "Latency":"6"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":139
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_off_diag"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":140
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg_diagonal"
+              , "Start Cycle":"1"
+              , "Latency":"6"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":141
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"arg_off_diag"
+              , "Start Cycle":"12"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":142
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":215
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_off_diag"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":146
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":218
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"arg_off_diag"
+              , "Start Cycle":"837"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":147
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":220
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_off_diag"
+              , "Start Cycle":"895"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":148
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":220
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_off_diag"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":151
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":221
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_off_diag"
+              , "Start Cycle":"849"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":152
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":221
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_off_diag"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":154
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_off_diag"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":155
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_off_diag"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":156
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg_diagonal"
+              , "Start Cycle":"13"
+              , "Latency":"6"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":157
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg_diagonal"
+              , "Start Cycle":"1"
+              , "Latency":"6"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":158
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_off_diag"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":159
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"arg_off_diag"
+              , "Start Cycle":"16"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":160
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":230
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_off_diag"
+              , "Start Cycle":"5"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":235
+          , "name":"On-chip Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":236
+              , "name":"arg_diagonal"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_pipe_value_range.cpp"
+                    , "line":193
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":237
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":238
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":239
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":240
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":241
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":242
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"5 total ports/bank\n4 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"5"
+                      , "Number of read ports per bank":"4"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"8"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"65536 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"4096 words"
+                  , "Number of replicates":"4"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"For each bank, 4 replicates were created to efficiently support multiple accesses"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"memsys"
+              , "id":243
+              , "name":"arg_off_diag"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_pipe_value_range.cpp"
+                    , "line":193
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":244
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":252
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":268
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":245
+                  , "name":"Bank 1"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":254
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":270
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":246
+                  , "name":"Bank 2"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":256
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":272
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":247
+                  , "name":"Bank 3"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":258
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":274
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":248
+                  , "name":"Bank 4"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":260
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":276
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":249
+                  , "name":"Bank 5"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":262
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":278
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":250
+                  , "name":"Bank 6"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":264
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":280
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":251
+                  , "name":"Bank 7"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":266
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":282
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"16384 bytes"
+                  , "Number of banks":"8"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"512 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"2"
+                  , "Additional Information":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":253
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":255
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":257
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":259
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":261
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":263
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":265
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":267
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":269
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":271
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":273
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":275
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":277
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":279
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":281
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":283
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":284
+      , "name":"KernelPhase3"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":305
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":270
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"arg_C"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":306
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":266
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"arg_A"
+              , "Start Cycle":"12"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":307
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":268
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"arg_B"
+              , "Start Cycle":"12"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":308
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_C"
+              , "Start Cycle":"4"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":309
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg_A"
+              , "Start Cycle":"13"
+              , "Latency":"6"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":310
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":131
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg_B"
+              , "Start Cycle":"13"
+              , "Latency":"6"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":311
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg_A"
+              , "Start Cycle":"1"
+              , "Latency":"6"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":312
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"arg_B"
+              , "Start Cycle":"1"
+              , "Latency":"6"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":313
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":132
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"arg_C"
+              , "Start Cycle":"12"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":314
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+                , "line":280
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"arg_C"
+              , "Start Cycle":"5"
+              , "Latency":"7"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":371
+          , "name":"On-chip Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":372
+              , "name":"arg_A"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_pipe_value_range.cpp"
+                    , "line":253
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":373
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":253
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":374
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":375
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":376
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"3 total ports/bank\n2 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"3"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"4"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"32768 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"4096 words"
+                  , "Number of replicates":"2"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"For each bank, 2 replicates were created to efficiently support multiple accesses"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"memsys"
+              , "id":377
+              , "name":"arg_B"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_pipe_value_range.cpp"
+                    , "line":253
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":378
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":253
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":379
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":380
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":381
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"3 total ports/bank\n2 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"3"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"4"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"32768 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"4096 words"
+                  , "Number of replicates":"2"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"For each bank, 2 replicates were created to efficiently support multiple accesses"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"memsys"
+              , "id":382
+              , "name":"arg_C"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_pipe_value_range.cpp"
+                    , "line":253
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":383
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":253
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":385
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":389
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":384
+                  , "name":"Bank 1"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"apsp_pipe_value_range.cpp"
+                        , "line":253
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":387
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":391
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"2"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"16384 bytes"
+                  , "Number of banks":"2"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"2048 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"2"
+                  , "Additional Information":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.3/oneapi/compiler/2022.2.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":386
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":388
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":390
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":392
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":53
+      , "name":"__acl_global_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_global_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":54
+      , "name":"__acl_global_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_global_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":55
+      , "name":"__acl_global_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_global_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":69
+      , "name":"__acl_global_offset_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_global_offset_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":70
+      , "name":"__acl_global_offset_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_global_offset_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":71
+      , "name":"__acl_global_offset_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_global_offset_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":50
+      , "name":"__acl_global_size_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_global_size_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":51
+      , "name":"__acl_global_size_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_global_size_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":52
+      , "name":"__acl_global_size_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_global_size_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":66
+      , "name":"__acl_group_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_group_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":67
+      , "name":"__acl_group_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_group_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":68
+      , "name":"__acl_group_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_group_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":72
+      , "name":"__acl_hw_wg_id"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_hw_wg_id"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":59
+      , "name":"__acl_local_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_local_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":60
+      , "name":"__acl_local_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_local_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":61
+      , "name":"__acl_local_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_local_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":62
+      , "name":"__acl_local_linear_id"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_local_linear_id"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":56
+      , "name":"__acl_local_size_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_local_size_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":57
+      , "name":"__acl_local_size_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_local_size_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":58
+      , "name":"__acl_local_size_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_local_size_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":63
+      , "name":"__acl_num_groups_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_num_groups_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":64
+      , "name":"__acl_num_groups_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_num_groups_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":65
+      , "name":"__acl_num_groups_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":151
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1"
+          , "Port Name":"k0_ZTSZZ26BlockedFloydWarshallPhase1RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase1___acl_num_groups_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":215
+      , "name":"__acl_global_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_global_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":216
+      , "name":"__acl_global_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_global_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":217
+      , "name":"__acl_global_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_global_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":231
+      , "name":"__acl_global_offset_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_global_offset_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":232
+      , "name":"__acl_global_offset_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_global_offset_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":233
+      , "name":"__acl_global_offset_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_global_offset_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":212
+      , "name":"__acl_global_size_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_global_size_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":213
+      , "name":"__acl_global_size_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_global_size_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":214
+      , "name":"__acl_global_size_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_global_size_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":228
+      , "name":"__acl_group_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_group_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":229
+      , "name":"__acl_group_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_group_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":230
+      , "name":"__acl_group_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_group_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":234
+      , "name":"__acl_hw_wg_id"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_hw_wg_id"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":221
+      , "name":"__acl_local_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_local_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":222
+      , "name":"__acl_local_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_local_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":223
+      , "name":"__acl_local_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_local_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":224
+      , "name":"__acl_local_linear_id"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_local_linear_id"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":218
+      , "name":"__acl_local_size_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_local_size_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":219
+      , "name":"__acl_local_size_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_local_size_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":220
+      , "name":"__acl_local_size_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_local_size_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":225
+      , "name":"__acl_num_groups_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_num_groups_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":226
+      , "name":"__acl_num_groups_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_num_groups_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":227
+      , "name":"__acl_num_groups_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":193
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2"
+          , "Port Name":"k1_ZTSZZ26BlockedFloydWarshallPhase2RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase2___acl_num_groups_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":351
+      , "name":"__acl_global_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_global_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":352
+      , "name":"__acl_global_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_global_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":353
+      , "name":"__acl_global_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_global_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":367
+      , "name":"__acl_global_offset_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_global_offset_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":368
+      , "name":"__acl_global_offset_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_global_offset_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":369
+      , "name":"__acl_global_offset_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_global_offset_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":348
+      , "name":"__acl_global_size_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_global_size_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":349
+      , "name":"__acl_global_size_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_global_size_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":350
+      , "name":"__acl_global_size_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_global_size_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":364
+      , "name":"__acl_group_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_group_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":365
+      , "name":"__acl_group_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_group_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":366
+      , "name":"__acl_group_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_group_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":370
+      , "name":"__acl_hw_wg_id"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_hw_wg_id"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":357
+      , "name":"__acl_local_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_local_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":358
+      , "name":"__acl_local_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_local_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":359
+      , "name":"__acl_local_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_local_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":360
+      , "name":"__acl_local_linear_id"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_local_linear_id"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":354
+      , "name":"__acl_local_size_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_local_size_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":355
+      , "name":"__acl_local_size_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_local_size_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":356
+      , "name":"__acl_local_size_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_local_size_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":361
+      , "name":"__acl_num_groups_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_num_groups_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":362
+      , "name":"__acl_num_groups_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_num_groups_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":363
+      , "name":"__acl_num_groups_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_pipe_value_range.cpp"
+            , "line":253
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3"
+          , "Port Name":"k2_ZTSZZ26BlockedFloydWarshallPhase3RN2cl4sycl5queueEPiiENKUlRNS0_7handlerEE_clES5_E12KernelPhase3___acl_num_groups_2"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":80
+      , "to":24
+    }
+    , {
+      "from":80
+      , "to":22
+    }
+    , {
+      "from":80
+      , "to":20
+    }
+    , {
+      "from":19
+      , "to":80
+    }
+    , {
+      "from":80
+      , "to":79
+    }
+    , {
+      "from":79
+      , "to":80
+    }
+    , {
+      "from":82
+      , "to":24
+    }
+    , {
+      "from":82
+      , "to":22
+    }
+    , {
+      "from":82
+      , "to":20
+    }
+    , {
+      "from":19
+      , "to":82
+    }
+    , {
+      "from":82
+      , "to":81
+    }
+    , {
+      "from":81
+      , "to":82
+    }
+    , {
+      "from":84
+      , "to":24
+    }
+    , {
+      "from":84
+      , "to":22
+    }
+    , {
+      "from":84
+      , "to":20
+    }
+    , {
+      "from":19
+      , "to":84
+    }
+    , {
+      "from":84
+      , "to":83
+    }
+    , {
+      "from":83
+      , "to":84
+    }
+    , {
+      "from":86
+      , "to":24
+    }
+    , {
+      "from":86
+      , "to":22
+    }
+    , {
+      "from":86
+      , "to":20
+    }
+    , {
+      "from":19
+      , "to":86
+    }
+    , {
+      "from":86
+      , "to":85
+    }
+    , {
+      "from":85
+      , "to":86
+    }
+    , {
+      "from":88
+      , "to":26
+    }
+    , {
+      "from":88
+      , "to":23
+    }
+    , {
+      "from":88
+      , "to":21
+    }
+    , {
+      "from":25
+      , "to":88
+    }
+    , {
+      "from":88
+      , "to":87
+    }
+    , {
+      "from":87
+      , "to":88
+    }
+    , {
+      "from":90
+      , "to":26
+    }
+    , {
+      "from":90
+      , "to":23
+    }
+    , {
+      "from":90
+      , "to":21
+    }
+    , {
+      "from":25
+      , "to":90
+    }
+    , {
+      "from":90
+      , "to":89
+    }
+    , {
+      "from":89
+      , "to":90
+    }
+    , {
+      "from":92
+      , "to":26
+    }
+    , {
+      "from":92
+      , "to":23
+    }
+    , {
+      "from":92
+      , "to":21
+    }
+    , {
+      "from":25
+      , "to":92
+    }
+    , {
+      "from":92
+      , "to":91
+    }
+    , {
+      "from":91
+      , "to":92
+    }
+    , {
+      "from":94
+      , "to":26
+    }
+    , {
+      "from":94
+      , "to":23
+    }
+    , {
+      "from":94
+      , "to":21
+    }
+    , {
+      "from":25
+      , "to":94
+    }
+    , {
+      "from":94
+      , "to":93
+    }
+    , {
+      "from":93
+      , "to":94
+    }
+    , {
+      "from":238
+      , "to":138
+    }
+    , {
+      "from":239
+      , "to":140
+    }
+    , {
+      "from":240
+      , "to":156
+    }
+    , {
+      "from":241
+      , "to":157
+    }
+    , {
+      "from":135
+      , "to":242
+    }
+    , {
+      "from":253
+      , "to":151
+    }
+    , {
+      "from":253
+      , "to":136
+    }
+    , {
+      "from":134
+      , "to":253
+    }
+    , {
+      "from":253
+      , "to":139
+    }
+    , {
+      "from":146
+      , "to":253
+    }
+    , {
+      "from":253
+      , "to":147
+    }
+    , {
+      "from":253
+      , "to":154
+    }
+    , {
+      "from":253
+      , "to":158
+    }
+    , {
+      "from":253
+      , "to":252
+    }
+    , {
+      "from":252
+      , "to":253
+    }
+    , {
+      "from":255
+      , "to":151
+    }
+    , {
+      "from":255
+      , "to":136
+    }
+    , {
+      "from":134
+      , "to":255
+    }
+    , {
+      "from":255
+      , "to":139
+    }
+    , {
+      "from":146
+      , "to":255
+    }
+    , {
+      "from":255
+      , "to":147
+    }
+    , {
+      "from":255
+      , "to":154
+    }
+    , {
+      "from":255
+      , "to":158
+    }
+    , {
+      "from":255
+      , "to":254
+    }
+    , {
+      "from":254
+      , "to":255
+    }
+    , {
+      "from":257
+      , "to":151
+    }
+    , {
+      "from":257
+      , "to":136
+    }
+    , {
+      "from":134
+      , "to":257
+    }
+    , {
+      "from":257
+      , "to":139
+    }
+    , {
+      "from":146
+      , "to":257
+    }
+    , {
+      "from":257
+      , "to":147
+    }
+    , {
+      "from":257
+      , "to":154
+    }
+    , {
+      "from":257
+      , "to":158
+    }
+    , {
+      "from":257
+      , "to":256
+    }
+    , {
+      "from":256
+      , "to":257
+    }
+    , {
+      "from":259
+      , "to":151
+    }
+    , {
+      "from":259
+      , "to":136
+    }
+    , {
+      "from":134
+      , "to":259
+    }
+    , {
+      "from":259
+      , "to":139
+    }
+    , {
+      "from":146
+      , "to":259
+    }
+    , {
+      "from":259
+      , "to":147
+    }
+    , {
+      "from":259
+      , "to":154
+    }
+    , {
+      "from":259
+      , "to":158
+    }
+    , {
+      "from":259
+      , "to":258
+    }
+    , {
+      "from":258
+      , "to":259
+    }
+    , {
+      "from":261
+      , "to":151
+    }
+    , {
+      "from":261
+      , "to":136
+    }
+    , {
+      "from":134
+      , "to":261
+    }
+    , {
+      "from":261
+      , "to":139
+    }
+    , {
+      "from":146
+      , "to":261
+    }
+    , {
+      "from":261
+      , "to":147
+    }
+    , {
+      "from":261
+      , "to":154
+    }
+    , {
+      "from":261
+      , "to":158
+    }
+    , {
+      "from":261
+      , "to":260
+    }
+    , {
+      "from":260
+      , "to":261
+    }
+    , {
+      "from":263
+      , "to":151
+    }
+    , {
+      "from":263
+      , "to":136
+    }
+    , {
+      "from":134
+      , "to":263
+    }
+    , {
+      "from":263
+      , "to":139
+    }
+    , {
+      "from":146
+      , "to":263
+    }
+    , {
+      "from":263
+      , "to":147
+    }
+    , {
+      "from":263
+      , "to":154
+    }
+    , {
+      "from":263
+      , "to":158
+    }
+    , {
+      "from":263
+      , "to":262
+    }
+    , {
+      "from":262
+      , "to":263
+    }
+    , {
+      "from":265
+      , "to":151
+    }
+    , {
+      "from":265
+      , "to":136
+    }
+    , {
+      "from":134
+      , "to":265
+    }
+    , {
+      "from":265
+      , "to":139
+    }
+    , {
+      "from":146
+      , "to":265
+    }
+    , {
+      "from":265
+      , "to":147
+    }
+    , {
+      "from":265
+      , "to":154
+    }
+    , {
+      "from":265
+      , "to":158
+    }
+    , {
+      "from":265
+      , "to":264
+    }
+    , {
+      "from":264
+      , "to":265
+    }
+    , {
+      "from":267
+      , "to":151
+    }
+    , {
+      "from":267
+      , "to":136
+    }
+    , {
+      "from":134
+      , "to":267
+    }
+    , {
+      "from":267
+      , "to":139
+    }
+    , {
+      "from":146
+      , "to":267
+    }
+    , {
+      "from":267
+      , "to":147
+    }
+    , {
+      "from":267
+      , "to":154
+    }
+    , {
+      "from":267
+      , "to":158
+    }
+    , {
+      "from":267
+      , "to":266
+    }
+    , {
+      "from":266
+      , "to":267
+    }
+    , {
+      "from":269
+      , "to":148
+    }
+    , {
+      "from":269
+      , "to":152
+    }
+    , {
+      "from":269
+      , "to":137
+    }
+    , {
+      "from":141
+      , "to":269
+    }
+    , {
+      "from":269
+      , "to":142
+    }
+    , {
+      "from":269
+      , "to":155
+    }
+    , {
+      "from":159
+      , "to":269
+    }
+    , {
+      "from":269
+      , "to":160
+    }
+    , {
+      "from":269
+      , "to":268
+    }
+    , {
+      "from":268
+      , "to":269
+    }
+    , {
+      "from":271
+      , "to":148
+    }
+    , {
+      "from":271
+      , "to":152
+    }
+    , {
+      "from":271
+      , "to":137
+    }
+    , {
+      "from":141
+      , "to":271
+    }
+    , {
+      "from":271
+      , "to":142
+    }
+    , {
+      "from":271
+      , "to":155
+    }
+    , {
+      "from":159
+      , "to":271
+    }
+    , {
+      "from":271
+      , "to":160
+    }
+    , {
+      "from":271
+      , "to":270
+    }
+    , {
+      "from":270
+      , "to":271
+    }
+    , {
+      "from":273
+      , "to":148
+    }
+    , {
+      "from":273
+      , "to":152
+    }
+    , {
+      "from":273
+      , "to":137
+    }
+    , {
+      "from":141
+      , "to":273
+    }
+    , {
+      "from":273
+      , "to":142
+    }
+    , {
+      "from":273
+      , "to":155
+    }
+    , {
+      "from":159
+      , "to":273
+    }
+    , {
+      "from":273
+      , "to":160
+    }
+    , {
+      "from":273
+      , "to":272
+    }
+    , {
+      "from":272
+      , "to":273
+    }
+    , {
+      "from":275
+      , "to":148
+    }
+    , {
+      "from":275
+      , "to":152
+    }
+    , {
+      "from":275
+      , "to":137
+    }
+    , {
+      "from":141
+      , "to":275
+    }
+    , {
+      "from":275
+      , "to":142
+    }
+    , {
+      "from":275
+      , "to":155
+    }
+    , {
+      "from":159
+      , "to":275
+    }
+    , {
+      "from":275
+      , "to":160
+    }
+    , {
+      "from":275
+      , "to":274
+    }
+    , {
+      "from":274
+      , "to":275
+    }
+    , {
+      "from":277
+      , "to":148
+    }
+    , {
+      "from":277
+      , "to":152
+    }
+    , {
+      "from":277
+      , "to":137
+    }
+    , {
+      "from":141
+      , "to":277
+    }
+    , {
+      "from":277
+      , "to":142
+    }
+    , {
+      "from":277
+      , "to":155
+    }
+    , {
+      "from":159
+      , "to":277
+    }
+    , {
+      "from":277
+      , "to":160
+    }
+    , {
+      "from":277
+      , "to":276
+    }
+    , {
+      "from":276
+      , "to":277
+    }
+    , {
+      "from":279
+      , "to":148
+    }
+    , {
+      "from":279
+      , "to":152
+    }
+    , {
+      "from":279
+      , "to":137
+    }
+    , {
+      "from":141
+      , "to":279
+    }
+    , {
+      "from":279
+      , "to":142
+    }
+    , {
+      "from":279
+      , "to":155
+    }
+    , {
+      "from":159
+      , "to":279
+    }
+    , {
+      "from":279
+      , "to":160
+    }
+    , {
+      "from":279
+      , "to":278
+    }
+    , {
+      "from":278
+      , "to":279
+    }
+    , {
+      "from":281
+      , "to":148
+    }
+    , {
+      "from":281
+      , "to":152
+    }
+    , {
+      "from":281
+      , "to":137
+    }
+    , {
+      "from":141
+      , "to":281
+    }
+    , {
+      "from":281
+      , "to":142
+    }
+    , {
+      "from":281
+      , "to":155
+    }
+    , {
+      "from":159
+      , "to":281
+    }
+    , {
+      "from":281
+      , "to":160
+    }
+    , {
+      "from":281
+      , "to":280
+    }
+    , {
+      "from":280
+      , "to":281
+    }
+    , {
+      "from":283
+      , "to":148
+    }
+    , {
+      "from":283
+      , "to":152
+    }
+    , {
+      "from":283
+      , "to":137
+    }
+    , {
+      "from":141
+      , "to":283
+    }
+    , {
+      "from":283
+      , "to":142
+    }
+    , {
+      "from":283
+      , "to":155
+    }
+    , {
+      "from":159
+      , "to":283
+    }
+    , {
+      "from":283
+      , "to":160
+    }
+    , {
+      "from":283
+      , "to":282
+    }
+    , {
+      "from":282
+      , "to":283
+    }
+    , {
+      "from":374
+      , "to":309
+    }
+    , {
+      "from":375
+      , "to":311
+    }
+    , {
+      "from":306
+      , "to":376
+    }
+    , {
+      "from":379
+      , "to":310
+    }
+    , {
+      "from":380
+      , "to":312
+    }
+    , {
+      "from":307
+      , "to":381
+    }
+    , {
+      "from":386
+      , "to":308
+    }
+    , {
+      "from":305
+      , "to":386
+    }
+    , {
+      "from":386
+      , "to":385
+    }
+    , {
+      "from":385
+      , "to":386
+    }
+    , {
+      "from":388
+      , "to":308
+    }
+    , {
+      "from":305
+      , "to":388
+    }
+    , {
+      "from":388
+      , "to":387
+    }
+    , {
+      "from":387
+      , "to":388
+    }
+    , {
+      "from":313
+      , "to":390
+    }
+    , {
+      "from":390
+      , "to":314
+    }
+    , {
+      "from":390
+      , "to":389
+    }
+    , {
+      "from":389
+      , "to":390
+    }
+    , {
+      "from":313
+      , "to":392
+    }
+    , {
+      "from":392
+      , "to":314
+    }
+    , {
+      "from":392
+      , "to":391
+    }
+    , {
+      "from":391
+      , "to":392
+    }
+  ]
+}

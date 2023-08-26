@@ -1,0 +1,1456 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"'i'"
+      , "id":451
+      , "src":"121"
+      , "dst":"126"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"LoopBackMainKernel.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'i'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/LoopbackTest.hpp"
+                  , "line":"34"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"432.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/LoopbackTest.hpp"
+                  , "line":"34"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/LoopbackTest.hpp"
+                  , "line":"34"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'i'"
+          , "id":121
+          , "start":"4.00"
+          , "parent":"_ZTS18LoopBackMainKernel.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/LoopbackTest.hpp"
+                , "line":34
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":122
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/LoopbackTest.hpp"
+                , "line":34
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":125
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/LoopbackTest.hpp"
+                , "line":34
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":126
+          , "end":"5.00"
+          , "parent":"_ZTS18LoopBackMainKernel.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/LoopbackTest.hpp"
+                , "line":34
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":121
+          , "to":122
+        }
+        , {
+          "from":122
+          , "to":125
+        }
+        , {
+          "from":125
+          , "to":126
+        }
+        , {
+          "from":122
+          , "to":126
+        }
+        , {
+          "from":121
+          , "to":126
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":452
+      , "src":"146"
+      , "dst":"156"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"LoopBackReadIOPipeID.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"432.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"192"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"192"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"192"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":146
+          , "start":"4.00"
+          , "parent":"_ZTS20LoopBackReadIOPipeID.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":147
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":152
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":155
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":156
+          , "end":"5.00"
+          , "parent":"_ZTS20LoopBackReadIOPipeID.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":146
+          , "to":147
+        }
+        , {
+          "from":147
+          , "to":155
+        }
+        , {
+          "from":155
+          , "to":156
+        }
+        , {
+          "from":147
+          , "to":156
+        }
+        , {
+          "from":146
+          , "to":156
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":453
+      , "src":"176"
+      , "dst":"181"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"LoopBackWriteIOPipeID.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"432.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"249"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":176
+          , "start":"4.00"
+          , "parent":"_ZTS21LoopBackWriteIOPipeID.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":180
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":177
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":188
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":181
+          , "end":"5.00"
+          , "parent":"_ZTS21LoopBackWriteIOPipeID.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":176
+          , "to":177
+        }
+        , {
+          "from":180
+          , "to":181
+        }
+        , {
+          "from":177
+          , "to":181
+        }
+        , {
+          "from":176
+          , "to":181
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Feedback"
+      , "id":454
+      , "src":"212"
+      , "dst":"218"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"SideChannelMainKernel.B2"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Loop: ":"_ZTS21SideChannelMainKernel.B2"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+                  , "line":"72"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"432.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+                  , "line":"72"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+                  , "line":"50"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Feedback"
+          , "id":212
+          , "start":"4.00"
+          , "parent":"_ZTS21SideChannelMainKernel.B2"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+                , "line":50
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":216
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+                , "line":72
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":213
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+                , "line":50
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":218
+          , "end":"5.00"
+          , "parent":"_ZTS21SideChannelMainKernel.B2"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/SideChannelTest.hpp"
+                , "line":72
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":212
+          , "to":213
+        }
+        , {
+          "from":216
+          , "to":218
+        }
+        , {
+          "from":212
+          , "to":218
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":455
+      , "src":"247"
+      , "dst":"257"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"HostToDeviceSideChannelID.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"432.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"192"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"192"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"192"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":247
+          , "start":"4.00"
+          , "parent":"_ZTS25HostToDeviceSideChannelID.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":248
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":253
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":256
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":257
+          , "end":"5.00"
+          , "parent":"_ZTS25HostToDeviceSideChannelID.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":247
+          , "to":248
+        }
+        , {
+          "from":248
+          , "to":256
+        }
+        , {
+          "from":256
+          , "to":257
+        }
+        , {
+          "from":248
+          , "to":257
+        }
+        , {
+          "from":247
+          , "to":257
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":456
+      , "src":"279"
+      , "dst":"283"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"SideChannelReadIOPipeID.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"432.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"192"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"192"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"192"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":279
+          , "start":"4.00"
+          , "parent":"_ZTS23SideChannelReadIOPipeID.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":277
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":282
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":285
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":283
+          , "end":"4.00"
+          , "parent":"_ZTS23SideChannelReadIOPipeID.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":277
+          , "to":277
+        }
+        , {
+          "from":279
+          , "to":282
+        }
+        , {
+          "from":277
+          , "to":285
+        }
+        , {
+          "from":282
+          , "to":283
+        }
+        , {
+          "from":277
+          , "to":283
+        }
+        , {
+          "from":279
+          , "to":283
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":457
+      , "src":"305"
+      , "dst":"310"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"SideChannelWriteIOPipeID.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"432.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"249"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":305
+          , "start":"4.00"
+          , "parent":"_ZTS24SideChannelWriteIOPipeID.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":309
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":306
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":317
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":310
+          , "end":"5.00"
+          , "parent":"_ZTS24SideChannelWriteIOPipeID.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":305
+          , "to":306
+        }
+        , {
+          "from":309
+          , "to":310
+        }
+        , {
+          "from":306
+          , "to":310
+        }
+        , {
+          "from":305
+          , "to":310
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":458
+      , "src":"335"
+      , "dst":"340"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"DeviceToHostSideChannelID.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"432.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"249"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"249"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":335
+          , "start":"4.00"
+          , "parent":"_ZTS25DeviceToHostSideChannelID.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":339
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":336
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":347
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":340
+          , "end":"5.00"
+          , "parent":"_ZTS25DeviceToHostSideChannelID.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":249
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":335
+          , "to":336
+        }
+        , {
+          "from":339
+          , "to":340
+        }
+        , {
+          "from":336
+          , "to":340
+        }
+        , {
+          "from":335
+          , "to":340
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":459
+      , "src":"365"
+      , "dst":"375"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"HostToDeviceTermSideChannelID.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"432.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"192"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"192"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                  , "line":"192"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":365
+          , "start":"4.00"
+          , "parent":"_ZTS29HostToDeviceTermSideChannelID.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":374
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":366
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":371
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":375
+          , "end":"5.00"
+          , "parent":"_ZTS29HostToDeviceTermSideChannelID.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":192
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":365
+          , "to":366
+        }
+        , {
+          "from":374
+          , "to":375
+        }
+        , {
+          "from":366
+          , "to":375
+        }
+        , {
+          "from":365
+          , "to":375
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}

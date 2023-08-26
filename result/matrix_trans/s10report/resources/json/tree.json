@@ -1,0 +1,83 @@
+{
+  "nodes":
+  [
+    {
+      "name":"ConsumerTutorial"
+      , "id":1
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerTutorial.B0"
+          , "id":3
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":8
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"ConsumerTutorial.B1"
+          , "id":4
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":9
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 2"
+              , "id":11
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 3"
+              , "id":12
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"ConsumerTutorial.B2"
+          , "id":5
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ProducerTutorial"
+      , "id":2
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ProducerTutorial.B0"
+          , "id":6
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 4"
+              , "id":15
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 5"
+              , "id":18
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

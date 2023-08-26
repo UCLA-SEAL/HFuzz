@@ -1,0 +1,3702 @@
+
+########################################################################
+#      Date:           Sat Jul  9 20:29:57 PDT 2022
+#    Job ID:           1948782.v-qsvr-1.aidevcloud
+#      User:           u93631
+# Resources:           neednodes=s001-n081:ppn=2,nodes=s001-n081:ppn=2,walltime=06:00:00
+########################################################################
+
+sourcing /opt/intel/inteloneapi/setvars.sh
+ 
+:: WARNING: setvars.sh has already been run. Skipping re-execution.
+   To force a re-execution of setvars.sh, use the '--force' option.
+   Using '--force' can result in excessive use of your environment variables.
+  
+usage: source setvars.sh [--force] [--config=file] [--help] [...]
+  --force        Force setvars.sh to re-run, doing so may overload environment.
+  --config=file  Customize env vars using a setvars.sh configuration file.
+  --help         Display this help message and exit.
+  ...            Additional args are passed to individual env/vars.sh scripts
+                 and should follow this script's arguments.
+  
+  Some POSIX shells do not accept command-line options. In that case, you can pass
+  command-line options via the SETVARS_ARGS environment variable. For example:
+  
+  $ SETVARS_ARGS="ia32 --config=config.txt" ; export SETVARS_ARGS
+  $ . path/to/setvars.sh
+  
+  The SETVARS_ARGS environment variable is cleared on exiting setvars.sh.
+  
+
+Running in Emulation Mode:
+Could not open the input file.
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 5 = 5
+[1]: 1 + 5590599 = 5590600
+[2]: 2 + -1073741822 = -1073741820
+...
+[9999]: 9999 + 32623 = 42622
+Successfully completed on device.
+Test successfully completed for a round.
+[0;36mrandom-fuzz [1;97m2.52b[0m by 
+[1;94m[*] [0mSetting up the shared memory for code coverage...[0m
+[1;92m[+] [0mShared memory is ready.[0m
+main cksum -1312741860
+[1;92m[+] [0mInput queue initialized with 1 seeds.[0m
+[1;92m[+] [0mCommand line saved.[0m
+[1;92m[+] [0mThe start time is: 1657423806005[0m
+[1;92m[+] [0mPerform dry run![0m
+[1;94m[*] [0mAttempting dry run with 'simple_add_pipefuzz_pipe_size.fpga_emu'...[0m
+check sum of changed bitmap 2982225436
+child exited normal exit status= 0
+Fuzzing execution time: -1657423806005
+[1;92m[+] [0mThe binary works well with the seed input.[0m
+[1;92m[+] [0mStart fuzzing![0m
+
+**********1**********
+input queue length: 1
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 31delete position end 39running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32622 = 42621
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+DSPs MIN0.000000
+FMax MIN0.000000
+the current input is interest: 3
+
+**********2**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/2
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32671 = 42670
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********3**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/3
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32665 = 42664
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********4**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/4
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 0 = 0
+[1]: 1 + 0 = 1
+[2]: 2 + 0 = 2
+...
+[9999]: 9999 + 32628 = 42627
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********5**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/5
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 0 = 0
+[1]: 1 + 0 = 1
+[2]: 2 + 0 = 2
+...
+[9999]: 9999 + 32722 = 42721
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********6**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/6
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32580 = 42579
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********7**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 168
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/7
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32759 = 42758
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********8**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/8
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 0 = 1
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32741 = 42740
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********9**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/9
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32615 = 42614
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********10**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/10
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32722 = 42721
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********11**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+5
+delete position begin 17delete position end 22running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/11
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32637 = 42636
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********12**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/12
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 0 = 2
+...
+[9999]: 9999 + 32654 = 42653
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********13**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+5
+delete position begin 17delete position end 51running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/13
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32697 = 42696
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********14**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 95delete position end 231running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/14
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32725 = 42724
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********15**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/15
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 0 = 0
+[1]: 1 + 0 = 1
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32572 = 42571
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********16**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 19
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/16
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32609 = 42608
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********17**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/17
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32752 = 42751
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********18**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/18
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32641 = 42640
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********19**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/19
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32710 = 42709
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********20**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+5
+delete position begin 12delete position end 63running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/20
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32673 = 42672
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********21**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/21
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32707 = 42706
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********22**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 27
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/22
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32572 = 42571
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********23**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 254
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/23
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32559 = 42558
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********24**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 146delete position end 215running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/24
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32725 = 42724
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********25**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 43delete position end 44running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/25
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32741 = 42740
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********26**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+5
+delete position begin 25delete position end 38running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/26
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32756 = 42755
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********27**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+5
+delete position begin 171delete position end 175running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/27
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32553 = 42552
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********28**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/28
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32759 = 42758
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********29**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 135
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/29
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32627 = 42626
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********30**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/30
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 0 = 2
+...
+[9999]: 9999 + 32640 = 42639
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********31**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 58
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/31
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32539 = 42538
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********32**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 114delete position end 229running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/32
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32723 = 42722
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********33**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/33
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32572 = 42571
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********34**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/34
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32587 = 42586
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********35**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/35
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32593 = 42592
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********36**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 56
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/36
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32596 = 42595
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********37**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 17delete position end 60running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/37
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32720 = 42719
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********38**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/38
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32587 = 42586
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********39**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 81delete position end 215running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/39
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32675 = 42674
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********40**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 147delete position end 167running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/40
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32511 = 42510
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********41**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/41
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32645 = 42644
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********42**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/42
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32583 = 42582
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********43**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 48
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/43
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32540 = 42539
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********44**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/44
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32722 = 42721
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********45**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/45
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32573 = 42572
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********46**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/46
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32545 = 42544
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********47**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/47
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 0 = 1
+[2]: 2 + 0 = 2
+...
+[9999]: 9999 + 32667 = 42666
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********48**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 33
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/48
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32722 = 42721
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********49**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+5
+delete position begin 39delete position end 175running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/49
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32678 = 42677
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********50**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 257
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/50
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32518 = 42517
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********51**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/51
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32673 = 42672
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********52**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 191delete position end 199running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/52
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32517 = 42516
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********53**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/53
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32636 = 42635
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********54**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/54
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32698 = 42697
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********55**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 236
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/55
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32726 = 42725
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********56**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/56
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32754 = 42753
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********57**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 271
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/57
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32674 = 42673
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********58**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 8
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/58
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32539 = 42538
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********59**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 45delete position end 49running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/59
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32680 = 42679
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********60**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/60
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 0 = 0
+[1]: 1 + 0 = 1
+[2]: 2 + 0 = 2
+...
+[9999]: 9999 + 32661 = 42660
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********61**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 133delete position end 223running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/61
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32614 = 42613
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********62**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/62
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 0 = 0
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32652 = 42651
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********63**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/63
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 0 = 0
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32674 = 42673
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********64**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/64
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32707 = 42706
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********65**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 250
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/65
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32737 = 42736
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********66**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/66
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32653 = 42652
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********67**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 200
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/67
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32545 = 42544
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********68**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 29delete position end 119running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/68
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32705 = 42704
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********69**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/69
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 0 = 1
+[2]: 2 + 0 = 2
+...
+[9999]: 9999 + 32650 = 42649
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********70**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/70
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32668 = 42667
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********71**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/71
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 0 = 0
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32718 = 42717
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********72**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/72
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32737 = 42736
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********73**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 87
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/73
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32742 = 42741
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********74**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 40
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/74
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32548 = 42547
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********75**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+5
+delete position begin 21delete position end 139running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/75
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32598 = 42597
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********76**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/76
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32632 = 42631
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********77**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/77
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32654 = 42653
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********78**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/78
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32631 = 42630
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********79**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/79
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 0 = 1
+[2]: 2 + 0 = 2
+...
+[9999]: 9999 + 32633 = 42632
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********80**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/80
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32561 = 42560
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********81**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/81
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32615 = 42614
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********82**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/82
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32696 = 42695
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********83**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/83
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32615 = 42614
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********84**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/84
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32603 = 42602
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********85**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/85
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32575 = 42574
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********86**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/86
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 0 = 0
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32654 = 42653
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********87**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+5
+delete position begin 10delete position end 13running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/87
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32706 = 42705
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********88**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+5
+delete position begin 199delete position end 235running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/88
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32537 = 42536
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********89**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/89
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32535 = 42534
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********90**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/90
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32727 = 42726
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********91**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 87
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/91
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32708 = 42707
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********92**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/92
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32573 = 42572
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********93**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 192
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/93
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32711 = 42710
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********94**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 215
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/94
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32608 = 42607
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********95**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/95
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32571 = 42570
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********96**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/96
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32535 = 42534
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********97**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/97
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32747 = 42746
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********98**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 188
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/98
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32661 = 42660
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********99**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/99
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 0 = 0
+[1]: 1 + 0 = 1
+[2]: 2 + 0 = 2
+...
+[9999]: 9999 + 32639 = 42638
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********100**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/100
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32574 = 42573
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********101**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/101
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32693 = 42692
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********102**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/102
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32594 = 42593
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********103**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/103
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 0 = 0
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32734 = 42733
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********104**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/104
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32618 = 42617
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********105**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 60
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/105
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32750 = 42749
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********106**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+5
+delete position begin 180delete position end 223running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/106
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32648 = 42647
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********107**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+5
+delete position begin 180delete position end 223running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/107
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32607 = 42606
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********108**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/108
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32723 = 42722
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********109**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/109
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32706 = 42705
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********110**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/110
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32562 = 42561
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********111**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 207
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/111
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32630 = 42629
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********112**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/112
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32623 = 42622
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********113**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/113
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 0 = 0
+[1]: 1 + 0 = 1
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32677 = 42676
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********114**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/114
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32561 = 42560
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********115**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 14
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/115
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32734 = 42733
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********116**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 10
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/116
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32564 = 42563
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********117**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/117
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32627 = 42626
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********118**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/118
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32584 = 42583
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********119**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/119
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32658 = 42657
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********120**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/120
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32667 = 42666
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********121**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/121
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 0 = 0
+[1]: 1 + 1 = 2
+[2]: 2 + 0 = 2
+...
+[9999]: 9999 + 32754 = 42753
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********122**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+3
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/122
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32762 = 42761
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********123**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/123
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 0 = 1
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32579 = 42578
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********124**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/124
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32679 = 42678
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********125**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/125
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32744 = 42743
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********126**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/126
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32689 = 42688
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********127**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/127
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32736 = 42735
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********128**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/128
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 0 = 0
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32609 = 42608
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********129**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/129
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 0 = 1
+[2]: 2 + 0 = 2
+...
+[9999]: 9999 + 32763 = 42762
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********130**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/130
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32519 = 42518
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********131**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 48
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/131
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32545 = 42544
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********132**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/132
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32560 = 42559
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********133**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+5
+delete position begin 183delete position end 193running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/133
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32748 = 42747
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********134**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+1
+selected pos: 174
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/134
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32573 = 42572
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********135**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/135
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 0 = 2
+...
+[9999]: 9999 + 32528 = 42527
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********136**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/136
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32734 = 42733
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********137**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/137
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 0 = 2
+...
+[9999]: 9999 + 32529 = 42528
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********138**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/138
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32566 = 42565
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********139**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+1
+selected pos: 205
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/139
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32725 = 42724
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********140**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+delete position begin 107delete position end 125running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/140
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32639 = 42638
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********141**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/141
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32726 = 42725
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********142**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+2
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/142
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32687 = 42686
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********143**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+6
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/143
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 0 = 1
+[2]: 2 + 0 = 2
+...
+[9999]: 9999 + 32656 = 42655
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********144**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+4
+running with mutated input: ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/144
+Running on device: Intel(R) FPGA Emulation Device
+Array size: 10000
+0 Overflow were found.
+finish reading.
+start destroying the channel.
+finish destroying.
+[0]: 0 + 1 = 1
+[1]: 1 + 1 = 2
+[2]: 2 + 1 = 3
+...
+[9999]: 9999 + 32763 = 42762
+Successfully completed on device.
+Test successfully completed for a round.
+check sum of changed bitmap 2590401586
+child exited normal exit status= 0
+fpga execution time:0.000000
+the current input is interest: 0
+
+**********145**********
+input queue length: 2
+../../HeteroFuzz/prototype/good-seeds/seed1.txt
+ ../../HeteroFuzz/prototype/good-outputs/oneapi_heteroprob_simpleadd/pipe_size/1_both
+ current input: ../../HeteroFuzz/prototype/good-seeds/seed1.txt
+5
+
+########################################################################
+# End of output for job 1948782.v-qsvr-1.aidevcloud
+# Date: Sat Jul  9 20:31:50 PDT 2022
+########################################################################
+

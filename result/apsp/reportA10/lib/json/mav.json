@@ -1,0 +1,5361 @@
+{
+  "nodes":
+  [
+    {
+      "type":"kernel"
+      , "id":2
+      , "name":"KernelPhase1"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":3
+          , "name":"KernelPhase1.B0"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":18
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":159
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced cached"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"8"
+                  , "Latency":"207"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":28
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":29
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"216"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"216"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":4
+          , "name":"KernelPhase1.B1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"4"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":5
+          , "name":"KernelPhase1.B2"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":19
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":159
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"arg0"
+                  , "Start Cycle":"10"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":30
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":31
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"21"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"21"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":6
+          , "name":"KernelPhase1.B3"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"1"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+              , "Loops To":"37"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":7
+          , "name":"KernelPhase1.B4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"7"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":8
+          , "name":"KernelPhase1.B5"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":20
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":132
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg0"
+                  , "Start Cycle":"1"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":21
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":132
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg0"
+                  , "Start Cycle":"1"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":22
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":132
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg0"
+                  , "Start Cycle":"1"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":32
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":33
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"9"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":9
+          , "name":"KernelPhase1.B6"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"9"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":10
+          , "name":"KernelPhase1.B7"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":11
+          , "name":"KernelPhase1.B8"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"11"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":12
+          , "name":"KernelPhase1.B9"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":23
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":133
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg0"
+                  , "Start Cycle":"1"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":34
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":35
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"9"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":13
+          , "name":"KernelPhase1.B10"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"13"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":14
+          , "name":"KernelPhase1.B11"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":24
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":133
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg0"
+                  , "Start Cycle":"1"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":25
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":133
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"arg0"
+                  , "Start Cycle":"6"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":36
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":37
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"13"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"13"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":15
+          , "name":"KernelPhase1.B12"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":16
+          , "name":"KernelPhase1.B13"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"16"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":17
+          , "name":"KernelPhase1.B14"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":26
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":168
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg0"
+                  , "Start Cycle":"1"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":27
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":168
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"9"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":38
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":39
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"18"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"18"
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":40
+          , "name":"On-chip Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":41
+              , "name":"arg0"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":152
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"49152 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"4096 words"
+                  , "Number of replicates":"3"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"For each bank, 3 replicates were created to efficiently support multiple accesses"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Running memory at 2x clock to support more concurrent ports"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":52
+      , "name":"KernelPhase2"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":53
+          , "name":"KernelPhase2.B0"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":88
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":203
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced cached"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"2"
+                  , "Latency":"191"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":118
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":119
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"194"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"194"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":54
+          , "name":"KernelPhase2.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":89
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":205
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"1"
+                  , "Latency":"191"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":120
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":121
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"193"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"193"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":55
+          , "name":"KernelPhase2.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"55"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":56
+          , "name":"KernelPhase2.B3"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":90
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":203
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"arg1"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":91
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":205
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Stores to":"arg6"
+                  , "Start Cycle":"0"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":122
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":123
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"9"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":57
+          , "name":"KernelPhase2.B4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"1"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+              , "Loops To":"129"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":58
+          , "name":"KernelPhase2.B5"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"10"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"58"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":59
+          , "name":"KernelPhase2.B6"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":92
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":132
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Loads from":"arg6"
+                  , "Start Cycle":"0"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":93
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":132
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Loads from":"arg6"
+                  , "Start Cycle":"0"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":94
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":132
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg1"
+                  , "Start Cycle":"9"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":124
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":125
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"17"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"17"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":60
+          , "name":"KernelPhase2.B7"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"60"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":61
+          , "name":"KernelPhase2.B8"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":62
+          , "name":"KernelPhase2.B9"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"62"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":63
+          , "name":"KernelPhase2.B10"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":95
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":133
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Loads from":"arg6"
+                  , "Start Cycle":"0"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":126
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":127
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"8"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"8"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":64
+          , "name":"KernelPhase2.B11"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"64"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":65
+          , "name":"KernelPhase2.B12"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":96
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":133
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg1"
+                  , "Start Cycle":"1"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":97
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":133
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Stores to":"arg6"
+                  , "Start Cycle":"9"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":128
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":129
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"19"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"19"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":66
+          , "name":"KernelPhase2.B13"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"1"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":67
+          , "name":"KernelPhase2.B14"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"67"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":68
+          , "name":"KernelPhase2.B15"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":98
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":215
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Loads from":"arg6"
+                  , "Start Cycle":"0"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":99
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":215
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"8"
+                  , "Latency":"34"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":100
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":218
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"42"
+                  , "Latency":"191"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":101
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":220
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"42"
+                  , "Latency":"257"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":102
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":218
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Stores to":"arg6"
+                  , "Start Cycle":"234"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":103
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":220
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Loads from":"arg6"
+                  , "Start Cycle":"292"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":130
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":131
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"306"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"306"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":69
+          , "name":"KernelPhase2.B16"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"69"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":70
+          , "name":"KernelPhase2.B17"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":104
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":220
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Loads from":"arg6"
+                  , "Start Cycle":"0"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":105
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":220
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"13"
+                  , "Latency":"100"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":132
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":133
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"113"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"113"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":71
+          , "name":"KernelPhase2.B18"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"71"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":72
+          , "name":"KernelPhase2.B19"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":106
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":221
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"0"
+                  , "Latency":"257"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":107
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":221
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Loads from":"arg6"
+                  , "Start Cycle":"250"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":134
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":135
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"264"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"264"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":73
+          , "name":"KernelPhase2.B20"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"73"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":74
+          , "name":"KernelPhase2.B21"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":108
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":221
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Loads from":"arg6"
+                  , "Start Cycle":"0"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":109
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":221
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"64 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"13"
+                  , "Latency":"100"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":136
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":137
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"115"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"115"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":75
+          , "name":"KernelPhase2.B22"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"1"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+              , "Loops To":"143"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":76
+          , "name":"KernelPhase2.B23"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"10"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"76"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":77
+          , "name":"KernelPhase2.B24"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":110
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":132
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Loads from":"arg6"
+                  , "Start Cycle":"0"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":111
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":132
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Loads from":"arg6"
+                  , "Start Cycle":"0"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":112
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":132
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg1"
+                  , "Start Cycle":"9"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":138
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":139
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"17"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"17"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":78
+          , "name":"KernelPhase2.B25"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"78"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":79
+          , "name":"KernelPhase2.B26"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":80
+          , "name":"KernelPhase2.B27"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"80"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":81
+          , "name":"KernelPhase2.B28"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":113
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":133
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg1"
+                  , "Start Cycle":"1"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":140
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":141
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"9"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":82
+          , "name":"KernelPhase2.B29"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"82"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":83
+          , "name":"KernelPhase2.B30"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":114
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":133
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Loads from":"arg6"
+                  , "Start Cycle":"0"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":115
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":133
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Stores to":"arg6"
+                  , "Start Cycle":"8"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":142
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":143
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"18"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"18"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":84
+          , "name":"KernelPhase2.B31"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":85
+          , "name":"KernelPhase2.B32"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"85"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":86
+          , "name":"KernelPhase2.B33"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":87
+          , "name":"KernelPhase2.B34"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":116
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":230
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined"
+                  , "Stall-free":"No"
+                  , "Loads from":"arg6"
+                  , "Start Cycle":"1"
+                  , "Latency":"7"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":117
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":230
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"9"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":144
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":145
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"18"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"18"
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":146
+          , "name":"On-chip Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":147
+              , "name":"arg1"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":193
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"32768 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"4096 words"
+                  , "Number of replicates":"2"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"For each bank, 2 replicates were created to efficiently support multiple accesses"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Running memory at 2x clock to support more concurrent ports"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"memsys"
+              , "id":154
+              , "name":"arg6"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":193
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"16384 bytes"
+                  , "Number of banks":"4"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"1024 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Running memory at 2x clock to support more concurrent ports"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":191
+      , "name":"KernelPhase3"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":192
+          , "name":"KernelPhase3.B0"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":209
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":267
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"2"
+                  , "Latency":"239"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":223
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":224
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"242"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"242"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":193
+          , "name":"KernelPhase3.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":210
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":269
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"1"
+                  , "Latency":"239"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":211
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":271
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Loads from":"_arg_"
+                  , "Start Cycle":"1"
+                  , "Latency":"239"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":225
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":226
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"241"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"241"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":194
+          , "name":"KernelPhase3.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"194"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":195
+          , "name":"KernelPhase3.B3"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":212
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":267
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"arg1"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":213
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":269
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"arg6"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":214
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":271
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"arg10"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":227
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":228
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"3"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"3"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":196
+          , "name":"KernelPhase3.B4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"1"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+              , "Loops To":"234"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":197
+          , "name":"KernelPhase3.B5"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"10"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"197"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":198
+          , "name":"KernelPhase3.B6"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":215
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":132
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg10"
+                  , "Start Cycle":"1"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":216
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":132
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg1"
+                  , "Start Cycle":"1"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":217
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":132
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg6"
+                  , "Start Cycle":"1"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":229
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":230
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"9"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":199
+          , "name":"KernelPhase3.B7"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"199"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":200
+          , "name":"KernelPhase3.B8"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":201
+          , "name":"KernelPhase3.B9"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"201"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":202
+          , "name":"KernelPhase3.B10"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":218
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":133
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg1"
+                  , "Start Cycle":"1"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":231
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":232
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"9"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":203
+          , "name":"KernelPhase3.B11"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"203"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":204
+          , "name":"KernelPhase3.B12"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":219
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":133
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg6"
+                  , "Start Cycle":"1"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":220
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":133
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Stores to":"arg10"
+                  , "Start Cycle":"6"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":233
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":234
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"13"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"13"
+              , "II":"n/a"
+              , "Subloops":"Yes"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":205
+          , "name":"KernelPhase3.B13"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":206
+          , "name":"KernelPhase3.B14"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"n/a"
+              , "Subloops":"No"
+              , "Pipelined":"No"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Loops To":"206"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":207
+          , "name":"KernelPhase3.B15"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":208
+          , "name":"KernelPhase3.B16"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":221
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":281
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Pipelined never-stall"
+                  , "Stall-free":"Yes"
+                  , "Loads from":"arg10"
+                  , "Start Cycle":"2"
+                  , "Latency":"4"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":222
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u93631/A10_oneapi/apsp/src/apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":280
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"10"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":235
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":236
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"19"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"19"
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":237
+          , "name":"On-chip Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":238
+              , "name":"arg1"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":254
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"16384 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"4096 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Running memory at 2x clock to support more concurrent ports"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"memsys"
+              , "id":243
+              , "name":"arg6"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":254
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"16384 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"4096 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Running memory at 2x clock to support more concurrent ports"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"memsys"
+              , "id":248
+              , "name":"arg10"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"apsp_heterofuzz_value_range_no_probe.cpp"
+                    , "line":254
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"16384 bytes"
+                  , "Implemented size":"16384 bytes"
+                  , "Number of banks":"1"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"4096 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"2"
+                  , "Additional Information":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"For each replicate, 2 private copies were created to efficiently support multiple simultaneous workgroups"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Running memory at 2x clock to support more concurrent ports"
+                    }
+                  ]
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2022.2/oneapi/compiler/2022.1.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"memtype"
+      , "id":1
+      , "name":"Global Memory"
+      , "children":
+      [
+        {
+          "type":"memsys"
+          , "id":51
+          , "name":"DDR"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Number of banks":"2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":41
+      , "to":20
+    }
+    , {
+      "from":41
+      , "to":21
+    }
+    , {
+      "from":41
+      , "to":22
+    }
+    , {
+      "from":41
+      , "to":23
+    }
+    , {
+      "from":41
+      , "to":24
+    }
+    , {
+      "from":41
+      , "to":26
+    }
+    , {
+      "from":19
+      , "to":41
+    }
+    , {
+      "from":25
+      , "to":41
+    }
+    , {
+      "from":18
+      , "to":29
+    }
+    , {
+      "from":4
+      , "to":4
+    }
+    , {
+      "from":29
+      , "to":4
+    }
+    , {
+      "from":4
+      , "to":30
+    }
+    , {
+      "from":19
+      , "to":31
+    }
+    , {
+      "from":37
+      , "to":6
+    }
+    , {
+      "from":31
+      , "to":6
+    }
+    , {
+      "from":7
+      , "to":7
+    }
+    , {
+      "from":6
+      , "to":7
+    }
+    , {
+      "from":7
+      , "to":32
+    }
+    , {
+      "from":20
+      , "to":33
+    }
+    , {
+      "from":21
+      , "to":33
+    }
+    , {
+      "from":22
+      , "to":33
+    }
+    , {
+      "from":9
+      , "to":9
+    }
+    , {
+      "from":33
+      , "to":9
+    }
+    , {
+      "from":9
+      , "to":10
+    }
+    , {
+      "from":11
+      , "to":11
+    }
+    , {
+      "from":10
+      , "to":11
+    }
+    , {
+      "from":11
+      , "to":34
+    }
+    , {
+      "from":23
+      , "to":35
+    }
+    , {
+      "from":13
+      , "to":13
+    }
+    , {
+      "from":35
+      , "to":13
+    }
+    , {
+      "from":13
+      , "to":36
+    }
+    , {
+      "from":25
+      , "to":37
+    }
+    , {
+      "from":37
+      , "to":15
+    }
+    , {
+      "from":16
+      , "to":16
+    }
+    , {
+      "from":15
+      , "to":16
+    }
+    , {
+      "from":16
+      , "to":38
+    }
+    , {
+      "from":26
+      , "to":39
+    }
+    , {
+      "from":27
+      , "to":39
+    }
+    , {
+      "from":28
+      , "to":18
+    }
+    , {
+      "from":30
+      , "to":19
+    }
+    , {
+      "from":32
+      , "to":20
+    }
+    , {
+      "from":32
+      , "to":21
+    }
+    , {
+      "from":32
+      , "to":22
+    }
+    , {
+      "from":34
+      , "to":23
+    }
+    , {
+      "from":36
+      , "to":24
+    }
+    , {
+      "from":24
+      , "to":25
+    }
+    , {
+      "from":38
+      , "to":26
+    }
+    , {
+      "from":26
+      , "to":27
+    }
+    , {
+      "from":51
+      , "to":18
+    }
+    , {
+      "from":27
+      , "to":51
+    }
+    , {
+      "from":147
+      , "to":94
+    }
+    , {
+      "from":147
+      , "to":96
+    }
+    , {
+      "from":147
+      , "to":112
+    }
+    , {
+      "from":147
+      , "to":113
+    }
+    , {
+      "from":90
+      , "to":147
+    }
+    , {
+      "from":91
+      , "to":154
+    }
+    , {
+      "from":154
+      , "to":92
+    }
+    , {
+      "from":154
+      , "to":103
+    }
+    , {
+      "from":154
+      , "to":110
+    }
+    , {
+      "from":154
+      , "to":93
+    }
+    , {
+      "from":97
+      , "to":154
+    }
+    , {
+      "from":154
+      , "to":104
+    }
+    , {
+      "from":154
+      , "to":111
+    }
+    , {
+      "from":154
+      , "to":114
+    }
+    , {
+      "from":154
+      , "to":95
+    }
+    , {
+      "from":102
+      , "to":154
+    }
+    , {
+      "from":154
+      , "to":107
+    }
+    , {
+      "from":154
+      , "to":98
+    }
+    , {
+      "from":154
+      , "to":108
+    }
+    , {
+      "from":115
+      , "to":154
+    }
+    , {
+      "from":154
+      , "to":116
+    }
+    , {
+      "from":88
+      , "to":119
+    }
+    , {
+      "from":119
+      , "to":120
+    }
+    , {
+      "from":89
+      , "to":121
+    }
+    , {
+      "from":55
+      , "to":55
+    }
+    , {
+      "from":121
+      , "to":55
+    }
+    , {
+      "from":55
+      , "to":122
+    }
+    , {
+      "from":90
+      , "to":123
+    }
+    , {
+      "from":91
+      , "to":123
+    }
+    , {
+      "from":129
+      , "to":57
+    }
+    , {
+      "from":123
+      , "to":57
+    }
+    , {
+      "from":58
+      , "to":58
+    }
+    , {
+      "from":57
+      , "to":58
+    }
+    , {
+      "from":58
+      , "to":124
+    }
+    , {
+      "from":92
+      , "to":125
+    }
+    , {
+      "from":93
+      , "to":125
+    }
+    , {
+      "from":94
+      , "to":125
+    }
+    , {
+      "from":60
+      , "to":60
+    }
+    , {
+      "from":125
+      , "to":60
+    }
+    , {
+      "from":60
+      , "to":61
+    }
+    , {
+      "from":62
+      , "to":62
+    }
+    , {
+      "from":61
+      , "to":62
+    }
+    , {
+      "from":62
+      , "to":126
+    }
+    , {
+      "from":95
+      , "to":127
+    }
+    , {
+      "from":64
+      , "to":64
+    }
+    , {
+      "from":127
+      , "to":64
+    }
+    , {
+      "from":64
+      , "to":128
+    }
+    , {
+      "from":96
+      , "to":129
+    }
+    , {
+      "from":97
+      , "to":129
+    }
+    , {
+      "from":129
+      , "to":66
+    }
+    , {
+      "from":67
+      , "to":67
+    }
+    , {
+      "from":66
+      , "to":67
+    }
+    , {
+      "from":67
+      , "to":130
+    }
+    , {
+      "from":98
+      , "to":131
+    }
+    , {
+      "from":99
+      , "to":131
+    }
+    , {
+      "from":100
+      , "to":131
+    }
+    , {
+      "from":101
+      , "to":131
+    }
+    , {
+      "from":102
+      , "to":131
+    }
+    , {
+      "from":103
+      , "to":131
+    }
+    , {
+      "from":69
+      , "to":69
+    }
+    , {
+      "from":131
+      , "to":69
+    }
+    , {
+      "from":69
+      , "to":132
+    }
+    , {
+      "from":104
+      , "to":133
+    }
+    , {
+      "from":105
+      , "to":133
+    }
+    , {
+      "from":71
+      , "to":71
+    }
+    , {
+      "from":133
+      , "to":71
+    }
+    , {
+      "from":71
+      , "to":134
+    }
+    , {
+      "from":106
+      , "to":135
+    }
+    , {
+      "from":107
+      , "to":135
+    }
+    , {
+      "from":73
+      , "to":73
+    }
+    , {
+      "from":135
+      , "to":73
+    }
+    , {
+      "from":73
+      , "to":136
+    }
+    , {
+      "from":108
+      , "to":137
+    }
+    , {
+      "from":109
+      , "to":137
+    }
+    , {
+      "from":143
+      , "to":75
+    }
+    , {
+      "from":137
+      , "to":75
+    }
+    , {
+      "from":76
+      , "to":76
+    }
+    , {
+      "from":75
+      , "to":76
+    }
+    , {
+      "from":76
+      , "to":138
+    }
+    , {
+      "from":110
+      , "to":139
+    }
+    , {
+      "from":111
+      , "to":139
+    }
+    , {
+      "from":112
+      , "to":139
+    }
+    , {
+      "from":78
+      , "to":78
+    }
+    , {
+      "from":139
+      , "to":78
+    }
+    , {
+      "from":78
+      , "to":79
+    }
+    , {
+      "from":80
+      , "to":80
+    }
+    , {
+      "from":79
+      , "to":80
+    }
+    , {
+      "from":80
+      , "to":140
+    }
+    , {
+      "from":113
+      , "to":141
+    }
+    , {
+      "from":82
+      , "to":82
+    }
+    , {
+      "from":141
+      , "to":82
+    }
+    , {
+      "from":82
+      , "to":142
+    }
+    , {
+      "from":114
+      , "to":143
+    }
+    , {
+      "from":115
+      , "to":143
+    }
+    , {
+      "from":143
+      , "to":84
+    }
+    , {
+      "from":85
+      , "to":85
+    }
+    , {
+      "from":84
+      , "to":85
+    }
+    , {
+      "from":85
+      , "to":86
+    }
+    , {
+      "from":86
+      , "to":144
+    }
+    , {
+      "from":119
+      , "to":144
+    }
+    , {
+      "from":116
+      , "to":145
+    }
+    , {
+      "from":117
+      , "to":145
+    }
+    , {
+      "from":118
+      , "to":88
+    }
+    , {
+      "from":120
+      , "to":89
+    }
+    , {
+      "from":122
+      , "to":90
+    }
+    , {
+      "from":122
+      , "to":91
+    }
+    , {
+      "from":124
+      , "to":92
+    }
+    , {
+      "from":124
+      , "to":93
+    }
+    , {
+      "from":92
+      , "to":94
+    }
+    , {
+      "from":93
+      , "to":94
+    }
+    , {
+      "from":126
+      , "to":95
+    }
+    , {
+      "from":128
+      , "to":96
+    }
+    , {
+      "from":96
+      , "to":97
+    }
+    , {
+      "from":130
+      , "to":98
+    }
+    , {
+      "from":98
+      , "to":99
+    }
+    , {
+      "from":99
+      , "to":100
+    }
+    , {
+      "from":99
+      , "to":101
+    }
+    , {
+      "from":100
+      , "to":102
+    }
+    , {
+      "from":102
+      , "to":103
+    }
+    , {
+      "from":132
+      , "to":104
+    }
+    , {
+      "from":104
+      , "to":105
+    }
+    , {
+      "from":134
+      , "to":106
+    }
+    , {
+      "from":134
+      , "to":107
+    }
+    , {
+      "from":136
+      , "to":108
+    }
+    , {
+      "from":108
+      , "to":109
+    }
+    , {
+      "from":138
+      , "to":110
+    }
+    , {
+      "from":138
+      , "to":111
+    }
+    , {
+      "from":110
+      , "to":112
+    }
+    , {
+      "from":111
+      , "to":112
+    }
+    , {
+      "from":140
+      , "to":113
+    }
+    , {
+      "from":142
+      , "to":114
+    }
+    , {
+      "from":114
+      , "to":115
+    }
+    , {
+      "from":144
+      , "to":116
+    }
+    , {
+      "from":116
+      , "to":117
+    }
+    , {
+      "from":51
+      , "to":88
+    }
+    , {
+      "from":51
+      , "to":89
+    }
+    , {
+      "from":99
+      , "to":51
+    }
+    , {
+      "from":51
+      , "to":100
+    }
+    , {
+      "from":51
+      , "to":101
+    }
+    , {
+      "from":105
+      , "to":51
+    }
+    , {
+      "from":51
+      , "to":106
+    }
+    , {
+      "from":109
+      , "to":51
+    }
+    , {
+      "from":117
+      , "to":51
+    }
+    , {
+      "from":238
+      , "to":216
+    }
+    , {
+      "from":238
+      , "to":218
+    }
+    , {
+      "from":212
+      , "to":238
+    }
+    , {
+      "from":243
+      , "to":217
+    }
+    , {
+      "from":243
+      , "to":219
+    }
+    , {
+      "from":213
+      , "to":243
+    }
+    , {
+      "from":248
+      , "to":215
+    }
+    , {
+      "from":248
+      , "to":221
+    }
+    , {
+      "from":214
+      , "to":248
+    }
+    , {
+      "from":220
+      , "to":248
+    }
+    , {
+      "from":209
+      , "to":224
+    }
+    , {
+      "from":224
+      , "to":225
+    }
+    , {
+      "from":210
+      , "to":226
+    }
+    , {
+      "from":211
+      , "to":226
+    }
+    , {
+      "from":194
+      , "to":194
+    }
+    , {
+      "from":226
+      , "to":194
+    }
+    , {
+      "from":194
+      , "to":227
+    }
+    , {
+      "from":212
+      , "to":228
+    }
+    , {
+      "from":213
+      , "to":228
+    }
+    , {
+      "from":214
+      , "to":228
+    }
+    , {
+      "from":234
+      , "to":196
+    }
+    , {
+      "from":228
+      , "to":196
+    }
+    , {
+      "from":197
+      , "to":197
+    }
+    , {
+      "from":196
+      , "to":197
+    }
+    , {
+      "from":197
+      , "to":229
+    }
+    , {
+      "from":215
+      , "to":230
+    }
+    , {
+      "from":216
+      , "to":230
+    }
+    , {
+      "from":217
+      , "to":230
+    }
+    , {
+      "from":199
+      , "to":199
+    }
+    , {
+      "from":230
+      , "to":199
+    }
+    , {
+      "from":199
+      , "to":200
+    }
+    , {
+      "from":201
+      , "to":201
+    }
+    , {
+      "from":200
+      , "to":201
+    }
+    , {
+      "from":201
+      , "to":231
+    }
+    , {
+      "from":218
+      , "to":232
+    }
+    , {
+      "from":203
+      , "to":203
+    }
+    , {
+      "from":232
+      , "to":203
+    }
+    , {
+      "from":203
+      , "to":233
+    }
+    , {
+      "from":220
+      , "to":234
+    }
+    , {
+      "from":234
+      , "to":205
+    }
+    , {
+      "from":206
+      , "to":206
+    }
+    , {
+      "from":205
+      , "to":206
+    }
+    , {
+      "from":206
+      , "to":207
+    }
+    , {
+      "from":207
+      , "to":235
+    }
+    , {
+      "from":224
+      , "to":235
+    }
+    , {
+      "from":221
+      , "to":236
+    }
+    , {
+      "from":222
+      , "to":236
+    }
+    , {
+      "from":223
+      , "to":209
+    }
+    , {
+      "from":225
+      , "to":210
+    }
+    , {
+      "from":225
+      , "to":211
+    }
+    , {
+      "from":227
+      , "to":212
+    }
+    , {
+      "from":227
+      , "to":213
+    }
+    , {
+      "from":227
+      , "to":214
+    }
+    , {
+      "from":229
+      , "to":215
+    }
+    , {
+      "from":229
+      , "to":216
+    }
+    , {
+      "from":229
+      , "to":217
+    }
+    , {
+      "from":231
+      , "to":218
+    }
+    , {
+      "from":233
+      , "to":219
+    }
+    , {
+      "from":219
+      , "to":220
+    }
+    , {
+      "from":235
+      , "to":221
+    }
+    , {
+      "from":221
+      , "to":222
+    }
+    , {
+      "from":51
+      , "to":209
+    }
+    , {
+      "from":51
+      , "to":210
+    }
+    , {
+      "from":51
+      , "to":211
+    }
+    , {
+      "from":222
+      , "to":51
+    }
+  ]
+}

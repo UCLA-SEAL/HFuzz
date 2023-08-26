@@ -1,0 +1,209 @@
+{
+  "nodes":
+  [
+    {
+      "name":"'lambda'(auto)"
+      , "id":1
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"'lambda'(auto).B0"
+          , "id":2
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":13
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"'lambda'(auto).B1"
+          , "id":3
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":25
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 2"
+              , "id":26
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 3"
+              , "id":27
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 4"
+              , "id":28
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"'lambda'(auto).B2"
+          , "id":4
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 5"
+              , "id":42
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 6"
+              , "id":45
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"'lambda'(auto).B3"
+          , "id":5
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 7"
+              , "id":58
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 8"
+              , "id":61
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"'lambda'(auto).B4"
+          , "id":6
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 9"
+              , "id":73
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 10"
+              , "id":74
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"'lambda'(auto).B5"
+          , "id":7
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 11"
+              , "id":90
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 12"
+              , "id":93
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"'lambda'(auto).B6"
+          , "id":8
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 13"
+              , "id":106
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 14"
+              , "id":108
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"'lambda'(auto).B7"
+          , "id":9
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 15"
+              , "id":124
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 16"
+              , "id":127
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"'lambda'(auto).B8"
+          , "id":10
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 17"
+              , "id":139
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"'lambda'(auto).B9"
+          , "id":11
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 18"
+              , "id":155
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 19"
+              , "id":158
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"'lambda'(auto).B10"
+          , "id":12
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 20"
+              , "id":165
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

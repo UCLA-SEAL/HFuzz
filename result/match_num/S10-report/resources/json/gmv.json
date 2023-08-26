@@ -1,0 +1,471 @@
+{
+  "nodes":
+  [
+    {
+      "name":"DDR"
+      , "id":460
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Interleaving":"Yes"
+          , "Interleave Size":"4096 bytes"
+          , "Channels":"4 channels"
+          , "Maximum bandwidth the BSP can deliver":"76800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel DDR Width (bits)":"512, 512, 512, 512"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"channel 0"
+          , "id":462
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 1"
+          , "id":463
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 2"
+          , "id":464
+          , "type":"bb"
+        }
+        , {
+          "name":"channel 3"
+          , "id":465
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":461
+      , "parent":"460"
+      , "bw":"76800.00"
+      , "num_channels":"4"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"76800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":466
+      , "parent":"460"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":467
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":470
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"DDR"
+              , "Interconnect Style":"ring"
+              , "Writes":"3"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"4"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect"
+          , "id":468
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"DDR"
+              , "Interconnect Style":"ring"
+              , "Reads":"4"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect Router"
+          , "id":469
+          , "details":
+          [
+            {
+              "type":"table"
+              , "User specified num-reorder flag":"Unset"
+            }
+          ]
+          , "type":"memsys"
+          , "children":
+          [
+            {
+              "name":"Bus 0"
+              , "id":480
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 1"
+              , "id":481
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 2"
+              , "id":482
+              , "type":"memsys"
+            }
+            , {
+              "name":"Bus 3"
+              , "id":483
+              , "type":"memsys"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Loads"
+      , "id":471
+      , "parent":"460"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"LD"
+          , "id":472
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"790 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"LoopBackReadIOPipeID"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":193
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":475
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"790 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"HostToDeviceSideChannelID"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":193
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":476
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"790 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"SideChannelReadIOPipeID"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":193
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":479
+          , "kwidth":"8"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"790 cycles"
+              , "Width":"8 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"HostToDeviceTermSideChannelID"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":193
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":473
+      , "parent":"460"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":474
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"18"
+              , "Latency":"2 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"LoopBackWriteIOPipeID"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":251
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":477
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"18"
+              , "Latency":"2 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"SideChannelWriteIOPipeID"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":251
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":478
+          , "kwidth":"32"
+          , "mwidth":"512"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"18"
+              , "Latency":"2 cycles"
+              , "Width":"32 bits"
+              , "DDR Width":"512 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"DeviceToHostSideChannelID"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u93631/A10_oneapi/IOpipe/src/FakeIOPipes.hpp"
+                , "line":251
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":462
+      , "to":461
+    }
+    , {
+      "from":461
+      , "to":462
+    }
+    , {
+      "from":463
+      , "to":461
+    }
+    , {
+      "from":461
+      , "to":463
+    }
+    , {
+      "from":464
+      , "to":461
+    }
+    , {
+      "from":461
+      , "to":464
+    }
+    , {
+      "from":465
+      , "to":461
+    }
+    , {
+      "from":461
+      , "to":465
+    }
+    , {
+      "from":468
+      , "to":467
+    }
+    , {
+      "from":470
+      , "to":467
+    }
+    , {
+      "from":467
+      , "to":461
+    }
+    , {
+      "from":472
+      , "to":468
+    }
+    , {
+      "from":474
+      , "to":470
+    }
+    , {
+      "from":475
+      , "to":468
+    }
+    , {
+      "from":476
+      , "to":468
+    }
+    , {
+      "from":477
+      , "to":470
+    }
+    , {
+      "from":478
+      , "to":470
+    }
+    , {
+      "from":479
+      , "to":468
+    }
+    , {
+      "from":461
+      , "to":480
+    }
+    , {
+      "from":461
+      , "to":481
+    }
+    , {
+      "from":461
+      , "to":482
+    }
+    , {
+      "from":461
+      , "to":483
+    }
+    , {
+      "from":480
+      , "to":472
+      , "reverse":1
+    }
+    , {
+      "from":481
+      , "to":475
+      , "reverse":1
+    }
+    , {
+      "from":482
+      , "to":476
+      , "reverse":1
+    }
+    , {
+      "from":483
+      , "to":479
+      , "reverse":1
+    }
+  ]
+}

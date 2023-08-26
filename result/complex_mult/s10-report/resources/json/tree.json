@@ -1,0 +1,39 @@
+{
+  "nodes":
+  [
+    {
+      "name":"'lambda'(auto)"
+      , "id":1
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"'lambda'(auto).B0"
+          , "id":2
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":3
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 1"
+              , "id":4
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 2"
+              , "id":7
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

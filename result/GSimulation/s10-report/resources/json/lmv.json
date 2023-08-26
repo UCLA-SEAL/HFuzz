@@ -1,0 +1,1016 @@
+{
+  "nodes":
+  [
+    {
+      "type":"interface"
+      , "id":33
+      , "name":"__acl_global_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":34
+      , "name":"__acl_global_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":35
+      , "name":"__acl_global_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":48
+      , "name":"__acl_global_offset_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_offset_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":49
+      , "name":"__acl_global_offset_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_offset_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":50
+      , "name":"__acl_global_offset_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_offset_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":30
+      , "name":"__acl_global_size_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_size_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":31
+      , "name":"__acl_global_size_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_size_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":32
+      , "name":"__acl_global_size_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_size_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":45
+      , "name":"__acl_group_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_group_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":46
+      , "name":"__acl_group_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_group_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":47
+      , "name":"__acl_group_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_group_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":39
+      , "name":"__acl_local_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_local_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":40
+      , "name":"__acl_local_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_local_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":41
+      , "name":"__acl_local_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_local_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":36
+      , "name":"__acl_local_size_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_local_size_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":37
+      , "name":"__acl_local_size_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_local_size_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":38
+      , "name":"__acl_local_size_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_local_size_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":42
+      , "name":"__acl_num_groups_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_num_groups_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":43
+      , "name":"__acl_num_groups_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_num_groups_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":44
+      , "name":"__acl_num_groups_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":173
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k0_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_num_groups_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":74
+      , "name":"__acl_global_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":75
+      , "name":"__acl_global_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":76
+      , "name":"__acl_global_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":89
+      , "name":"__acl_global_offset_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_offset_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":90
+      , "name":"__acl_global_offset_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_offset_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":91
+      , "name":"__acl_global_offset_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_offset_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":71
+      , "name":"__acl_global_size_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_size_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":72
+      , "name":"__acl_global_size_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_size_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":73
+      , "name":"__acl_global_size_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"64 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_global_size_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":86
+      , "name":"__acl_group_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_group_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":87
+      , "name":"__acl_group_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_group_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":88
+      , "name":"__acl_group_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_group_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":80
+      , "name":"__acl_local_id_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_local_id_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":81
+      , "name":"__acl_local_id_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_local_id_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":82
+      , "name":"__acl_local_id_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_local_id_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":77
+      , "name":"__acl_local_size_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_local_size_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":78
+      , "name":"__acl_local_size_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_local_size_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":79
+      , "name":"__acl_local_size_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_local_size_2"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":83
+      , "name":"__acl_num_groups_0"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_num_groups_0"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":84
+      , "name":"__acl_num_groups_1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_num_groups_1"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":85
+      , "name":"__acl_num_groups_2"
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u93631/A10_oneapi/GSimulation/src/GSimulation_noprob_kernel_variable.cpp"
+            , "line":230
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Width":"32 bits"
+          , "Kernel":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl"
+          , "Port Name":"k1_ZTSZZN11GSimulation5StartENSt7_cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRN2cl4sycl7handl___acl_num_groups_2"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

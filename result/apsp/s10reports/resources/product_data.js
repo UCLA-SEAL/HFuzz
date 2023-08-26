@@ -1,0 +1,1 @@
+var infoJSON={"compileInfo":{"nodes":[{"family":"Stratix 10, 1SX280HN2F43E2VG, intel_s10sx_pac:pac_s10","id":1,"name":"apsp_pipe_value_ragne_s10","product":"SYCL","quartus":"","time":"Thu Nov 17 16:02:43 2022","version":"2022.3.0 Build 156.2"}]}};
